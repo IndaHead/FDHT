@@ -1435,3 +1435,48 @@ theorem twoThreadSwapRotation_quotient_nontrivial
   intro heq
   have hK := Quotient.exact heq
   exact exposingFamily_swap_kernel_ne h hK
+
+/-! Concrete instance of ResolveDistinguishesExposedLeft -/
+
+def distinguishingResolve : KernelExpr → Unit → KernelExpr :=
+  fun e _ => e
+
+theorem distinguishingResolve_instance :
+    ResolveDistinguishesExposedLeft distinguishingResolve := by
+  refine ⟨identityContext, (), ?_⟩
+  simp [distinguishingResolve, identityContext]
+
+theorem distinguishingResolve_exposingContext_nonidentity :
+    toTrajectoryBoundary distinguishingResolve [exposingContext]
+    ≠
+    emptyTrajectory distinguishingResolve := by
+  intro h
+  have hK : FoldKernel distinguishingResolve [exposingContext] [] := by
+    show Quotient.mk _ [exposingContext] = Quotient.mk _ []
+    exact h
+  exact resolveDistinguishes_implies_exposingContext_outside_identity
+    distinguishingResolve distinguishingResolve_instance hK
+
+theorem distinguishingResolve_synchronous_distinction_to_collapse :
+    trajectoryProjection distinguishingResolve [exposingContext]
+    ≠
+    trajectoryProjection distinguishingResolve [identityContext]
+    ∧
+    trajectoryProjection distinguishingResolve [exposingContext, identityContext]
+    =
+    trajectoryProjection distinguishingResolve [identityContext, exposingContext] := by
+  constructor
+  · intro h
+    have hId : trajectoryProjection distinguishingResolve [identityContext]
+        = emptyTrajectory distinguishingResolve :=
+      identity_singleton_equals_empty_trajectory distinguishingResolve
+    rw [hId] at h
+    exact distinguishingResolve_exposingContext_nonidentity h
+  · show trajectoryProjection distinguishingResolve ([exposingContext] ++ [identityContext])
+        = trajectoryProjection distinguishingResolve ([identityContext] ++ [exposingContext])
+    rw [trajectoryProjection_append, trajectoryProjection_append]
+    have hId : trajectoryProjection distinguishingResolve [identityContext]
+        = emptyTrajectory distinguishingResolve :=
+      identity_singleton_equals_empty_trajectory distinguishingResolve
+    rw [hId]
+    rw [composeTrajectory_id_right, composeTrajectory_id_left]
