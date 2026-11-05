@@ -58,9 +58,10 @@ jobs:
           set -euo pipefail
           export LEAN_PATH="$(pwd)/fdht"
           cd fdht
-          lean -o /tmp/audit.olean FDHT_Audit_ArbitraryCollision.lean
-          lean -o /tmp/aft.olean AggregateFamilyTransform.lean
-          lean -o /tmp/perm.olean FDHTPermutationRotation.lean
+          for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean AggregateFamilyTransform.lean FDHTPermutationRotation.lean; do
+            echo "Building $f"
+            lean -o "/tmp/${f%.lean}.olean" "$f"
+          done
 
       - name: Normal axiom audit
         run: python3 scripts/fdht_axiom_audit.py --verbose
