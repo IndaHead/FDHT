@@ -5955,3 +5955,34 @@ theorem trajectoryProjection_first_isomorphism
     exact trajectoryQuotientHom_kernel_iff resolve xs ys
   · intro xs
     exact foldKernelMonoidEquiv_recovers_projection resolve xs
+
+/-! ============================================================
+    Stage 4 — Local pairwise reconstruction obstruction
+============================================================ -/
+
+theorem collapsed_pair_blocks_common_reconstruction
+    (resolve : KernelExpr → Store → Location)
+    (xs ys : List KernelExprContext)
+    (hxy : xs ≠ ys)
+    (hcollapse : toTrajectoryBoundary resolve xs = toTrajectoryBoundary resolve ys) :
+    ¬ ∃ recover : TrajectoryBoundary resolve → List KernelExprContext,
+      recover (toTrajectoryBoundary resolve xs) = xs ∧
+      recover (toTrajectoryBoundary resolve ys) = ys := by
+  intro ⟨recover, hxs, hys⟩
+  have : xs = ys := by
+    calc
+      xs = recover (toTrajectoryBoundary resolve xs) := hxs.symm
+      _ = recover (toTrajectoryBoundary resolve ys) := by rw [hcollapse]
+      _ = ys := hys
+  exact hxy this
+
+theorem swap_pair_blocks_common_reconstruction
+    (resolve : KernelExpr → Store → Location) :
+    ¬ ∃ recover : TrajectoryBoundary resolve → List KernelExprContext,
+      recover (toTrajectoryBoundary resolve []) = [] ∧
+      recover (toTrajectoryBoundary resolve [swapContext, swapContext]) =
+        [swapContext, swapContext] := by
+  apply collapsed_pair_blocks_common_reconstruction
+  · intro h
+    injection h
+  · exact (swap_pair_equals_empty_trajectory resolve).symm
