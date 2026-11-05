@@ -3,20 +3,8 @@ name: FDHT Axiom Audit
 on:
   push:
     branches: [main]
-    paths:
-      - 'fdht/**/*.lean'
-      - 'scripts/fdht_axiom_audit.py'
-      - 'lean-toolchain'
-      - 'lakefile.toml'
-      - '.github/workflows/fdht-axiom-audit.yml'
   pull_request:
     branches: [main]
-    paths:
-      - 'fdht/**/*.lean'
-      - 'scripts/fdht_axiom_audit.py'
-      - 'lean-toolchain'
-      - 'lakefile.toml'
-      - '.github/workflows/fdht-axiom-audit.yml'
   workflow_dispatch:
 
 permissions:
