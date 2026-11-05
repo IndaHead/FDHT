@@ -241,3 +241,66 @@ Frozen trust regression: PASS.
 Distinct raw histories may occupy the same trajectory projection fibre. When they do, no single recovery function from that common projected observation can exactly reconstruct both histories. FDHT establishes this obstruction generically and instantiates it concretely for the empty history and the two-swap history. This establishes projection collision and exact reconstruction failure, not deletion, non-existence, or an unrestricted notion of absolute information loss.
 
 STAGE 4 FIRST SURVIVAL/COLLAPSE/RECONSTRUCTION BOUNDARY VERIFIED
+
+## Synchronous Distinction→Collapse Event
+
+### Verified theorem
+
+```lean
+theorem distinguishingResolve_synchronous_distinction_to_collapse :
+    trajectoryProjection distinguishingResolve [exposingContext]
+    ≠
+    trajectoryProjection distinguishingResolve [identityContext]
+    ∧
+    trajectoryProjection distinguishingResolve [exposingContext, identityContext]
+    =
+    trajectoryProjection distinguishingResolve [identityContext, exposingContext]
+```
+
+### Frozen mathematical statement
+
+A genuine synchronous projected distinction→collapse transition exists for `distinguishingResolve`.
+
+```text
+BEFORE:
+  π([exposingContext]) ≠ π([identityContext])
+
+AFTER INDEPENDENT NEXT STEPS:
+  π([exposingContext, identityContext])
+  =
+  π([identityContext, exposingContext])
+```
+
+### Distinctions preserved
+
+- projected collapse ≠ deletion
+- projected collapse ≠ non-existence
+- projected collapse ≠ absolute information loss
+- independent continuations ≠ common continuation
+- this result does NOT contradict common-extension persistence
+- existence of an event ≠ first-event localisation
+- existence ≠ computability
+- this theorem does NOT define FirstCollapse
+
+### Trust footprint
+
+```text
+[propext, Quot.sound]
+Classical.choice: ABSENT
+sorryAx: ABSENT
+custom axioms: ABSENT
+```
+
+### Stage 4 status map
+
+| Boundary | Status |
+|----------|--------|
+| collision/reconstruction obstruction | PROVED |
+| common-continuation persistence | PROVED |
+| naive first-prefix equality | DEGENERATE |
+| concrete projected nonidentity | PROVED |
+| projected distinction seed | PROVED |
+| synchronous distinction→collapse event | PROVED |
+| first-collapse localisation | OPEN |
+| information addition | UNPROBED |
+| InformationFate | NOT CREATED |
