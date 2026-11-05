@@ -4,11 +4,11 @@ import argparse
 import hashlib
 import subprocess
 import sys
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FDHT = ROOT / "fdht"
-LEAN_PATH = str(FDHT)
 
 FROZEN = [
     "ThreadPermutation.projectedAction",
@@ -32,13 +32,15 @@ def lean_axioms(decl):
 open KernelExprContext
 #print axioms {decl}
 """
+    env = os.environ.copy()
+    env["LEAN_PATH"] = str(FDHT)
     r = subprocess.run(
         ["lean", "--stdin"],
         input=code,
         text=True,
         capture_output=True,
         cwd=str(FDHT),
-        env={"LEAN_PATH": LEAN_PATH, **dict(__import__("os").environ)},
+        env=env,
     )
     return r.returncode, r.stdout + r.stderr
 
@@ -67,6 +69,8 @@ def main():
         rc, out = lean_axioms(decl)
         if rc != 0:
             failures.append(f"{decl}: lean failed")
+            if args.verbose:
+                print(f"{decl}: FAIL\n{out}")
             continue
         line = [l for l in out.splitlines() if "depends on axioms" in l or "does not depend" in l]
         line = line[0] if line else out
@@ -76,9 +80,6 @@ def main():
             failures.append(f"{decl}: Classical.choice")
         if "sorryAx" in line:
             failures.append(f"{decl}: sorryAx")
-        if "axiom" in line.lower() and "depends on axioms" not in line and "does not depend" not in line:
-            # crude custom-axiom check
-            pass
 
     # Write artefacts
     outdir = ROOT
