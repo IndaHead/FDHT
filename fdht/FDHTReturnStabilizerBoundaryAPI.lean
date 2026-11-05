@@ -5,7 +5,10 @@ open KernelExprContext
 /-!
 # FDHT Return / Stabiliser / Cancellation Boundary
 
-Dependency calculus only. Does not close OPEN propositions.
+Dependency calculus only. Does not close OPEN propositions for arbitrary resolvers.
+    For distinguishingResolve the cancellation frontier is closed by
+    distinguishingResolve_exposing_idempotent_nonidentity and
+    distinguishingResolve_cancellation_frontier.
 Does not assume cancellation.
 -/
 
@@ -1480,3 +1483,63 @@ theorem distinguishingResolve_synchronous_distinction_to_collapse :
       identity_singleton_equals_empty_trajectory distinguishingResolve
     rw [hId]
     rw [composeTrajectory_id_right, composeTrajectory_id_left]
+
+/-! ============================================================
+    distinguishingResolve cancellation frontier
+    (concrete nonidentity idempotent trajectory)
+============================================================ -/
+
+theorem distinguishingResolve_exposing_idempotent_nonidentity :
+    let q := trajectoryProjection distinguishingResolve [exposingContext]
+    q ≠ emptyTrajectory distinguishingResolve ∧
+    composeTrajectory distinguishingResolve q q = q := by
+  constructor
+  · exact distinguishingResolve_exposingContext_nonidentity
+  · exact exposingContext_stabilises_itself distinguishingResolve
+
+theorem distinguishingResolve_nontrivialRightStabilizer :
+    NontrivialRightStabilizer distinguishingResolve := by
+  have h := distinguishingResolve_exposing_idempotent_nonidentity
+  let q := trajectoryProjection distinguishingResolve [exposingContext]
+  refine ⟨q, q, h.1, h.2⟩
+
+theorem distinguishingResolve_nontrivialLeftStabilizer :
+    NontrivialLeftStabilizer distinguishingResolve := by
+  have h := distinguishingResolve_exposing_idempotent_nonidentity
+  let q := trajectoryProjection distinguishingResolve [exposingContext]
+  refine ⟨q, q, h.1, h.2⟩
+
+theorem distinguishingResolve_not_returnImpliesIdentityClass :
+    ¬ ReturnImpliesIdentityClass distinguishingResolve := by
+  intro hImpl
+  have h := distinguishingResolve_exposing_idempotent_nonidentity
+  have hRet : ReturnsTo distinguishingResolve [exposingContext] [exposingContext] := by
+    unfold ReturnsTo
+    rw [trajectoryProjection_append]
+    exact h.2
+  exact h.1 (hImpl [exposingContext] [exposingContext] hRet)
+
+theorem distinguishingResolve_not_leftCancellation :
+    ¬ LeftCancellation distinguishingResolve := by
+  intro hCanc
+  have hRetId := leftCancellation_implies_returnIdentity distinguishingResolve hCanc
+  exact distinguishingResolve_not_returnImpliesIdentityClass hRetId
+
+theorem distinguishingResolve_cancellation_frontier :
+    NontrivialRightStabilizer distinguishingResolve ∧
+    NontrivialLeftStabilizer distinguishingResolve ∧
+    ¬ ReturnImpliesIdentityClass distinguishingResolve ∧
+    ¬ LeftCancellation distinguishingResolve ∧
+    ¬ RightCancellation distinguishingResolve ∧
+    KernelExprContext.RightCancellationCollision distinguishingResolve := by
+  refine ⟨
+    distinguishingResolve_nontrivialRightStabilizer,
+    distinguishingResolve_nontrivialLeftStabilizer,
+    distinguishingResolve_not_returnImpliesIdentityClass,
+    distinguishingResolve_not_leftCancellation,
+    nontrivialLeftStabilizer_implies_not_rightCancellation distinguishingResolve
+      distinguishingResolve_nontrivialLeftStabilizer,
+    nontrivialLeftStabilizer_implies_rightCollision distinguishingResolve
+      distinguishingResolve_nontrivialLeftStabilizer
+  ⟩
+
