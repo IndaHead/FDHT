@@ -41,6 +41,9 @@ jobs:
         uses: leanprover/lean-action@v1
         with:
           use-mathlib-cache: false
+          build: false
+          test: false
+          lint: false
 
       - name: Report Lean version
         run: lean --version
