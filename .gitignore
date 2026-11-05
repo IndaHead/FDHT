@@ -1,0 +1,11 @@
+*.olean
+*.olean.private
+*.olean.server
+*.ir
+*.ir.sig
+.lake/
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp
+/tmp/

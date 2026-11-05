@@ -1,0 +1,40 @@
+import FDHTReturnStabilizerBoundaryAPI
+
+/-!
+# FDHT Trajectory Nonidentity Boundary API
+
+Thin facade. All mathematics is defined in FDHTReturnStabilizerBoundaryAPI.
+-/
+
+open KernelExprContext
+
+#check NonidentityTrajectoryExists
+#check NonidentityTrajectoryBoundaryExists
+#check AllTrajectoriesIdentity
+
+#check empty_not_nonidentity
+#check nonidentity_requires_nonempty_history
+#check nonidentityTrajectory_iff_nonidentityBoundary
+#check allTrajectoriesIdentity_implies_not_nonidentityBoundary
+
+#check nontrivialRightStabilizer_implies_nonidentityTrajectoryExists
+#check nontrivialLeftStabilizer_implies_nonidentityTrajectoryExists
+#check returnWithoutIdentityExtension_implies_nonidentityTrajectoryExists
+
+#check allTrajectoriesIdentity_implies_allRightStabilizersTrivial
+#check allTrajectoriesIdentity_implies_allLeftStabilizersTrivial
+#check allTrajectoriesIdentity_implies_returnImpliesIdentityClass
+#check allTrajectoriesIdentity_implies_leftCancellation
+#check allTrajectoriesIdentity_implies_rightCancellation
+
+#check RawOutsideIdentityKernelExists
+#check FoldKernelQuotientNontrivial
+#check rawOutsideIdentityKernel_iff_nonidentityTrajectory
+#check foldKernelQuotientNontrivial_iff_rawOutsideIdentityKernel
+
+#check ResolveDistinguishesExposedLeft
+#check resolveDistinguishes_implies_exposingContext_outside_identity
+#check resolveDistinguishes_implies_nonidentityTrajectoryExists
+
+#check trajectoryProjection_nil
+#check trajectoryProjection_surjective

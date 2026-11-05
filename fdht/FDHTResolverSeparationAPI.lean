@@ -1,0 +1,26 @@
+import FDHTReturnStabilizerBoundaryAPI
+
+/-!
+# FDHT Resolver Separation API
+
+Thin facade. All mathematics is defined in FDHTReturnStabilizerBoundaryAPI.
+-/
+
+open KernelExprContext
+
+#check ResolverDistinguishesAt
+#check ResolverContextDistinguishesAt
+#check ResolverSeparates
+#check ResolveDistinguishesExposedLeft
+#check ResolvesExposedLeftDifferently
+#check ResolvesExposedRightDifferently
+#check ResolverDirectlySeparatesExposedLeft
+
+#check resolverDirectlySeparates_implies_resolvesExposedLeftDifferently
+#check resolvesExposedLeftDifferently_implies_nonidentityTrajectoryExists
+#check resolveDistinguishes_implies_exposingContext_outside_identity
+#check resolveDistinguishes_implies_nonidentityTrajectoryExists
+
+#check constant_resolver_not_separating
+#check exposingContext_plug_left
+#check exposingContext_plug_right

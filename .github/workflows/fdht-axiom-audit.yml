@@ -1,0 +1,92 @@
+name: FDHT Axiom Audit
+
+on:
+  pull_request:
+    paths:
+      - 'fdht/**/*.lean'
+      - 'scripts/fdht_axiom_audit.py'
+      - 'lean-toolchain'
+      - 'lakefile.toml'
+      - '.github/workflows/fdht-axiom-audit.yml'
+  push:
+    paths:
+      - 'fdht/**/*.lean'
+      - 'scripts/fdht_axiom_audit.py'
+      - 'lean-toolchain'
+      - 'lakefile.toml'
+      - '.github/workflows/fdht-axiom-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fdht-axiom-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Report commit
+        run: |
+          echo "Commit: $(git rev-parse HEAD)"
+          echo "Toolchain:"
+          cat lean-toolchain
+
+      - name: Setup Lean
+        uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: false
+
+      - name: Report Lean version
+        run: lean --version
+
+      - name: Source integrity
+        run: |
+          set -euo pipefail
+          test -r lean-toolchain
+          test -r scripts/fdht_axiom_audit.py
+          find fdht -name '*.lean' -type f -exec test -r {} \;
+          echo "Source integrity OK"
+
+      - name: Canonical build
+        run: |
+          set -euo pipefail
+          export LEAN_PATH="$(pwd)/fdht"
+          cd fdht
+          lean -o /tmp/aft.olean AggregateFamilyTransform.lean
+          lean -o /tmp/perm.olean FDHTPermutationRotation.lean
+
+      - name: Normal axiom audit
+        run: python3 scripts/fdht_axiom_audit.py --verbose
+
+      - name: Strict axiom trust gate
+        run: python3 scripts/fdht_axiom_audit.py --fail-on-unexpected
+
+      - name: Upload audit artefacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fdht-axiom-audit
+          path: |
+            FDHT_AXIOM_MATRIX.csv
+            FDHT_AXIOM_MATRIX.md
+            FDHT_AXIOM_RAW.txt
+            FDHT_AXIOM_SUMMARY.md
+          if-no-files-found: warn
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "## FDHT AXIOM AUDIT" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: \`$(git rev-parse HEAD)\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Lean: \`$(lean --version 2>/dev/null || echo unavailable)\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f FDHT_AXIOM_SUMMARY.md ]; then
+            cat FDHT_AXIOM_SUMMARY.md >> "$GITHUB_STEP_SUMMARY"
+          fi

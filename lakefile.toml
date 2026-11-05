@@ -1,0 +1,11 @@
+name = "fdht_parent_antichain"
+version = "0.1.0"
+defaultTargets = ["FDHTParentAntichain"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "FDHTParentAntichain"
+roots = ["FDHT_Audit_ParentAntichain"]
