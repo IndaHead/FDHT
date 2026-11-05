@@ -60,7 +60,7 @@ jobs:
           cd fdht
           for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean AggregateFamilyTransform.lean FDHTPermutationRotation.lean; do
             echo "Building $f"
-            lean -o "/tmp/${f%.lean}.olean" "$f"
+            lean -o "${f%.lean}.olean" "$f"
           done
 
       - name: Normal axiom audit
