@@ -381,3 +381,135 @@ This shows `qE * qE = qE = qE * q0`. The failed candidate does not prove impossi
 | first-collapse localisation | OPEN |
 | information addition | UNPROBED |
 | InformationFate | NOT CREATED |
+
+## Open Post-Collapse Branch-Separation Lemma
+
+### Status
+
+OPEN — NOT PROVED — NOT REFUTED
+
+### Origin
+
+This boundary arose downstream of the verified synchronous
+distinction→collapse witness under `distinguishingResolve`.
+
+FDHT proves that two projected trajectories can be distinct and then
+converge under independent next steps.
+
+Common continuation after projected equality preserves equality.
+
+The remaining question is whether different subsequent continuations
+from that common projected state can produce distinct projected
+outcomes.
+
+### Frozen collapsed state
+
+```text
+q := trajectoryProjection distinguishingResolve [exposingContext, identityContext]
+```
+
+The frozen Stage 4 witness also establishes:
+
+```text
+q = trajectoryProjection distinguishingResolve [identityContext, exposingContext]
+```
+
+### Open lemma
+
+The smallest currently missing proposition is:
+
+```text
+∃ a b : List KernelExprContext,
+  trajectoryProjection distinguishingResolve
+    ([exposingContext, identityContext] ++ a)
+  ≠
+  trajectoryProjection distinguishingResolve
+    ([exposingContext, identityContext] ++ b)
+```
+
+Equivalently, at the trajectory level, the unresolved question is
+whether right action from `q` is nonconstant:
+
+```text
+∃ qa qb,
+  composeTrajectory distinguishingResolve q qa
+  ≠
+  composeTrajectory distinguishingResolve q qb
+```
+
+subject to the required trajectory representatives.
+
+### What has been tested
+
+Existing identity, exposingContext, swapContext and hole candidates have
+not supplied a certified separating pair.
+
+The natural exposingContext/identityContext candidate does not establish
+branch separation because existing idempotence and identity behaviour
+reduce the tested outcomes to equality.
+
+This failed candidate does NOT prove that branch separation is
+impossible.
+
+### Exact classification
+
+The following remain distinct:
+
+- right-action constant: UNDERDETERMINED
+- right-action nonconstant: UNDERDETERMINED
+- right-action injective: NOT ESTABLISHED
+- existential branch separation: OPEN
+- post-collapse synchronous re-divergence: OPEN
+- right cancellation: NOT REQUIRED / NOT CLAIMED
+
+### Dependency boundary
+
+If existential branch separation is proved, it can supply the missing
+ingredient for a post-collapse re-divergence witness.
+
+If existential branch separation is refuted for `q`, that would instead
+establish a resolver/state-specific persistence constraint.
+
+Neither outcome is currently established.
+
+### Semantic firewall
+
+Do not infer:
+
+- branch separation from raw continuation inequality
+- branch separation from trajectory nonidentity alone
+- branch separation from cancellation unless cancellation is separately
+  proved
+- impossibility from failed witness search
+- permanent collapse from common-continuation persistence
+- re-divergence as raw-history recovery
+- re-divergence as reversal of information loss
+- collapse as deletion
+- collapse as non-existence
+- collapse as absolute information loss
+
+### Downstream work parked behind this boundary
+
+Until this lemma is proved or refuted:
+
+- post-collapse re-divergence remains OPEN
+- recurrence/multiple-collapse analysis remains PARKED
+- first-collapse localisation remains OPEN
+- information-addition semantics remain UNPROBED
+- InformationFate remains NOT CREATED
+
+### Governing rule
+
+Preserve the OPEN state.
+
+Do not strengthen, weaken or silently replace this existential lemma
+with a cancellation assumption or broader algebraic property.
+
+The next admissible step is a proof, countermodel, or independently
+required theorem that genuinely settles this boundary.
+
+Failed search ≠ impossibility.
+Unknown ≠ false.
+Unproved ≠ refuted.
+
+Trust the maths.
