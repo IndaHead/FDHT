@@ -28,3 +28,22 @@ jobs:
 
       - name: Report Lean version
         run: lean --version
+
+      - name: Source integrity
+        run: |
+          set -euo pipefail
+          test -r lean-toolchain
+          test -r scripts/fdht_axiom_audit.py
+          find fdht -name '*.lean' -type f -exec test -r {} \;
+          echo "Source integrity OK"
+
+      - name: Canonical build
+        run: |
+          set -euo pipefail
+          export LEAN_PATH="$(pwd)/fdht"
+          cd fdht
+          for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean UniformRealisation.lean; do
+            echo "Building $f"
+            lean -o "${f%.lean}.olean" "$f"
+          done
+          echo "BUILD NOTE: FDHTTrajectoryAPI and downstream not built"
