@@ -49,7 +49,8 @@ jobs:
           echo "BUILD NOTE: FDHTTrajectoryAPI and downstream not built"
 
       - name: Normal axiom audit
-        run: python3 scripts/fdht_axiom_audit.py --verbose || echo "AUDIT NOTE: frozen surface not reachable from clean build"
+        run: |
+          python3 scripts/fdht_axiom_audit.py --verbose || echo "AUDIT NOTE: frozen surface not reachable from clean build"
 
       - name: Strict axiom trust gate
         run: python3 scripts/fdht_axiom_audit.py --fail-on-unexpected
