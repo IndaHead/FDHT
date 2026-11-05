@@ -58,7 +58,7 @@ jobs:
           set -euo pipefail
           export LEAN_PATH="$(pwd)/fdht"
           cd fdht
-          for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean AggregateFamilyTransform.lean FDHTPermutationRotation.lean; do
+          for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean UniformRealisation.lean AggregateFamilyTransform.lean FDHTPermutationRotation.lean; do
             echo "Building $f"
             lean -o "${f%.lean}.olean" "$f"
           done
