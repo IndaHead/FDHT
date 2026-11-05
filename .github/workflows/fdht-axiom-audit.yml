@@ -37,13 +37,10 @@ jobs:
           echo "Toolchain:"
           cat lean-toolchain
 
-      - name: Setup Lean
-        uses: leanprover/lean-action@v1
-        with:
-          use-mathlib-cache: false
-          build: false
-          test: false
-          lint: false
+      - name: Install elan and Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
 
       - name: Report Lean version
         run: lean --version
