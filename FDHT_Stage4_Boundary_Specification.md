@@ -304,3 +304,80 @@ custom axioms: ABSENT
 | first-collapse localisation | OPEN |
 | information addition | UNPROBED |
 | InformationFate | NOT CREATED |
+
+## Post-Collapse Branch Separation
+
+### Frozen state
+
+```text
+q := trajectoryProjection distinguishingResolve [exposingContext, identityContext]
+```
+
+The frozen theorem also gives:
+
+```text
+q = trajectoryProjection distinguishingResolve [identityContext, exposingContext]
+```
+
+### Unresolved property
+
+Existential branch separation from the collapsed state `q`:
+
+```text
+∃ a b : List KernelExprContext,
+  trajectoryProjection distinguishingResolve
+    ([exposingContext, identityContext] ++ a)
+  ≠
+  trajectoryProjection distinguishingResolve
+    ([exposingContext, identityContext] ++ b)
+```
+
+Equivalently:
+
+```text
+∃ qa qb : TrajectoryBoundary distinguishingResolve,
+  composeTrajectory distinguishingResolve q qa
+  ≠
+  composeTrajectory distinguishingResolve q qb
+```
+
+### Status
+
+Post-collapse branch separation: OPEN
+
+Synchronous re-divergence: OPEN
+
+### Tested candidate
+
+Appending `exposingContext` vs `identityContext` does not separate because:
+
+```text
+exposingContext_history_idempotent distinguishingResolve
+  : TrajectoryEquivalent distinguishingResolve
+      [exposingContext, exposingContext]
+      [exposingContext]
+```
+
+This shows `qE * qE = qE = qE * q0`. The failed candidate does not prove impossibility.
+
+### Distinctions preserved
+
+- branch separation ≠ right cancellation
+- common continuation ≠ independent continuation
+- re-divergence ≠ raw-history recovery
+- failed witness search ≠ impossibility
+- unknown ≠ false
+- unproved ≠ refuted
+
+### Stage 4 status map (updated)
+
+| Boundary | Status |
+|----------|--------|
+| synchronous distinction→collapse event | PROVED |
+| take-based transition predicate | PROVED |
+| common-continuation persistence | PROVED |
+| post-collapse branch separation | OPEN |
+| synchronous re-divergence | OPEN |
+| first-collapse localisation | OPEN |
+| information addition | UNPROBED |
+| InformationFate | NOT CREATED |
