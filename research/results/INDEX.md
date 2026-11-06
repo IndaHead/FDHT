@@ -22,3 +22,24 @@
 ## #14 Status
 
 Parent #14 is CLOSED. 98 concrete committed regression cells preserved. Projected nonidentity remains OPEN and NON-BLOCKING.
+
+## Backlog #16 — Projected Nonidentity
+
+**Status:** CLOSED  
+**Authority:** RESEARCH RESULT ONLY  
+**Promotion:** NOT PROMOTED
+
+### Summary
+
+Compiler-verified constructive direct bridge from raw ThreadPermutation
+nonidentity plus TrajectoryBoundary carrier distinction to projectedAction
+nonidentity. Shared resolverSeparationWitness carrier witness instantiated
+for n=4/6/8.
+
+### Closure Record
+
+- [FDHT_Backlog_16_Projected_Nonidentity_Closure.md](FDHT_Backlog_16_Projected_Nonidentity_Closure.md)
+
+### Archived Probes
+
+- [probes/backlog_16/](../probes/backlog_16/)

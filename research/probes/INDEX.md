@@ -13,3 +13,36 @@
 |-------|--------|
 | n2_no_early_return | HISTORICAL PROBE REFERENCED; EXACT ARTEFACT UNRECOVERED |
 | n4_coordinate_table_no_early_return | HISTORICAL PROBE REFERENCED; EXACT ARTEFACT UNRECOVERED |
+
+## Backlog #16 — Projected Nonidentity
+
+**Status:** CLOSED (research probe only)  
+**Authority:** RESEARCH PROBE ONLY  
+**Promotion:** NOT PROMOTED
+
+### Summary
+
+#16A: Minimal separation audit. Carrier-level nontriviality identified as candidate.
+
+#16B: Moved-family indicator bridge compiled. Footprint: `[propext, Quot.sound]`.
+
+#16C: Constructive moved-coordinate extraction compiled. Classical.choice eliminated.
+
+#16D: End-to-end direct generic conditional theorem compiled. No permanent consumer.
+
+#16E: Shared resolverSeparationWitness carrier witness instantiated generic theorem for n=4/6/8.
+
+### Archived Probes
+
+- [backlog_16/HEADER.md](backlog_16/HEADER.md)
+- [backlog_16/constructive_moved_coordinate_probe.lean](backlog_16/constructive_moved_coordinate_probe.lean)
+- [backlog_16/projectedAction_moved_probe.lean](backlog_16/projectedAction_moved_probe.lean)
+- [backlog_16/end_to_end_projected_nonidentity_probe.lean](backlog_16/end_to_end_projected_nonidentity_probe.lean)
+- [backlog_16/shared_carrier_witness_n4_n6_n8_probe.lean](backlog_16/shared_carrier_witness_n4_n6_n8_probe.lean)
+
+### Trust Footprint
+
+All preferred theorems: `[propext, Quot.sound]`
+
+Classical.choice: ABSENT  
+sorryAx: ABSENT
