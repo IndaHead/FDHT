@@ -204,3 +204,77 @@ theorem sixThreadCycleCube_projected_involutive
 #print axioms sixThreadCycleCube_involutive
 #print axioms sixThreadCycleCube_fixed_point_free
 #print axioms sixThreadCycleCube_projected_involutive
+
+/-! ============================================================
+    n=6 no-early-return (30-cell coordinate table)
+============================================================ -/
+
+theorem sixThreadCycle_k1_ne :
+    ∀ i : Fin 6, Nat.repeat sixThreadCycle.toFun 1 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change sixThreadCycleFun 0 ≠ 0; simp [sixThreadCycleFun]
+  | ⟨1, _⟩ => change sixThreadCycleFun 1 ≠ 1; simp [sixThreadCycleFun]
+  | ⟨2, _⟩ => change sixThreadCycleFun 2 ≠ 2; simp [sixThreadCycleFun]
+  | ⟨3, _⟩ => change sixThreadCycleFun 3 ≠ 3; simp [sixThreadCycleFun]
+  | ⟨4, _⟩ => change sixThreadCycleFun 4 ≠ 4; simp [sixThreadCycleFun]
+  | ⟨5, _⟩ => change sixThreadCycleFun 5 ≠ 5; simp [sixThreadCycleFun]
+
+theorem sixThreadCycle_k2_ne :
+    ∀ i : Fin 6, Nat.repeat sixThreadCycle.toFun 2 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 0) ≠ 0; simp [sixThreadCycleFun]
+  | ⟨1, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 1) ≠ 1; simp [sixThreadCycleFun]
+  | ⟨2, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 2) ≠ 2; simp [sixThreadCycleFun]
+  | ⟨3, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 3) ≠ 3; simp [sixThreadCycleFun]
+  | ⟨4, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 4) ≠ 4; simp [sixThreadCycleFun]
+  | ⟨5, _⟩ => change sixThreadCycleFun (sixThreadCycleFun 5) ≠ 5; simp [sixThreadCycleFun]
+
+theorem sixThreadCycle_k3_ne :
+    ∀ i : Fin 6, Nat.repeat sixThreadCycle.toFun 3 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 0)) ≠ 0; simp [sixThreadCycleFun]
+  | ⟨1, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 1)) ≠ 1; simp [sixThreadCycleFun]
+  | ⟨2, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 2)) ≠ 2; simp [sixThreadCycleFun]
+  | ⟨3, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 3)) ≠ 3; simp [sixThreadCycleFun]
+  | ⟨4, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 4)) ≠ 4; simp [sixThreadCycleFun]
+  | ⟨5, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 5)) ≠ 5; simp [sixThreadCycleFun]
+
+theorem sixThreadCycle_k4_ne :
+    ∀ i : Fin 6, Nat.repeat sixThreadCycle.toFun 4 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 0))) ≠ 0; simp [sixThreadCycleFun]
+  | ⟨1, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 1))) ≠ 1; simp [sixThreadCycleFun]
+  | ⟨2, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 2))) ≠ 2; simp [sixThreadCycleFun]
+  | ⟨3, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 3))) ≠ 3; simp [sixThreadCycleFun]
+  | ⟨4, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 4))) ≠ 4; simp [sixThreadCycleFun]
+  | ⟨5, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 5))) ≠ 5; simp [sixThreadCycleFun]
+
+theorem sixThreadCycle_k5_ne :
+    ∀ i : Fin 6, Nat.repeat sixThreadCycle.toFun 5 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 0)))) ≠ 0; simp [sixThreadCycleFun]
+  | ⟨1, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 1)))) ≠ 1; simp [sixThreadCycleFun]
+  | ⟨2, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 2)))) ≠ 2; simp [sixThreadCycleFun]
+  | ⟨3, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 3)))) ≠ 3; simp [sixThreadCycleFun]
+  | ⟨4, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 4)))) ≠ 4; simp [sixThreadCycleFun]
+  | ⟨5, _⟩ => change sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun (sixThreadCycleFun 5)))) ≠ 5; simp [sixThreadCycleFun]
+
+theorem sixThreadCycle_noEarlyReturn :
+    ∀ i : Fin 6,
+      ∀ k : Nat,
+        0 < k →
+        k < 6 →
+        Nat.repeat sixThreadCycle.toFun k i ≠ i := by
+  intro i k hkPos hkLt
+  have hk : k = 1 ∨ k = 2 ∨ k = 3 ∨ k = 4 ∨ k = 5 := by omega
+  rcases hk with rfl | rfl | rfl | rfl | rfl
+  · exact sixThreadCycle_k1_ne i
+  · exact sixThreadCycle_k2_ne i
+  · exact sixThreadCycle_k3_ne i
+  · exact sixThreadCycle_k4_ne i
+  · exact sixThreadCycle_k5_ne i
