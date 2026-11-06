@@ -43,3 +43,23 @@ for n=4/6/8.
 ### Archived Probes
 
 - [probes/backlog_16/](../probes/backlog_16/)
+
+## Backlog #17 — Retrieval Frontier
+
+**Status:** CLOSED BY UNDERDETERMINATION  
+**Authority:** RESEARCH RESULT ONLY  
+**Promotion:** NOT PROMOTED
+
+### Summary
+
+#17A-E established that current FDHT mathematics does not justify retrieval
+semantics. No carrier, no identity relation, no equivalence laws, no mandatory
+requirements exist. No permanent consumer requires retrieval mathematics.
+
+### Closure Record
+
+- [FDHT_Backlog_17_Retrieval_Frontier_Closure.md](FDHT_Backlog_17_Retrieval_Frontier_Closure.md)
+
+### Reopening Gate
+
+R1-R5 required. Without R1-R5, do not reopen #17.
