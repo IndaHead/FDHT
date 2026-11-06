@@ -26,6 +26,7 @@ roots = [
   "FDHTResolverSeparationAPI",
   "FDHTReturnStabilizerBoundaryAPI",
   "FDHTProvenanceAuditAPI",
+  "FDHTProvenanceAuditAPIRegression",
   "FDHTThreadFamilyFirstIso",
   "FDHTThreeThreadCycle",
   "FDHTTrajectoryAPI",
