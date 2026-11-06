@@ -109,6 +109,7 @@ No generic Join API. No foundational modification.
 | C₂₁ | FIXTURE-KILL | [Consumer_C21_Biconditional_Transport_Audit.md](Consumer_C21_Biconditional_Transport_Audit.md) | NONE |
 | C₂₂ | FIXTURE-KILL | [Consumer_C22_Demanded_Edge_Audit.md](Consumer_C22_Demanded_Edge_Audit.md) | NONE |
 | C₂₃ | FIXTURE-KILL | [Consumer_C23_Proof_Substitution_Audit.md](Consumer_C23_Proof_Substitution_Audit.md) | NONE |
+| C₂₄ | FIXTURE-KILL | [Consumer_C24_Scope_Compatibility_Audit.md](Consumer_C24_Scope_Compatibility_Audit.md) | NONE |
 
 ### Programme Specification
 
