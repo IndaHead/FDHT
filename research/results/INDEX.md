@@ -74,10 +74,12 @@ R1-R5 required. Without R1-R5, do not reopen #17.
 ### Summary
 
 Evidence-gated consumer probes testing typed request/result discipline,
-dependency, branching, narrowing, conjunctive admission, and boundary testing
+dependency, branching, narrowing, conjunctive admission, boundary testing,
+negative evidence, theorem-mediated derivation, transitive derivation,
+derived-evidence fork, and derived-evidence reconvergence audit
 over existing FDHT substrate.
 No new mathematics. No generic Consumer API. No generic Evidence API.
-No foundational modification.
+No generic Join API. No foundational modification.
 
 ### Probe Records
 
@@ -91,6 +93,11 @@ No foundational modification.
 | C₅ | VERIFIED | [Consumer_C5_Evidence_Gated_Narrowing.md](Consumer_C5_Evidence_Gated_Narrowing.md) | c5_evidence_gated_narrowing_consumer.lean |
 | C₆ | VERIFIED | (probe only) | c6_conjunctive_evidence_consumer.lean |
 | C₇ | BOUNDARY / FIXTURE-KILL | [Consumer_C7_Alternative_Evidence_Boundary.md](Consumer_C7_Alternative_Evidence_Boundary.md) | NONE |
+| C₈ | VERIFIED | (probe only) | c8_negative_evidence_consumer.lean |
+| C₉ | VERIFIED | (probe only) | c9_theorem_mediated_derivation_consumer.lean |
+| C₁₀ | VERIFIED | (probe only) | c10_transitive_derivation_consumer.lean |
+| C₁₁ | VERIFIED | (probe only) | c11_derived_evidence_fork_consumer.lean |
+| C₁₂ | FIXTURE-KILL | [Consumer_C12_Derived_Evidence_Reconvergence_Audit.md](Consumer_C12_Derived_Evidence_Reconvergence_Audit.md) | NONE |
 
 ### Programme Specification
 
