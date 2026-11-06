@@ -102,6 +102,7 @@ No generic Join API. No foundational modification.
 | C₁₄ | VERIFIED | (probe only) | c14_same_source_convergent_derivation_consumer.lean |
 | C₁₅ | VERIFIED | (probe only) | c15_contrapositive_negative_evidence_consumer.lean |
 | C₁₆ | FIXTURE-KILL | [Consumer_C16_Mixed_Polarity_Conjunction_Audit.md](Consumer_C16_Mixed_Polarity_Conjunction_Audit.md) | NONE |
+| C₁₇ | FIXTURE-KILL | [Consumer_C17_Disjunctive_Evidence_Audit.md](Consumer_C17_Disjunctive_Evidence_Audit.md) | NONE |
 
 ### Programme Specification
 
