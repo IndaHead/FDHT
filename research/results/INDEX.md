@@ -121,3 +121,26 @@ No generic Join API. No foundational modification.
 **PROBE-LOCAL ONLY. EXISTING SUBSTRATE SUFFICIENT.**
 
 Retain FDHT v3.1 scope. No permanent promotion justified.
+
+---
+
+## Learning Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/learning-consumer`  
+**Promotion:** NOT PROMOTED
+
+| Probe | Status | Result | Lean Artefact |
+|-------|--------|--------|---------------|
+| L₀ | VERIFIED | [Learning_L0_History_Sensitive_Consumer.md](Learning_L0_History_Sensitive_Consumer.md) | l0_first_return_history_consumer.lean |
+
+### Programme Specification
+
+- [Learning_Consumer_Programme_Specification.md](Learning_Consumer_Programme_Specification.md)
+
+### Disposition
+
+**PROBE-LOCAL ONLY. EXISTING SUBSTRATE SUFFICIENT.**
+
+Retain FDHT v3.1 scope. No permanent promotion justified.
