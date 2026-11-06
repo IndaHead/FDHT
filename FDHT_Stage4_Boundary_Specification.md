@@ -1,3 +1,16 @@
+> **Historical freeze notice**
+>
+> This document records repository state at commit
+> `6bc214aef3c20b8540a0a6f89c66c5ed422ed62d`.
+>
+> Subsequent work closed the cancellation frontier for
+> `distinguishingResolve`: concrete nontrivial left and right stabilisers
+> were witnessed, and both `LeftCancellation` and `RightCancellation`
+> were refuted for that resolver.
+>
+> The generic/all-resolver questions are not thereby classified.
+> Consult the current repository boundary documentation for current status.
+
 # FDHT Stage 4 Boundary Specification
 
 ## Survival, Collapse and Reconstruction
