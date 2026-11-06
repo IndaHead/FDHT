@@ -63,3 +63,37 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+
+## Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/consumer-layer`  
+**Promotion:** NOT PROMOTED
+
+### Summary
+
+Evidence-gated consumer probes testing typed request/result discipline,
+dependency, branching, and narrowing over existing FDHT substrate.
+No new mathematics. No generic Consumer API. No foundational modification.
+
+### Probe Records
+
+| Probe | Status | Result Document | Probe Artefact |
+|-------|--------|-----------------|----------------|
+| C₀ | VERIFIED | (probe only) | c0_first_return_consumer.lean |
+| C₁ | VERIFIED | (probe only) | c1_composition_probe.lean |
+| C₂ | VERIFIED | (probe only) | c2_chirality_description_consumer.lean |
+| C₃ | VERIFIED | [Consumer_C3_Evidence_Gated_Admission.md](Consumer_C3_Evidence_Gated_Admission.md) | c3_evidence_gated_transition_consumer.lean |
+| C₄ | VERIFIED | (probe only) | c4_evidence_gated_branching_consumer.lean |
+| C₅ | VERIFIED | [Consumer_C5_Evidence_Gated_Narrowing.md](Consumer_C5_Evidence_Gated_Narrowing.md) | c5_evidence_gated_narrowing_consumer.lean |
+
+### Programme Specification
+
+- [Consumer_Layer_Programme_Specification.md](Consumer_Layer_Programme_Specification.md)
+
+### Disposition
+
+**PROBE-LOCAL ONLY. EXISTING SUBSTRATE SUFFICIENT.**
+
+Retain FDHT v3.1 scope. No permanent promotion justified.
