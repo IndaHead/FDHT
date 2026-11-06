@@ -1,11 +1,48 @@
-name = "fdht_parent_antichain"
+name = "fdht"
 version = "0.1.0"
-defaultTargets = ["FDHTParentAntichain"]
-
-[[require]]
-name = "mathlib"
-scope = "leanprover-community"
+defaultTargets = ["fdht"]
 
 [[lean_lib]]
-name = "FDHTParentAntichain"
-roots = ["FDHT_Audit_ParentAntichain"]
+name = "fdht"
+srcDir = "fdht"
+roots = [
+  "API_Ledger",
+  "AggregateFamilyTransform",
+  "ChiralityConsequences",
+  "ChiralitySpec",
+  "ClassifierFactorisation",
+  "ClassifierReconciliation",
+  "Clean",
+  "FDHTAutomaticRotation",
+  "FDHTFinPigeonhole",
+  "FDHTFinitePeriod",
+  "FDHTGlobalPeriod",
+  "FDHTHiddenDynamicOrbitAPI",
+  "FDHTIndexReturn",
+  "FDHTOriginRelativeDepthAPI",
+  "FDHTPermutationRotation",
+  "FDHTProjectedRotation",
+  "FDHTRelationalChiralityAPI",
+  "FDHTResolverSeparationAPI",
+  "FDHTReturnStabilizerBoundaryAPI",
+  "FDHTThreadFamilyFirstIso",
+  "FDHTThreeThreadCycle",
+  "FDHTTrajectoryAPI",
+  "FDHTTrajectoryNonidentityBoundaryAPI",
+  "FDHT_Audit_ArbitraryCollision",
+  "FamilyRotation",
+  "FamilyRotationObs",
+  "FamilyRotationPositive",
+  "FamilyRotationRelation",
+  "RotationDescent",
+  "ThreadFamilyWitness",
+  "ThreadPair",
+  "ThreadPairR",
+  "ThreadPairTests",
+  "ThreadPairWitness",
+  "ThreadQuadWitness",
+  "ThreadReindex",
+  "ThreadTripleWitness",
+  "UniformCompatibleSearch",
+  "UniformRealisation",
+]

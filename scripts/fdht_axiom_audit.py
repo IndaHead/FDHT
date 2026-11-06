@@ -33,7 +33,7 @@ open KernelExprContext
 #print axioms {decl}
 """
     env = os.environ.copy()
-    env["LEAN_PATH"] = str(FDHT)
+    env["LEAN_PATH"] = str(ROOT / ".lake/build/lib/lean") + ":" + str(FDHT)
     r = subprocess.run(
         ["lean", "--stdin"],
         input=code,

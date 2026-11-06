@@ -47,13 +47,8 @@ jobs:
       - name: Canonical build
         run: |
           set -euo pipefail
-          export LEAN_PATH="$(pwd)/fdht"
-          cd fdht
-          for f in FDHT_Audit_ArbitraryCollision.lean ThreadFamilyWitness.lean ClassifierReconciliation.lean ClassifierFactorisation.lean ChiralitySpec.lean ChiralityConsequences.lean UniformRealisation.lean FDHTTrajectoryAPI.lean AggregateFamilyTransform.lean FDHTReturnStabilizerBoundaryAPI.lean FDHTThreadFamilyFirstIso.lean FDHTProjectedRotation.lean FDHTThreeThreadCycle.lean FDHTPermutationRotation.lean; do
-            echo "Building $f"
-            lean -o "${f%.lean}.olean" "$f"
-          done
-          echo "Clean-source chain built through FDHTPermutationRotation"
+          lake build
+          echo "Lake build completed"
 
       - name: Normal axiom audit
         run: python3 scripts/fdht_axiom_audit.py --verbose
