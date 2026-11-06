@@ -33,6 +33,7 @@ roots = [
   "FDHTThreeThreadCycle",
   "FDHTEvenCycleRegression4",
   "FDHTEvenCycleRegression6",
+  "FDHTEvenCycleRegression8",
   "FDHTTrajectoryAPI",
   "FDHTTrajectoryNonidentityBoundaryAPI",
   "FDHT_Audit_ArbitraryCollision",
