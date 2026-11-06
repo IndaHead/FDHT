@@ -104,6 +104,7 @@ No generic Join API. No foundational modification.
 | C₁₆ | FIXTURE-KILL | [Consumer_C16_Mixed_Polarity_Conjunction_Audit.md](Consumer_C16_Mixed_Polarity_Conjunction_Audit.md) | NONE |
 | C₁₇ | FIXTURE-KILL | [Consumer_C17_Disjunctive_Evidence_Audit.md](Consumer_C17_Disjunctive_Evidence_Audit.md) | NONE |
 | C₁₈ | FIXTURE-KILL | [Consumer_C18_Existential_Witness_Audit.md](Consumer_C18_Existential_Witness_Audit.md) | NONE |
+| C₁₉ | FIXTURE-KILL | [Consumer_C19_Universal_Instance_Audit.md](Consumer_C19_Universal_Instance_Audit.md) | NONE |
 
 ### Programme Specification
 
