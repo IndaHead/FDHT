@@ -20,6 +20,8 @@ roots = [
   "FDHTHiddenDynamicOrbitAPI",
   "FDHTIndexReturn",
   "FDHTOriginRelativeDepthAPI",
+  "FDHTOriginAgeCertificateAPI",
+  "FDHTOriginAgeCertificateAPIRegression",
   "FDHTPermutationRotation",
   "FDHTProjectedRotation",
   "FDHTRelationalChiralityAPI",
