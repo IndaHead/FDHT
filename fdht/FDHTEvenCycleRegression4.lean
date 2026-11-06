@@ -97,3 +97,75 @@ theorem fourThreadCycle_k2_is_reindexing
 #print axioms fourThreadCycleTransform_four_step
 #print axioms fourThreadCycle_k2
 #print axioms fourThreadCycle_k2_is_reindexing
+
+/-! ============================================================
+    n=4 no-early-return (coordinate-table proof)
+    Verified in /tmp/n4_coordinate_table_no_early_return.lean
+============================================================ -/
+
+/-! k=1 table: 0→1, 1→2, 2→3, 3→0 -/
+theorem fourThreadCycle_k1_ne :
+    ∀ i : Fin 4, Nat.repeat fourThreadCycle.toFun 1 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ =>
+    change fourThreadCycleFun 0 ≠ 0
+    simp [fourThreadCycleFun]
+  | ⟨1, _⟩ =>
+    change fourThreadCycleFun 1 ≠ 1
+    simp [fourThreadCycleFun]
+  | ⟨2, _⟩ =>
+    change fourThreadCycleFun 2 ≠ 2
+    simp [fourThreadCycleFun]
+  | ⟨3, _⟩ =>
+    change fourThreadCycleFun 3 ≠ 3
+    simp [fourThreadCycleFun]
+
+/-! k=2 table: 0→2, 1→3, 2→0, 3→1 -/
+theorem fourThreadCycle_k2_ne :
+    ∀ i : Fin 4, Nat.repeat fourThreadCycle.toFun 2 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun 0) ≠ 0
+    simp [fourThreadCycleFun]
+  | ⟨1, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun 1) ≠ 1
+    simp [fourThreadCycleFun]
+  | ⟨2, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun 2) ≠ 2
+    simp [fourThreadCycleFun]
+  | ⟨3, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun 3) ≠ 3
+    simp [fourThreadCycleFun]
+
+/-! k=3 table: 0→3, 1→0, 2→1, 3→2 -/
+theorem fourThreadCycle_k3_ne :
+    ∀ i : Fin 4, Nat.repeat fourThreadCycle.toFun 3 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun (fourThreadCycleFun 0)) ≠ 0
+    simp [fourThreadCycleFun]
+  | ⟨1, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun (fourThreadCycleFun 1)) ≠ 1
+    simp [fourThreadCycleFun]
+  | ⟨2, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun (fourThreadCycleFun 2)) ≠ 2
+    simp [fourThreadCycleFun]
+  | ⟨3, _⟩ =>
+    change fourThreadCycleFun (fourThreadCycleFun (fourThreadCycleFun 3)) ≠ 3
+    simp [fourThreadCycleFun]
+
+theorem fourThreadCycle_noEarlyReturn :
+    ∀ i : Fin 4,
+      ∀ k : Nat,
+        0 < k →
+        k < 4 →
+        Nat.repeat fourThreadCycle.toFun k i ≠ i := by
+  intro i k hkPos hkLt
+  have hk : k = 1 ∨ k = 2 ∨ k = 3 := by omega
+  rcases hk with rfl | rfl | rfl
+  · exact fourThreadCycle_k1_ne i
+  · exact fourThreadCycle_k2_ne i
+  · exact fourThreadCycle_k3_ne i
