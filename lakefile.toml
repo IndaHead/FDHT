@@ -25,6 +25,7 @@ roots = [
   "FDHTRelationalChiralityAPI",
   "FDHTResolverSeparationAPI",
   "FDHTReturnStabilizerBoundaryAPI",
+  "FDHTProvenanceAuditAPI",
   "FDHTThreadFamilyFirstIso",
   "FDHTThreeThreadCycle",
   "FDHTTrajectoryAPI",
