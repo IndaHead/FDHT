@@ -142,3 +142,55 @@ theorem n4_index_first_return
 #print axioms n4_index_first_return
 
 end KernelExprContext
+
+/-! n=8 raw/projected first-return contrast. -/
+
+theorem familyUnequal_n8_raw_projected_first_return_contrast
+    (resolve : KernelExpr → Store → Location)
+    (h : 1 < 8) :
+    FirstPositiveReturnAt
+      (permuteThreadFamily resolve eightThreadCycle)
+      (familyUnequal resolve 8 h)
+      8
+    ∧
+    FirstPositiveReturnAt
+      (ThreadPermutation.projectedAction resolve eightThreadCycle)
+      (projectThreadFamily resolve
+        (familyUnequal resolve 8 h))
+      1 := by
+  constructor
+  · -- Raw first return 8
+    apply firstPositiveReturnAt_of_return_noEarlier
+    · omega
+    · exact permuteThreadFamily_repeat resolve eightThreadCycle 8
+        (eightThreadCycle_hasFinitePeriod.2) (familyUnequal resolve 8 h)
+    · intro k hkPos hkLt
+      intro heq
+      have h0 := congrFun heq 0
+      have hiter := permuteThreadFamily_iterate_apply resolve eightThreadCycle k
+        (familyUnequal resolve 8 h) 0
+      rw [hiter] at h0
+      have hidx : Nat.repeat eightThreadCycle.toFun k 0 ≠ 0 :=
+        eightThreadCycle_noEarlyReturn 0 k hkPos hkLt
+      have hval : (familyUnequal resolve 8 h) (Nat.repeat eightThreadCycle.toFun k 0) =
+          [identityContext] := by
+        simp [familyUnequal, hidx]
+      rw [hval] at h0
+      have hbase : (familyUnequal resolve 8 h) 0 = [] := by simp [familyUnequal]
+      rw [hbase] at h0
+      simp at h0
+  · -- Projected first return 1
+    apply firstPositiveReturnAt_of_return_noEarlier
+    · omega
+    · have hconst : projectThreadFamily resolve (familyUnequal resolve 8 h) =
+        fun _ => emptyTrajectory resolve := by
+        funext i
+        exact familyUnequal_projectsToIdentity resolve 8 h i
+      rw [hconst]
+      funext i
+      unfold ThreadPermutation.projectedAction
+      rfl
+    · intro j hjPos hjLt
+      omega
+
+#print axioms familyUnequal_n8_raw_projected_first_return_contrast
