@@ -217,3 +217,115 @@ theorem eightThreadCycleFourth_projected_involutive
 #print axioms eightThreadCycleFourth_involutive
 #print axioms eightThreadCycleFourth_fixed_point_free
 #print axioms eightThreadCycleFourth_projected_involutive
+
+/-! ============================================================
+    n=8 no-early-return (56-cell coordinate table)
+============================================================ -/
+
+theorem eightThreadCycle_k1_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 1 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun 0 ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun 1 ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun 2 ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun 3 ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun 4 ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun 5 ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun 6 ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun 7 ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k2_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 2 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 0) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 1) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 2) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 3) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 4) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 5) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 6) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun 7) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k3_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 3 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 0)) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 1)) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 2)) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 3)) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 4)) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 5)) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 6)) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 7)) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k4_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 4 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 0))) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 1))) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 2))) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 3))) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 4))) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 5))) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 6))) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 7))) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k5_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 5 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 0)))) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 1)))) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 2)))) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 3)))) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 4)))) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 5)))) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 6)))) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 7)))) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k6_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 6 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 0))))) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 1))))) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 2))))) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 3))))) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 4))))) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 5))))) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 6))))) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 7))))) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_k7_ne :
+    ∀ i : Fin 8, Nat.repeat eightThreadCycle.toFun 7 i ≠ i := by
+  intro i
+  match i with
+  | ⟨0, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 0)))))) ≠ 0; simp [eightThreadCycleFun]
+  | ⟨1, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 1)))))) ≠ 1; simp [eightThreadCycleFun]
+  | ⟨2, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 2)))))) ≠ 2; simp [eightThreadCycleFun]
+  | ⟨3, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 3)))))) ≠ 3; simp [eightThreadCycleFun]
+  | ⟨4, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 4)))))) ≠ 4; simp [eightThreadCycleFun]
+  | ⟨5, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 5)))))) ≠ 5; simp [eightThreadCycleFun]
+  | ⟨6, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 6)))))) ≠ 6; simp [eightThreadCycleFun]
+  | ⟨7, _⟩ => change eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun (eightThreadCycleFun 7)))))) ≠ 7; simp [eightThreadCycleFun]
+
+theorem eightThreadCycle_noEarlyReturn :
+    ∀ i : Fin 8,
+      ∀ k : Nat,
+        0 < k →
+        k < 8 →
+        Nat.repeat eightThreadCycle.toFun k i ≠ i := by
+  intro i k hkPos hkLt
+  have hk : k = 1 ∨ k = 2 ∨ k = 3 ∨ k = 4 ∨ k = 5 ∨ k = 6 ∨ k = 7 := by omega
+  rcases hk with rfl | rfl | rfl | rfl | rfl | rfl | rfl
+  · exact eightThreadCycle_k1_ne i
+  · exact eightThreadCycle_k2_ne i
+  · exact eightThreadCycle_k3_ne i
+  · exact eightThreadCycle_k4_ne i
+  · exact eightThreadCycle_k5_ne i
+  · exact eightThreadCycle_k6_ne i
+  · exact eightThreadCycle_k7_ne i
