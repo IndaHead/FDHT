@@ -107,6 +107,7 @@ No generic Join API. No foundational modification.
 | C₁₉ | FIXTURE-KILL | [Consumer_C19_Universal_Instance_Audit.md](Consumer_C19_Universal_Instance_Audit.md) | NONE |
 | C₂₀ | VERIFIED RESEARCH SYNTHESIS | [Consumer_C20_Yes_No_Structural_Comparison.md](Consumer_C20_Yes_No_Structural_Comparison.md) | NONE |
 | C₂₁ | FIXTURE-KILL | [Consumer_C21_Biconditional_Transport_Audit.md](Consumer_C21_Biconditional_Transport_Audit.md) | NONE |
+| C₂₂ | FIXTURE-KILL | [Consumer_C22_Demanded_Edge_Audit.md](Consumer_C22_Demanded_Edge_Audit.md) | NONE |
 
 ### Programme Specification
 
