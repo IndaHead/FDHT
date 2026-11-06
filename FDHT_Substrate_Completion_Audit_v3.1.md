@@ -1,5 +1,26 @@
 # FDHT v3.1 Defined-Scope Substrate Completion Audit
 
+> **Historical freeze notice**
+>
+> This document records repository state at commit
+> `6bc214aef3c20b8540a0a6f89c66c5ed422ed62d`.
+>
+> Status tables in this document are historical classifications at that
+> repository state and are not a current-status registry.
+>
+> Subsequent work closed the cancellation frontier for
+> `distinguishingResolve`: concrete nontrivial left and right stabilisers
+> were witnessed, `ReturnImpliesIdentityClass` was refuted, and both
+> `LeftCancellation` and `RightCancellation` were refuted for that
+> resolver.
+>
+> These resolver-specific results do not classify the corresponding
+> generic/all-resolver questions.
+>
+> Later audits also refined other historical OPEN boundaries. Consult the
+> current boundary/audit documents for current classifications while
+> retaining this document as provenance for the v3.1 freeze.
+
 ## Classification
 
 NO SUBSTRATE-CRITICAL OPEN BOUNDARY IDENTIFIED  
