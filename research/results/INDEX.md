@@ -74,8 +74,10 @@ R1-R5 required. Without R1-R5, do not reopen #17.
 ### Summary
 
 Evidence-gated consumer probes testing typed request/result discipline,
-dependency, branching, and narrowing over existing FDHT substrate.
-No new mathematics. No generic Consumer API. No foundational modification.
+dependency, branching, narrowing, conjunctive admission, and boundary testing
+over existing FDHT substrate.
+No new mathematics. No generic Consumer API. No generic Evidence API.
+No foundational modification.
 
 ### Probe Records
 
@@ -87,6 +89,8 @@ No new mathematics. No generic Consumer API. No foundational modification.
 | C₃ | VERIFIED | [Consumer_C3_Evidence_Gated_Admission.md](Consumer_C3_Evidence_Gated_Admission.md) | c3_evidence_gated_transition_consumer.lean |
 | C₄ | VERIFIED | (probe only) | c4_evidence_gated_branching_consumer.lean |
 | C₅ | VERIFIED | [Consumer_C5_Evidence_Gated_Narrowing.md](Consumer_C5_Evidence_Gated_Narrowing.md) | c5_evidence_gated_narrowing_consumer.lean |
+| C₆ | VERIFIED | (probe only) | c6_conjunctive_evidence_consumer.lean |
+| C₇ | BOUNDARY / FIXTURE-KILL | [Consumer_C7_Alternative_Evidence_Boundary.md](Consumer_C7_Alternative_Evidence_Boundary.md) | NONE |
 
 ### Programme Specification
 
