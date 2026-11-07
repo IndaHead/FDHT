@@ -134,6 +134,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | Probe | Status | Result | Lean Artefact |
 |-------|--------|--------|---------------|
 | L₀ | VERIFIED | [Learning_L0_History_Sensitive_Consumer.md](Learning_L0_History_Sensitive_Consumer.md) | l0_first_return_history_consumer.lean |
+| L₁ | VERIFIED | [Learning_L1_History_Addressed_Evidence.md](Learning_L1_History_Addressed_Evidence.md) | l1_history_addressed_evidence.lean |
 
 ### Programme Specification
 
