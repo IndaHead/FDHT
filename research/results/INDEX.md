@@ -127,6 +127,7 @@ No generic Join API. No foundational modification.
 | Probe | Status | Result | Lean Artefact |
 |-------|--------|--------|---------------|
 | V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
+| V₀-R | VERIFIED RESEARCH REPAIR | [Verification_V0R_Selection_Packaging_Repair.md](Verification_V0R_Selection_Packaging_Repair.md) | v0r_selection_packaging_repair.lean |
 
 ### Programme Specification
 
@@ -175,6 +176,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | Probe | Status | Result | Lean Artefact |
 |-------|--------|--------|---------------|
 | V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
+| V₀-R | VERIFIED RESEARCH REPAIR | [Verification_V0R_Selection_Packaging_Repair.md](Verification_V0R_Selection_Packaging_Repair.md) | v0r_selection_packaging_repair.lean |
 
 ### Programme Specification
 
