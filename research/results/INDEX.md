@@ -146,6 +146,7 @@ No generic Join API. No foundational modification.
 | Probe | Status | Result | Lean Artefact |
 |-------|--------|--------|---------------|
 | I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
+| I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 
 ### Programme Specification
 
@@ -213,6 +214,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | Probe | Status | Result | Lean Artefact |
 |-------|--------|--------|---------------|
 | I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
+| I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 
 ### Programme Specification
 

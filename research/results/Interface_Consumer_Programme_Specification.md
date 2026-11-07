@@ -38,3 +38,31 @@ New mathematics: **NO**
 Foundational abstraction: **NO**  
 Substrate modification: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## I₁ Milestone
+
+**Status:** AUDIT COMPLETE  
+**HEAD:** `d5be18aa5f0b33220c69b352f3bd89cb93dfaf35`
+
+### I₁ Result
+
+**I₁ READ-ONLY WORKBENCH INFORMATION ARCHITECTURE AUDITED.**
+
+Primary views identified.  
+Field ownership assigned.  
+Navigation graph defined.  
+Semantic invariants preserved.
+
+### Relationship to I₀
+
+- I₀: WHAT must survive presentation.
+- I₁: WHERE that information belongs and HOW humans navigate the relationships.
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
