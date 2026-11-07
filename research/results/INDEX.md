@@ -129,6 +129,7 @@ No generic Join API. No foundational modification.
 | V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
 | V₀-R | VERIFIED RESEARCH REPAIR | [Verification_V0R_Selection_Packaging_Repair.md](Verification_V0R_Selection_Packaging_Repair.md) | v0r_selection_packaging_repair.lean |
 | V₁ | FIXTURE-KILL | [Verification_V1_Distinct_Target_Verification.md](Verification_V1_Distinct_Target_Verification.md) | NONE |
+| V₂-A | FRONTIER CLOSED | [Verification_V2A_Natural_Distinct_Target_Frontier_Audit.md](Verification_V2A_Natural_Distinct_Target_Frontier_Audit.md) | NONE |
 
 ### Programme Specification
 
@@ -179,6 +180,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
 | V₀-R | VERIFIED RESEARCH REPAIR | [Verification_V0R_Selection_Packaging_Repair.md](Verification_V0R_Selection_Packaging_Repair.md) | v0r_selection_packaging_repair.lean |
 | V₁ | FIXTURE-KILL | [Verification_V1_Distinct_Target_Verification.md](Verification_V1_Distinct_Target_Verification.md) | NONE |
+| V₂-A | FRONTIER CLOSED | [Verification_V2A_Natural_Distinct_Target_Frontier_Audit.md](Verification_V2A_Natural_Distinct_Target_Frontier_Audit.md) | NONE |
 
 ### Programme Specification
 
