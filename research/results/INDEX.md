@@ -63,6 +63,7 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| IndaAgent001 I₅ | PROBE-LOCAL SUFFICIENCY | [IndaAgent001_I5_Audit.md](IndaAgent001_I5_Audit.md) | NONE |
 | IndaAgent001 I₄ | VERIFIED PERSISTENT-SOURCE SEPARATION | [IndaAgent001_I4_Result.md](IndaAgent001_I4_Result.md) | NONE |
 | IndaAgent001 I₃ Evidence Review | RECORDED | [IndaAgent001_I3_Evidence_Review.md](IndaAgent001_I3_Evidence_Review.md) | NONE |
 | IndaAgent001 I₃ | VERIFIED LOOP, OBJECTIVE UNRESOLVED | [IndaAgent001_I3_Result.md](IndaAgent001_I3_Result.md) | NONE |
