@@ -142,6 +142,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | L₃ | VERIFIED WITH LIMITATION | [Learning_L3_Typed_Historical_Selection.md](Learning_L3_Typed_Historical_Selection.md) | l3_typed_historical_selection.lean |
 | L₃-T | VERIFIED RESEARCH AUDIT | [Learning_L3T_Decidable_Equality_Boundary_Audit.md](Learning_L3T_Decidable_Equality_Boundary_Audit.md) | l3t_decidable_equality_boundary_audit.lean |
 | L₃-R | VERIFIED RESEARCH REPAIR | [Learning_L3R_Constructive_Keyed_Selection_Repair.md](Learning_L3R_Constructive_Keyed_Selection_Repair.md) | l3r_constructive_keyed_selection_repair.lean |
+| L₄ | FIXTURE-KILL | [Learning_L4_History_Constrained_Trajectory.md](Learning_L4_History_Constrained_Trajectory.md) | NONE |
 
 ### Programme Specification
 
