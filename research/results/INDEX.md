@@ -155,6 +155,7 @@ No generic Join API. No foundational modification.
 | Prototype V₃ | IMPLEMENTED | [Interface_Prototype_V3_Second_Successful_Acquisition.md](Interface_Prototype_V3_Second_Successful_Acquisition.md) | research/interface/workbench/acquire_distinguishing.py |
 | V₃ Milestone | RECORDED | [Interface_V3_Vertical_Integration_Milestone.md](Interface_V3_Vertical_Integration_Milestone.md) | NONE |
 | Prototype V₄ | AUDIT COMPLETE | [Interface_Prototype_V4_Acquisition_Invariant_Audit.md](Interface_Prototype_V4_Acquisition_Invariant_Audit.md) | NONE |
+| V₄ Archive | FROZEN | [Interface_Consumer_V4_Programme_Archive.md](Interface_Consumer_V4_Programme_Archive.md) | NONE |
 
 ### Programme Specification
 
@@ -231,6 +232,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | Prototype V₃ | IMPLEMENTED | [Interface_Prototype_V3_Second_Successful_Acquisition.md](Interface_Prototype_V3_Second_Successful_Acquisition.md) | research/interface/workbench/acquire_distinguishing.py |
 | V₃ Milestone | RECORDED | [Interface_V3_Vertical_Integration_Milestone.md](Interface_V3_Vertical_Integration_Milestone.md) | NONE |
 | Prototype V₄ | AUDIT COMPLETE | [Interface_Prototype_V4_Acquisition_Invariant_Audit.md](Interface_Prototype_V4_Acquisition_Invariant_Audit.md) | NONE |
+| V₄ Archive | FROZEN | [Interface_Consumer_V4_Programme_Archive.md](Interface_Consumer_V4_Programme_Archive.md) | NONE |
 
 ### Programme Specification
 

@@ -258,3 +258,25 @@ Substrate modification: **NO**
 Generic acquirer: **NO**  
 Automated discovery: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## Programme Disposition
+
+**STATUS: FROZEN AT V₄**
+
+**Archive Document:** [Interface_Consumer_V4_Programme_Archive.md](Interface_Consumer_V4_Programme_Archive.md)
+
+**NO V₅ IS CURRENTLY JUSTIFIED.**
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+Generic acquirer: **NO**  
+Automated discovery: **NO**  
+V₅: **NOT JUSTIFIED**  
+FDHT v3.1 scope: **UNCHANGED**
+
+**STOP UNTIL CONCRETE REOPENING PRESSURE EXISTS.**
