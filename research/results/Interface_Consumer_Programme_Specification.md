@@ -66,3 +66,32 @@ New mathematics: **NO**
 Foundational abstraction: **NO**  
 Substrate modification: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## I₂ Milestone
+
+**Status:** AUDIT COMPLETE  
+**HEAD:** `71821e87bb7159b13ce75646374a23bbfcee4155`
+
+### I₂ Result
+
+**I₂ READ-ONLY DATA ACQUISITION BOUNDARY AUDITED.**
+
+Acquisition sources identified.  
+Acquisition routes defined.  
+Field acquisition map established.  
+Adversarial tests passed.
+
+### Relationship to Prior Layers
+
+- I₀: WHAT must survive presentation.
+- I₁: WHERE that information belongs and HOW humans navigate.
+- I₂: HOW formal state is acquired for presentation.
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
