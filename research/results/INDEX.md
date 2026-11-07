@@ -148,6 +148,7 @@ No generic Join API. No foundational modification.
 | I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
 | I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
+| I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
 
 ### Programme Specification
 
@@ -217,6 +218,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
 | I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
+| I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
 
 ### Programme Specification
 

@@ -95,3 +95,35 @@ New mathematics: **NO**
 Foundational abstraction: **NO**  
 Substrate modification: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## I₃ Milestone
+
+**Status:** AUDIT COMPLETE  
+**HEAD:** `3578f7c2f156896d288efbabb0d5beb96cee5435`
+
+### I₃ Result
+
+**I₃ LOSS-AWARE READ-ONLY TRANSPORT / SCHEMA AUDITED.**
+
+Transport requirements derived.  
+Result class representation defined.  
+Basis validity matrix established.  
+JSON selected as prototype format.  
+Malformed record tests defined.  
+Round-trip tests passed.
+
+### Relationship to Prior Layers
+
+- I₀: WHAT must survive presentation.
+- I₁: WHERE that information belongs and HOW humans navigate.
+- I₂: HOW formal state is acquired for presentation.
+- I₃: HOW acquired state is transported while preserving semantic distinctions.
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
