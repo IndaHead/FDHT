@@ -152,6 +152,7 @@ No generic Join API. No foundational modification.
 | Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
 | Prototype V₁ | IMPLEMENTED | [Interface_Prototype_V1_Real_Acquisition.md](Interface_Prototype_V1_Real_Acquisition.md) | research/interface/workbench/acquire_n8.py |
 | Prototype V₂ | FIXTURE-KILL | [Interface_Prototype_V2_Negative_Acquisition.md](Interface_Prototype_V2_Negative_Acquisition.md) | NONE |
+| Prototype V₃ | IMPLEMENTED | [Interface_Prototype_V3_Second_Successful_Acquisition.md](Interface_Prototype_V3_Second_Successful_Acquisition.md) | research/interface/workbench/acquire_distinguishing.py |
 
 ### Programme Specification
 
@@ -225,6 +226,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
 | Prototype V₁ | IMPLEMENTED | [Interface_Prototype_V1_Real_Acquisition.md](Interface_Prototype_V1_Real_Acquisition.md) | research/interface/workbench/acquire_n8.py |
 | Prototype V₂ | FIXTURE-KILL | [Interface_Prototype_V2_Negative_Acquisition.md](Interface_Prototype_V2_Negative_Acquisition.md) | NONE |
+| Prototype V₃ | IMPLEMENTED | [Interface_Prototype_V3_Second_Successful_Acquisition.md](Interface_Prototype_V3_Second_Successful_Acquisition.md) | research/interface/workbench/acquire_distinguishing.py |
 
 ### Programme Specification
 

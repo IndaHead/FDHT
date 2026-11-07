@@ -1,0 +1,56 @@
+{
+  "schema_version": "i3.0",
+  "source_snapshot": {
+    "source_branch": "research/interface-consumer",
+    "source_head": "1d819bc159a9caae1ec39a1ebf87e76d61e15e58"
+  },
+  "request_scope": {
+    "domain": "TrajectoryBoundary",
+    "resolver": "distinguishingResolve",
+    "context": "exposingContext",
+    "property": "idempotent_nonidentity"
+  },
+  "result_class": "ESTABLISHED",
+  "evidence_ref": {
+    "theorem": "distinguishingResolve_exposing_idempotent_nonidentity",
+    "source": "fdht/FDHTReturnStabilizerBoundaryAPI.lean",
+    "authority": "MATHEMATICAL"
+  },
+  "obstruction_ref": null,
+  "non_admission_reason": null,
+  "historical_lineage": {
+    "source": "DIRECT",
+    "episode": "distinguishingResolve_exposing_idempotent_nonidentity"
+  },
+  "trust_footprint": {
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "research_provenance": {
+    "authority": "RESEARCH RESULT ONLY",
+    "programme": "interface-consumer",
+    "probe": "V\u2083",
+    "branch": "research/interface-consumer",
+    "commit": "1d819bc159a9caae1ec39a1ebf87e76d61e15e58",
+    "promotion": "NOT PROMOTED"
+  },
+  "_acquisition": {
+    "method": "executable read-only acquisition",
+    "source_artefact": "fdht/FDHTReturnStabilizerBoundaryAPI.lean",
+    "structural_difference_from_v1": {
+      "theorem_family": "different (trajectory vs permutation)",
+      "type_shape": "different (conjunction vs FirstPositiveReturnAt)",
+      "scope_shape": "different (TrajectoryBoundary vs Fin n)",
+      "extraction_rule": "different (conjunction pattern vs parameter pattern)"
+    },
+    "extraction_rules": {
+      "request_scope": "parsed from theorem type signature",
+      "result_class": "derived from theorem existence + consumer context",
+      "evidence_ref": "extracted from theorem declaration",
+      "trust_footprint": "acquired via lean #print axioms",
+      "source_snapshot": "acquired via git rev-parse"
+    }
+  }
+}

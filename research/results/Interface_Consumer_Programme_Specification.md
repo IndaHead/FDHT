@@ -153,3 +153,40 @@ Foundational abstraction: **NO**
 Substrate modification: **NO**  
 Acquisition code: **NONE**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## Prototype V₃ Milestone
+
+**Status:** PROTOTYPE COMPLETE  
+**HEAD:** `1d819bc159a9caae1ec39a1ebf87e76d61e15e58`
+
+### V₃ Result
+
+**PROTOTYPE V₃ SECOND SUCCESSFUL ACQUISITION IMPLEMENTED.**
+
+Specimen: `distinguishingResolve_exposing_idempotent_nonidentity`
+
+Structurally different from V₁:
+- Theorem family: Trajectory/stabilisation vs Permutation/cycle
+- Type shape: Conjunction vs FirstPositiveReturnAt
+- Scope shape: TrajectoryBoundary vs Fin n
+
+Non-circular acquisition.  
+I₃ validation passed.  
+Workbench integration verified.
+
+### Discovery-Readiness
+
+**DISCOVERY NOT YET JUSTIFIED**
+
+Two successful specimens do not justify automated discovery.
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+Generic acquirer: **NO**  
+Automated discovery: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
