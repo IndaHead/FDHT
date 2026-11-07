@@ -1,0 +1,49 @@
+{
+  "schema_version": "i3.0",
+  "source_snapshot": {
+    "source_branch": "research/interface-consumer",
+    "source_head": "b8abf914de24c71f57b0a8d57f5a23587aea3da0"
+  },
+  "request_scope": {
+    "state": "Fin 8",
+    "k": 8,
+    "step": "eightThreadCycle.toFun"
+  },
+  "result_class": "ESTABLISHED",
+  "evidence_ref": {
+    "theorem": "n8_index_first_return",
+    "source": "fdht/FDHTFirstPositiveReturn.lean",
+    "authority": "MATHEMATICAL"
+  },
+  "obstruction_ref": null,
+  "non_admission_reason": null,
+  "historical_lineage": {
+    "source": "DIRECT",
+    "episode": "n8_index_first_return"
+  },
+  "trust_footprint": {
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "research_provenance": {
+    "authority": "RESEARCH RESULT ONLY",
+    "programme": "interface-consumer",
+    "probe": "V\u2081",
+    "branch": "research/interface-consumer",
+    "commit": "b8abf914de24c71f57b0a8d57f5a23587aea3da0",
+    "promotion": "NOT PROMOTED"
+  },
+  "_acquisition": {
+    "method": "executable read-only acquisition",
+    "source_artefact": "fdht/FDHTFirstPositiveReturn.lean",
+    "extraction_rules": {
+      "request_scope": "parsed from theorem type signature",
+      "result_class": "derived from theorem existence + consumer context",
+      "evidence_ref": "extracted from theorem declaration",
+      "trust_footprint": "acquired via lean #print axioms",
+      "source_snapshot": "acquired via git rev-parse"
+    }
+  }
+}

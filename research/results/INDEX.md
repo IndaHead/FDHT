@@ -150,6 +150,7 @@ No generic Join API. No foundational modification.
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
 | I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
 | Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
+| Prototype V₁ | IMPLEMENTED | [Interface_Prototype_V1_Real_Acquisition.md](Interface_Prototype_V1_Real_Acquisition.md) | research/interface/workbench/acquire_n8.py |
 
 ### Programme Specification
 
@@ -221,6 +222,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
 | I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
 | Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
+| Prototype V₁ | IMPLEMENTED | [Interface_Prototype_V1_Real_Acquisition.md](Interface_Prototype_V1_Real_Acquisition.md) | research/interface/workbench/acquire_n8.py |
 
 ### Programme Specification
 
