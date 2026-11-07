@@ -63,5 +63,6 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| IndaAgent001 I₀/I₁/I₂ | COMPLETE | [IndaAgent001_I0_I1_I2_Result.md](IndaAgent001_I0_I1_I2_Result.md) | NONE |
 | S₀ Agent State | PROBE COMPLETE | [S0_AgentState_Probe_Result.md](S0_AgentState_Probe_Result.md) | NONE |
 | A₀ Agent Consumer | PROBE COMPLETE | [A0_AgentConsumer_Probe_Result.md](A0_AgentConsumer_Probe_Result.md) | NONE |
