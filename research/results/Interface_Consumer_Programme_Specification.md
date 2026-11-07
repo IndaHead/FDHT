@@ -223,3 +223,38 @@ New mathematics: **NO**
 Foundational abstraction: **NO**  
 Substrate modification: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## Prototype V₄ Milestone
+
+**Status:** AUDIT COMPLETE  
+**HEAD:** `7fc4d00d2f2d87f32b75ee6607df4c7d3e7bb2ee`
+
+### V₄ Result
+
+**ACQUISITION INVARIANT AUDIT COMPLETE**
+
+Tested-scope necessary conditions identified.  
+Sufficiency not established.  
+V₂ counterpressure preserved.  
+Declaration existence ≠ acquisition preserved.  
+Concrete fixture necessary within tested specimens.  
+Non-circularity necessary for real acquisition.  
+Field lineage necessary for non-circularity.  
+No eligibility predicate justified for automation.  
+Discovery not justified.  
+Generic acquirer not justified.
+
+### Audit Document
+
+[Interface_Prototype_V4_Acquisition_Invariant_Audit.md](Interface_Prototype_V4_Acquisition_Invariant_Audit.md)
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+Generic acquirer: **NO**  
+Automated discovery: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
