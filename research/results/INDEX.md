@@ -137,6 +137,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | L₁ | VERIFIED | [Learning_L1_History_Addressed_Evidence.md](Learning_L1_History_Addressed_Evidence.md) | l1_history_addressed_evidence.lean |
 | L₂ | VERIFIED WITH LIMITATION | [Learning_L2_Container_Dependent_History_Recovery.md](Learning_L2_Container_Dependent_History_Recovery.md) | l2_container_dependent_history_recovery.lean |
 | L₂-T | VERIFIED RESEARCH AUDIT | [Learning_L2T_SorryAx_Boundary_Audit.md](Learning_L2T_SorryAx_Boundary_Audit.md) | l2t_sorryax_boundary_audit.lean |
+| L₂-R | VERIFIED RESEARCH PROBE | [Learning_L2R_RecoverAt_Repair_Probe.md](Learning_L2R_RecoverAt_Repair_Probe.md) | l2r_recoverAt_repair_probe.lean |
 
 ### Programme Specification
 
