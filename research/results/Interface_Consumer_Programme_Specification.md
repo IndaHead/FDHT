@@ -190,3 +190,36 @@ Substrate modification: **NO**
 Generic acquirer: **NO**  
 Automated discovery: **NO**  
 FDHT v3.1 scope: **UNCHANGED**
+
+---
+
+## V₃ Vertical Integration Milestone
+
+**Status:** MILESTONE RECORDED  
+**HEAD:** `54cf60cd7862e7be0b993fda32e242906b764629`
+
+### Milestone Document
+
+[Interface_V3_Vertical_Integration_Milestone.md](Interface_V3_Vertical_Integration_Milestone.md)
+
+### Milestone Classification
+
+**FDHT INTERFACE V₃ VERTICAL-INTEGRATION MILESTONE RECORDED**
+
+Two structurally distinct real acquisition paths demonstrated.  
+Non-circular source-dependent acquisition demonstrated.  
+Loss-aware i3.0 transport demonstrated.  
+Existing Workbench integration demonstrated.  
+Human-facing read-only vertical path demonstrated.  
+Negative fixture-kill boundary preserved.  
+Discovery not yet justified.  
+Generic acquirer not justified.  
+No new mathematics.  
+No substrate modification.
+
+### Disposition
+
+New mathematics: **NO**  
+Foundational abstraction: **NO**  
+Substrate modification: **NO**  
+FDHT v3.1 scope: **UNCHANGED**
