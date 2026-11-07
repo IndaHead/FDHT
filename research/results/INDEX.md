@@ -63,3 +63,4 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| Integration Pressure | AUDIT COMPLETE | [FDHT_Integration_Pressure_Audit.md](FDHT_Integration_Pressure_Audit.md) | NONE |
