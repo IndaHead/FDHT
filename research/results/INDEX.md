@@ -63,3 +63,4 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| A₀ Agent Consumer | PROBE COMPLETE | [A0_AgentConsumer_Probe_Result.md](A0_AgentConsumer_Probe_Result.md) | NONE |
