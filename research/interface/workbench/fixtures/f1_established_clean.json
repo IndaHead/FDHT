@@ -1,0 +1,36 @@
+{
+  "schema_version": "i3.0",
+  "source_snapshot": {
+    "source_branch": "research/verification-consumer",
+    "source_head": "7795fda2f95658be2f4a81d550b2f15176526013"
+  },
+  "request_scope": {
+    "state": "Fin 8",
+    "k": 8,
+    "step": "eightThreadCycle.toFun"
+  },
+  "result_class": "ESTABLISHED",
+  "evidence_ref": {
+    "theorem": "n8_index_first_return",
+    "source": "fdht/FDHTFirstPositiveReturn.lean",
+    "authority": "MATHEMATICAL"
+  },
+  "obstruction_ref": null,
+  "non_admission_reason": null,
+  "historical_lineage": {
+    "source": "DIRECT",
+    "episode": "n8_index_first_return"
+  },
+  "trust_footprint": {
+    "axioms": ["propext", "Quot.sound"]
+  },
+  "research_provenance": {
+    "authority": "RESEARCH RESULT ONLY",
+    "programme": "verification-consumer",
+    "probe": "V₀-R",
+    "branch": "research/verification-consumer",
+    "commit": "7795fda2f95658be2f4a81d550b2f15176526013",
+    "promotion": "NOT PROMOTED"
+  },
+  "_fixture_provenance": "Manually constructed from verified V₀-R source data for prototype testing. SYNTHETIC PRESENTATION FIXTURE."
+}

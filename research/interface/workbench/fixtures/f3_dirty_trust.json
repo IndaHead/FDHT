@@ -1,0 +1,36 @@
+{
+  "schema_version": "i3.0",
+  "source_snapshot": {
+    "source_branch": "research/verification-consumer",
+    "source_head": "d40f188443d0783fb19c2c45aa0c11abdb5ef58a"
+  },
+  "request_scope": {
+    "state": "Fin 8",
+    "k": 8,
+    "step": "eightThreadCycle.toFun"
+  },
+  "result_class": "ESTABLISHED",
+  "evidence_ref": {
+    "theorem": "applicable_verified",
+    "source": "research/probes/verification_consumer/v0_evidence_gated_verification.lean",
+    "authority": "RESEARCH RESULT ONLY"
+  },
+  "obstruction_ref": null,
+  "non_admission_reason": null,
+  "historical_lineage": {
+    "source": "HISTORICALLY_RECOVERED",
+    "episode": "V₀ applicable_verified"
+  },
+  "trust_footprint": {
+    "axioms": ["propext", "sorryAx", "Quot.sound"]
+  },
+  "research_provenance": {
+    "authority": "RESEARCH RESULT ONLY",
+    "programme": "verification-consumer",
+    "probe": "V₀",
+    "branch": "research/verification-consumer",
+    "commit": "d40f188443d0783fb19c2c45aa0c11abdb5ef58a",
+    "promotion": "NOT PROMOTED"
+  },
+  "_fixture_provenance": "Manually constructed from verified V₀ historical dirty source data for prototype testing. SYNTHETIC PRESENTATION FIXTURE."
+}

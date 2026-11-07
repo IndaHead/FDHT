@@ -1,0 +1,29 @@
+{
+  "schema_version": "i3.0",
+  "source_snapshot": {
+    "source_branch": "research/verification-consumer",
+    "source_head": "7795fda2f95658be2f4a81d550b2f15176526013"
+  },
+  "request_scope": {
+    "state": "Fin 8",
+    "k": 8,
+    "step": "eightThreadCycle.toFun"
+  },
+  "result_class": "UNRESOLVED",
+  "evidence_ref": null,
+  "obstruction_ref": null,
+  "non_admission_reason": "NO APPLICABLE HISTORICAL EVIDENCE",
+  "historical_lineage": null,
+  "trust_footprint": {
+    "axioms": ["propext", "Quot.sound"]
+  },
+  "research_provenance": {
+    "authority": "RESEARCH RESULT ONLY",
+    "programme": "verification-consumer",
+    "probe": "V₀-R",
+    "branch": "research/verification-consumer",
+    "commit": "7795fda2f95658be2f4a81d550b2f15176526013",
+    "promotion": "NOT PROMOTED"
+  },
+  "_fixture_provenance": "Manually constructed from verified V₀-R baseline source data for prototype testing. SYNTHETIC PRESENTATION FIXTURE."
+}

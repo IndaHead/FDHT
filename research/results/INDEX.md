@@ -149,6 +149,7 @@ No generic Join API. No foundational modification.
 | I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
 | I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
+| Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
 
 ### Programme Specification
 
@@ -219,6 +220,7 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 | I₁ | AUDIT COMPLETE | [Interface_I1_Workbench_Information_Architecture.md](Interface_I1_Workbench_Information_Architecture.md) | NONE |
 | I₂ | AUDIT COMPLETE | [Interface_I2_Data_Acquisition_Boundary.md](Interface_I2_Data_Acquisition_Boundary.md) | NONE |
 | I₃ | AUDIT COMPLETE | [Interface_I3_Transport_Schema_Audit.md](Interface_I3_Transport_Schema_Audit.md) | NONE |
+| Prototype V₀ | IMPLEMENTED | [Interface_Prototype_V0_Workbench.md](Interface_Prototype_V0_Workbench.md) | research/interface/workbench/ |
 
 ### Programme Specification
 

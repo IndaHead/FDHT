@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FDHT Workbench V₀ — Read-Only Prototype</title>
+<style>
+body { font-family: monospace; margin: 0; background: #1a1a1a; color: #e0e0e0; }
+.header { background: #2a2a2a; padding: 10px 20px; border-bottom: 1px solid #444; }
+.header h1 { margin: 0; font-size: 16px; }
+.header .status { color: #888; font-size: 12px; }
+.nav { background: #222; padding: 10px 20px; border-bottom: 1px solid #444; }
+.nav button { background: #333; color: #e0e0e0; border: 1px solid #555; padding: 5px 15px; margin-right: 5px; cursor: pointer; }
+.nav button.active { background: #444; border-color: #888; }
+.nav button:hover { background: #3a3a3a; }
+.main { display: flex; height: calc(100vh - 100px); }
+.workspace { flex: 1; padding: 20px; overflow-y: auto; }
+.inspector { width: 300px; background: #222; border-left: 1px solid #444; padding: 15px; overflow-y: auto; }
+.inspector h3 { margin-top: 0; font-size: 14px; color: #888; }
+.inspector .section { margin-bottom: 15px; }
+.inspector .section h4 { margin: 0 0 5px 0; font-size: 12px; color: #aaa; }
+.inspector .field { font-size: 12px; margin: 2px 0; }
+.record { background: #2a2a2a; border: 1px solid #444; padding: 15px; margin-bottom: 10px; }
+.record h3 { margin: 0 0 10px 0; font-size: 14px; }
+.record .field { margin: 5px 0; }
+.record .label { color: #888; }
+.result-established { color: #4a4; }
+.result-refuted { color: #a44; }
+.result-unresolved { color: #aa4; }
+.error { background: #3a2a2a; border: 1px solid #a44; padding: 15px; margin-bottom: 10px; }
+.error h3 { margin: 0 0 10px 0; color: #a44; }
+.fixture-selector { margin-bottom: 15px; }
+.fixture-selector select { background: #333; color: #e0e0e0; border: 1px solid #555; padding: 5px; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>FDHT Workbench V₀</h1>
+<div class="status">READ-ONLY | STATIC RESEARCH FIXTURE | schema: i3.0</div>
+</div>
+<div class="nav">
+<button class="active" onclick="showView('requests')">REQUESTS</button>
+<button onclick="showView('history')">HISTORY</button>
+<button onclick="showView('evidence')">EVIDENCE</button>
+<button onclick="showView('verification')">VERIFICATION</button>
+<button onclick="showView('research')">RESEARCH</button>
+</div>
+<div class="main">
+<div class="workspace" id="workspace">
+<div class="fixture-selector">
+<label>Fixture: </label>
+<select id="fixture-select" onchange="loadFixture(this.value)">
+<option value="">Select fixture...</option>
+<option value="f1">F1 ESTABLISHED / clean trust</option>
+<option value="f2">F2 UNRESOLVED / no applicable evidence</option>
+<option value="f3">F3 dirty historical trust</option>
+</select>
+</div>
+<div id="content"></div>
+</div>
+<div class="inspector" id="inspector">
+<h3>INSPECTOR</h3>
+<div id="inspector-content">Select a record</div>
+</div>
+</div>
+<script>
+const fixtures = {
+  f1: {"schema_version":"i3.0","source_snapshot":{"source_branch":"research/verification-consumer","source_head":"7795fda2f95658be2f4a81d550b2f15176526013"},"request_scope":{"state":"Fin 8","k":8,"step":"eightThreadCycle.toFun"},"result_class":"ESTABLISHED","evidence_ref":{"theorem":"n8_index_first_return","source":"fdht/FDHTFirstPositiveReturn.lean","authority":"MATHEMATICAL"},"obstruction_ref":null,"non_admission_reason":null,"historical_lineage":{"source":"DIRECT","episode":"n8_index_first_return"},"trust_footprint":{"axioms":["propext","Quot.sound"]},"research_provenance":{"authority":"RESEARCH RESULT ONLY","programme":"verification-consumer","probe":"V₀-R","branch":"research/verification-consumer","commit":"7795fda2f95658be2f4a81d550b2f15176526013","promotion":"NOT PROMOTED"}},
+  f2: {"schema_version":"i3.0","source_snapshot":{"source_branch":"research/verification-consumer","source_head":"7795fda2f95658be2f4a81d550b2f15176526013"},"request_scope":{"state":"Fin 8","k":8,"step":"eightThreadCycle.toFun"},"result_class":"UNRESOLVED","evidence_ref":null,"obstruction_ref":null,"non_admission_reason":"NO APPLICABLE HISTORICAL EVIDENCE","historical_lineage":null,"trust_footprint":{"axioms":["propext","Quot.sound"]},"research_provenance":{"authority":"RESEARCH RESULT ONLY","programme":"verification-consumer","probe":"V₀-R","branch":"research/verification-consumer","commit":"7795fda2f95658be2f4a81d550b2f15176526013","promotion":"NOT PROMOTED"}},
+  f3: {"schema_version":"i3.0","source_snapshot":{"source_branch":"research/verification-consumer","source_head":"d40f188443d0783fb19c2c45aa0c11abdb5ef58a"},"request_scope":{"state":"Fin 8","k":8,"step":"eightThreadCycle.toFun"},"result_class":"ESTABLISHED","evidence_ref":{"theorem":"applicable_verified","source":"research/probes/verification_consumer/v0_evidence_gated_verification.lean","authority":"RESEARCH RESULT ONLY"},"obstruction_ref":null,"non_admission_reason":null,"historical_lineage":{"source":"HISTORICALLY_RECOVERED","episode":"V₀ applicable_verified"},"trust_footprint":{"axioms":["propext","sorryAx","Quot.sound"]},"research_provenance":{"authority":"RESEARCH RESULT ONLY","programme":"verification-consumer","probe":"V₀","branch":"research/verification-consumer","commit":"d40f188443d0783fb19c2c45aa0c11abdb5ef58a","promotion":"NOT PROMOTED"}}
+};
+let currentRecord = null;
+let currentView = 'requests';
+function validate(record) {
+  if (!record.schema_version || record.schema_version !== 'i3.0') return 'Unsupported schema version';
+  if (!record.request_scope) return 'Missing request_scope';
+  if (!record.request_scope.state || record.request_scope.k === undefined || !record.request_scope.step) return 'Missing required scope coordinate';
+  if (!record.result_class) return 'Missing result_class';
+  if (!['ESTABLISHED','REFUTED','UNRESOLVED'].includes(record.result_class)) return 'Unknown result_class';
+  if (record.result_class === 'ESTABLISHED' && !record.evidence_ref) return 'ESTABLISHED requires evidence_ref';
+  if (record.result_class === 'REFUTED' && !record.obstruction_ref) return 'REFUTED requires obstruction_ref';
+  if (record.result_class === 'UNRESOLVED' && record.evidence_ref) return 'UNRESOLVED must not have evidence_ref as basis';
+  if (record.result_class === 'REFUTED' && record.evidence_ref) return 'REFUTED must not use positive evidence as refutation basis';
+  return null;
+}
+function loadFixture(id) {
+  if (!id) { currentRecord = null; render(); return; }
+  const record = fixtures[id];
+  const error = validate(record);
+  if (error) { currentRecord = { _error: error, _raw: record }; } else { currentRecord = record; }
+  render();
+}
+function showView(view) {
+  currentView = view;
+  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  render();
+}
+function render() {
+  const content = document.getElementById('content');
+  const inspector = document.getElementById('inspector-content');
+  if (!currentRecord) { content.innerHTML = '<p>Select a fixture to begin.</p>'; inspector.innerHTML = 'Select a record'; return; }
+  if (currentRecord._error) { content.innerHTML = `<div class="error"><h3>TRANSPORT INVALID</h3><p>${currentRecord._error}</p><p>Transport failure ≠ mathematical result.</p></div>`; inspector.innerHTML = 'Invalid record'; return; }
+  const r = currentRecord;
+  const resultClass = r.result_class.toLowerCase();
+  let html = '';
+  if (currentView === 'requests') {
+    html = `<div class="record"><h3>REQUEST</h3><div class="field"><span class="label">Scope:</span> state=${r.request_scope.state}, k=${r.request_scope.k}, step=${r.request_scope.step}</div><div class="field"><span class="label">Result:</span> <span class="result-${resultClass}">${r.result_class}</span></div>`;
+    if (r.result_class === 'ESTABLISHED' && r.evidence_ref) html += `<div class="field"><span class="label">Evidence:</span> ${r.evidence_ref.theorem}</div>`;
+    if (r.result_class === 'REFUTED' && r.obstruction_ref) html += `<div class="field"><span class="label">Obstruction:</span> ${r.obstruction_ref.theorem}</div>`;
+    if (r.result_class === 'UNRESOLVED' && r.non_admission_reason) html += `<div class="field"><span class="label">Non-admission:</span> ${r.non_admission_reason}</div>`;
+    html += '</div>';
+  } else if (currentView === 'history') {
+    html = `<div class="record"><h3>HISTORY</h3>`;
+    if (r.historical_lineage) { html += `<div class="field"><span class="label">Source:</span> ${r.historical_lineage.source}</div><div class="field"><span class="label">Episode:</span> ${r.historical_lineage.episode}</div>`; } else { html += `<div class="field"><span class="label">Lineage:</span> NOT REPRESENTED</div>`; }
+    html += `<div class="field"><span class="label">Request scope:</span> state=${r.request_scope.state}, k=${r.request_scope.k}</div><div class="field"><span class="label">Result:</span> <span class="result-${resultClass}">${r.result_class}</span></div></div>`;
+  } else if (currentView === 'evidence') {
+    html = `<div class="record"><h3>EVIDENCE</h3>`;
+    if (r.evidence_ref) { html += `<div class="field"><span class="label">Theorem:</span> ${r.evidence_ref.theorem}</div><div class="field"><span class="label">Source:</span> ${r.evidence_ref.source}</div><div class="field"><span class="label">Authority:</span> ${r.evidence_ref.authority}</div>`; } else if (r.obstruction_ref) { html += `<div class="field"><span class="label">Obstruction:</span> ${r.obstruction_ref.theorem}</div>`; } else { html += `<div class="field"><span class="label">Evidence:</span> NOT APPLICABLE</div>`; }
+    html += `<div class="field"><span class="label">Scope:</span> state=${r.request_scope.state}, k=${r.request_scope.k}, step=${r.request_scope.step}</div>`;
+    if (r.trust_footprint) html += `<div class="field"><span class="label">Trust:</span> [${r.trust_footprint.axioms.join(', ')}]</div>`;
+    html += '</div>';
+  } else if (currentView === 'verification') {
+    html = `<div class="record"><h3>VERIFICATION</h3><div class="field"><span class="label">Scope:</span> state=${r.request_scope.state}, k=${r.request_scope.k}</div><div class="field"><span class="label">Result:</span> <span class="result-${resultClass}">${r.result_class}</span></div>`;
+    if (r.result_class === 'UNRESOLVED') html += `<div class="field"><span class="label">Non-admission:</span> ${r.non_admission_reason || 'NOT REPRESENTED'}</div><div class="field">EVIDENCE NOT AVAILABLE ≠ REFUTED</div>`;
+    if (r.result_class === 'ESTABLISHED') html += `<div class="field">VERIFIED ≠ CERTIFIED</div>`;
+    html += '</div>';
+  } else if (currentView === 'research') {
+    html = `<div class="record"><h3>RESEARCH</h3>`;
+    if (r.research_provenance) { html += `<div class="field"><span class="label">Authority:</span> ${r.research_provenance.authority}</div><div class="field"><span class="label">Programme:</span> ${r.research_provenance.programme}</div><div class="field"><span class="label">Probe:</span> ${r.research_provenance.probe}</div><div class="field"><span class="label">Branch:</span> ${r.research_provenance.branch}</div><div class="field"><span class="label">Commit:</span> ${r.research_provenance.commit}</div><div class="field"><span class="label">Promotion:</span> ${r.research_provenance.promotion}</div>`; } else { html += `<div class="field"><span class="label">Provenance:</span> NOT REPRESENTED</div>`; }
+    html += '</div>';
+  }
+  content.innerHTML = html;
+  let insp = '<div class="section"><h4>MATHEMATICAL</h4>';
+  insp += `<div class="field">Scope: ${r.request_scope.state}, k=${r.request_scope.k}</div>`;
+  insp += `<div class="field">Result: <span class="result-${resultClass}">${r.result_class}</span></div>`;
+  if (r.result_class === 'ESTABLISHED' && r.evidence_ref) insp += `<div class="field">Evidence: ${r.evidence_ref.theorem}</div>`;
+  if (r.result_class === 'UNRESOLVED' && r.non_admission_reason) insp += `<div class="field">Non-admission: ${r.non_admission_reason}</div>`;
+  insp += '</div><div class="section"><h4>TRUST</h4>';
+  if (r.trust_footprint) insp += `<div class="field">Axioms: [${r.trust_footprint.axioms.join(', ')}]</div>`;
+  else insp += `<div class="field">NOT AVAILABLE</div>`;
+  insp += '</div><div class="section"><h4>RESEARCH</h4>';
+  if (r.research_provenance) insp += `<div class="field">Authority: ${r.research_provenance.authority}</div><div class="field">Probe: ${r.research_provenance.probe}</div>`;
+  else insp += `<div class="field">NOT REPRESENTED</div>`;
+  insp += '</div><div class="section"><h4>HISTORY</h4>';
+  if (r.historical_lineage) insp += `<div class="field">Source: ${r.historical_lineage.source}</div>`;
+  else insp += `<div class="field">NOT REPRESENTED</div>`;
+  insp += '</div><div class="section"><h4>SOURCE SNAPSHOT</h4>';
+  if (r.source_snapshot) insp += `<div class="field">Branch: ${r.source_snapshot.source_branch}</div><div class="field">HEAD: ${r.source_snapshot.source_head}</div>`;
+  insp += '</div>';
+  inspector.innerHTML = insp;
+}
+</script>
+</body>
+</html>
