@@ -63,6 +63,7 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| CURI₀ | FIXTURE VALID / CONSUMER REDUNDANT | [CURI0_FixtureValidity.md](CURI0_FixtureValidity.md) | NONE |
 | IndaAgent001 I₈ | REDUNDANT WITH A₀ | [IndaAgent001_I8_Result.md](IndaAgent001_I8_Result.md) | NONE |
 | IndaAgent001 I₇ | MEMORY FUNCTIONAL, UTILITY NOT ESTABLISHED | [IndaAgent001_I7_Result.md](IndaAgent001_I7_Result.md) | NONE |
 | IndaAgent001 I₆ | VERIFIED AGENT-LOCAL MEMORY | [IndaAgent001_I6_Result.md](IndaAgent001_I6_Result.md) | NONE |
