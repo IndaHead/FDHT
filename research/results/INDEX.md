@@ -135,6 +135,22 @@ No generic Join API. No foundational modification.
 
 - [Verification_Consumer_Programme_Specification.md](Verification_Consumer_Programme_Specification.md)
 
+
+### Interface Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/interface-consumer`  
+**Promotion:** NOT PROMOTED
+
+| Probe | Status | Result | Lean Artefact |
+|-------|--------|--------|---------------|
+| I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
+
+### Programme Specification
+
+- [Interface_Consumer_Programme_Specification.md](Interface_Consumer_Programme_Specification.md)
+
 ### Disposition
 
 **PROBE-LOCAL ONLY. EXISTING SUBSTRATE SUFFICIENT.**
@@ -185,6 +201,22 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 ### Programme Specification
 
 - [Verification_Consumer_Programme_Specification.md](Verification_Consumer_Programme_Specification.md)
+
+
+### Interface Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/interface-consumer`  
+**Promotion:** NOT PROMOTED
+
+| Probe | Status | Result | Lean Artefact |
+|-------|--------|--------|---------------|
+| I₀ | AUDIT COMPLETE | [Interface_I0_ReadOnly_Presentation_Boundary.md](Interface_I0_ReadOnly_Presentation_Boundary.md) | NONE |
+
+### Programme Specification
+
+- [Interface_Consumer_Programme_Specification.md](Interface_Consumer_Programme_Specification.md)
 
 ### Disposition
 
