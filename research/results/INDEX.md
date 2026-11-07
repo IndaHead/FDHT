@@ -116,6 +116,22 @@ No generic Join API. No foundational modification.
 
 - [Consumer_Layer_Programme_Specification.md](Consumer_Layer_Programme_Specification.md)
 
+
+### Verification Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/verification-consumer`  
+**Promotion:** NOT PROMOTED
+
+| Probe | Status | Result | Lean Artefact |
+|-------|--------|--------|---------------|
+| V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
+
+### Programme Specification
+
+- [Verification_Consumer_Programme_Specification.md](Verification_Consumer_Programme_Specification.md)
+
 ### Disposition
 
 **PROBE-LOCAL ONLY. EXISTING SUBSTRATE SUFFICIENT.**
@@ -147,6 +163,22 @@ Retain FDHT v3.1 scope. No permanent promotion justified.
 ### Programme Specification
 
 - [Learning_Consumer_Programme_Specification.md](Learning_Consumer_Programme_Specification.md)
+
+
+### Verification Consumer Layer
+
+**Status:** PROBE-LOCAL  
+**Authority:** RESEARCH RESULT ONLY  
+**Branch:** `research/verification-consumer`  
+**Promotion:** NOT PROMOTED
+
+| Probe | Status | Result | Lean Artefact |
+|-------|--------|--------|---------------|
+| V₀ | FIXTURE-KILL / PACKAGING GAP | [Verification_V0_Evidence_Gated_Verification.md](Verification_V0_Evidence_Gated_Verification.md) | v0_evidence_gated_verification.lean |
+
+### Programme Specification
+
+- [Verification_Consumer_Programme_Specification.md](Verification_Consumer_Programme_Specification.md)
 
 ### Disposition
 
