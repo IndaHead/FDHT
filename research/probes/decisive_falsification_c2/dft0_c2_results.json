@@ -1,0 +1,19 @@
+{
+  "domain_size": 7,
+  "pair_count": 49,
+  "observational_equivalence_pairs": 25,
+  "consumer_distinguishing_collisions": 12,
+  "first_collision": {
+    "x": [
+      0
+    ],
+    "y": [
+      1
+    ]
+  },
+  "classification": "A",
+  "theorem": "isC2Collision",
+  "c1_lost_distinction": "empty vs non-empty",
+  "c2_lost_distinction": "terminal-event content (BLOCK vs ALLOW)",
+  "same_or_different": "STRUCTURALLY DIFFERENT LOST DISTINCTIONS"
+}

@@ -63,6 +63,7 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| DFT0-C2 | SECOND CONSUMER SUFFICIENCY COUNTERMODEL | [DFT0_C2_Second_Consumer_Result.md](DFT0_C2_Second_Consumer_Result.md) | NONE |
 | DFT0 | DECISIVE OBSERVATIONAL-SUFFICIENCY COUNTERMODEL | [DFT0_Decisive_Observational_Sufficiency_Result.md](DFT0_Decisive_Observational_Sufficiency_Result.md) | NONE |
 | OC0 | NO VERIFIED PROGRESS; CONJECTURE REMAINS OPEN | [OC0_Open_Conjecture_Pilot_Result.md](OC0_Open_Conjecture_Pilot_Result.md) | NONE |
 | BMN0 | FDHT-SPECIFIC MATHEMATICAL UTILITY NOT ESTABLISHED | [BMN0_Blind_Mathematical_Necessity_Result.md](BMN0_Blind_Mathematical_Necessity_Result.md) | NONE |
