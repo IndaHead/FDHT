@@ -63,6 +63,7 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| External Consumer E1 | REPRESENTATION WITH ADAPTER-LOCAL ALGEBRA | [External_Consumer_E1_CRDT_Result.md](External_Consumer_E1_CRDT_Result.md) | NONE |
 | External Consumer E0 | ABSORPTION WITH ADAPTER-LOCAL CONTENT | [External_Consumer_E0_SLSA_Result.md](External_Consumer_E0_SLSA_Result.md) | NONE |
 | Locality L1 | ATTESTED SOURCE-LOCAL PRESSURE OBSERVED | [Locality_L1_Attested_Source_Local_Consumer_Result.md](Locality_L1_Attested_Source_Local_Consumer_Result.md) | NONE |
 | Locality L0 | SOURCE-LOCAL OBSERVED IN FIXTURE | [Locality_L0_Source_Local_Consumer_Result.md](Locality_L0_Source_Local_Consumer_Result.md) | NONE |

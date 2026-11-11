@@ -1,0 +1,47 @@
+[
+  {
+    "fixture": "C1",
+    "expected": "CONVERGED",
+    "state": {
+      "A": 2,
+      "B": 3
+    },
+    "value": 5
+  },
+  {
+    "fixture": "C2",
+    "expected": "CONVERGED",
+    "state": {
+      "A": 2,
+      "B": 1
+    },
+    "value": 3
+  },
+  {
+    "fixture": "C6",
+    "expected": "PRECONDITION_NOT_MET",
+    "full_equal": false,
+    "updates_equal": false
+  },
+  {
+    "fixture": "C7",
+    "expected": "CONVERGED",
+    "state": {
+      "A": 2,
+      "B": 3
+    },
+    "value": 5
+  },
+  {
+    "fixture": "C10",
+    "expected": "PRECONDITION_NOT_MET",
+    "value_equal": true,
+    "state_equal": false
+  },
+  {
+    "fixture": "C11",
+    "expected": "DIVERGED",
+    "updates_equal": true,
+    "state_equal": false
+  }
+]
