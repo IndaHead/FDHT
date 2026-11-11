@@ -1,0 +1,35 @@
+{
+  "theorem_A": {
+    "status": "PROBABLY_PROVABLE",
+    "load_bearing": [
+      "mutual_divisibility",
+      "posnat"
+    ],
+    "necessary_distinctions": [
+      "divisibility_not_equality"
+    ]
+  },
+  "theorem_B": {
+    "status": "PROBABLY_REFUTABLE",
+    "load_bearing": [
+      "one_directional_divisibility"
+    ],
+    "necessary_distinctions": [
+      "one_directional_not_equality"
+    ],
+    "counterexample": "a=2,b=4"
+  },
+  "theorem_C": {
+    "status": "PROBABLY_PROVABLE",
+    "load_bearing": [
+      "mutual_divisibility",
+      "explicit_positivity"
+    ],
+    "redundant_candidates": [
+      "explicit_positivity"
+    ],
+    "necessary_distinctions": [
+      "mutual_divisibility_vs_equality"
+    ]
+  }
+}

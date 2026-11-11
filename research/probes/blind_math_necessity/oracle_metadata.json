@@ -1,0 +1,11 @@
+{
+  "oracle_digest": "4efdfce1c0d50915576322807d5d179faca29edc3c3157e61428b7ae49d4ccf4",
+  "visible_digest": "079ace6e0dc71cd217c93db638891e1c80b24ffae406875985d855abd39d4ebd",
+  "domain": "elementary number theory / divisibility on positive naturals",
+  "theorems": [
+    "theorem_A",
+    "theorem_B",
+    "theorem_C"
+  ],
+  "truth_labels_hidden": true
+}

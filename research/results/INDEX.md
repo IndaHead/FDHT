@@ -63,6 +63,7 @@ requirements exist. No permanent consumer requires retrieval mathematics.
 ### Reopening Gate
 
 R1-R5 required. Without R1-R5, do not reopen #17.
+| BMN0 | FDHT-SPECIFIC MATHEMATICAL UTILITY NOT ESTABLISHED | [BMN0_Blind_Mathematical_Necessity_Result.md](BMN0_Blind_Mathematical_Necessity_Result.md) | NONE |
 | BSN0 | FDHT-SPECIFIC UTILITY NOT ESTABLISHED | [BSN0_Blind_Structural_Necessity_Result.md](BSN0_Blind_Structural_Necessity_Result.md) | NONE |
 | External Consumer E1 | REPRESENTATION WITH ADAPTER-LOCAL ALGEBRA | [External_Consumer_E1_CRDT_Result.md](External_Consumer_E1_CRDT_Result.md) | NONE |
 | External Consumer E0 | ABSORPTION WITH ADAPTER-LOCAL CONTENT | [External_Consumer_E0_SLSA_Result.md](External_Consumer_E0_SLSA_Result.md) | NONE |
