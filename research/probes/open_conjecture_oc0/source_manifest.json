@@ -1,0 +1,14 @@
+{
+  "external_repository": "https://github.com/google-deepmind/formal-conjectures",
+  "external_commit": "da703a5f239f",
+  "file_path": "FormalConjectures/OEIS/232174.lean",
+  "conjecture_identifier": "OeisA232174.conjecture",
+  "source_category": "OEIS",
+  "oeis_number": "A232174",
+  "external_open_status": "research open",
+  "ams_classification": "11",
+  "original_informal_source": "Zhi-Wei Sun, Conjectures on representations involving primes, arXiv:1211.1588",
+  "oeis_url": "https://oeis.org/A232174",
+  "prize": "$200",
+  "selection_timestamp": "2026-11-12"
+}

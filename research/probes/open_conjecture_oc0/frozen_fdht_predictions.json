@@ -1,0 +1,17 @@
+{
+  "conjecture_id": "OeisA232174.conjecture",
+  "expected_terminal_state": "EXPECT_OPEN",
+  "load_bearing_assumptions": [
+    "n > 1",
+    "x, y > 0",
+    "simultaneous primality"
+  ],
+  "candidate_special_cases": [
+    "n=7 bounded search"
+  ],
+  "candidate_obstructions": [
+    "simultaneous primality hard",
+    "two conditions distinct"
+  ],
+  "proof_strategy": "preserve distinction, bounded verification, retain OPEN"
+}

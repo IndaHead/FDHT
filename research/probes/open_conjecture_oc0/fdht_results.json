@@ -1,0 +1,13 @@
+{
+  "arm": "fdht",
+  "verified_special_cases": [
+    "a_7"
+  ],
+  "full_proof": false,
+  "counterexample": false,
+  "strict_reduction": false,
+  "verified_conditional": false,
+  "verified_obstruction": false,
+  "terminal_state": "OPEN",
+  "progress_category": "NO_VERIFIED_PROGRESS"
+}
