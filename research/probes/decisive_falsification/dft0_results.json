@@ -1,0 +1,15 @@
+{
+  "domain_size": 7,
+  "pair_count": 49,
+  "observational_equivalence_pairs": 25,
+  "consumer_distinguishing_collisions": 6,
+  "first_collision": {
+    "x": [],
+    "y": [
+      0,
+      0
+    ]
+  },
+  "classification": "A",
+  "theorem": "isConsumerDistinguishingCollision"
+}

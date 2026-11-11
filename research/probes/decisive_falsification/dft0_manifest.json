@@ -1,0 +1,8 @@
+{
+  "observation_inventory_digest": "0a84f06a69a3701c321c462894bc263049c9d7e5c189863f24494751794db2ea",
+  "observation_surface_digest": "627f0982f1e398806ce0c3a3c9a02ecdc24a876c8a6444b94e942e1695a52a8f",
+  "external_consumer_digest": "7053787de5bf5c13087ad9568801e7b38b96eb7f684e9b4bd69bf841de52f486",
+  "concrete_domain_digest": "6d52ad3f84151f7b040a3ddc3edce6842696f5d924a1e3b7c0b1cb48fecc8504",
+  "sufficiency_claim": "forall x y, O x = O y -> C x = C y",
+  "countermodel_predicate": "O x = O y and C x != C y"
+}
