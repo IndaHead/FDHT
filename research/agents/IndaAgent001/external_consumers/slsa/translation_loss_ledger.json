@@ -1,0 +1,106 @@
+[
+  {
+    "external_item": "artifact_id",
+    "external_meaning": "artifact identifier",
+    "fdht_representation": "preserved in request",
+    "translation_status": "EXACT",
+    "justification": "direct field",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "artifact_digest",
+    "external_meaning": "artifact digest",
+    "fdht_representation": "preserved in request",
+    "translation_status": "EXACT",
+    "justification": "direct field",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "subject_binding",
+    "external_meaning": "ID and digest match",
+    "fdht_representation": "check result preserved",
+    "translation_status": "EXACT",
+    "justification": "check-level result carried",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "signature",
+    "external_meaning": "fixture signature valid",
+    "fdht_representation": "check result preserved",
+    "translation_status": "EXACT",
+    "justification": "check-level result carried",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "builder_id",
+    "external_meaning": "builder identity",
+    "fdht_representation": "check result preserved",
+    "translation_status": "EXACT",
+    "justification": "check-level result carried",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "build_type",
+    "external_meaning": "build type match",
+    "fdht_representation": "check result preserved",
+    "translation_status": "EXACT",
+    "justification": "check-level result carried",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "external_parameters",
+    "external_meaning": "parameter recognition and permission",
+    "fdht_representation": "check result preserved",
+    "translation_status": "EXACT",
+    "justification": "check-level result carried",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "ACCEPT",
+    "external_meaning": "all mandatory checks pass",
+    "fdht_representation": "ESTABLISHED -> ADMIT",
+    "translation_status": "TRANSFORMED_LOSSLESS",
+    "justification": "candidate mapping preserves outcome",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "REJECT",
+    "external_meaning": "at least one check fails",
+    "fdht_representation": "REFUTED -> REJECT",
+    "translation_status": "TRANSFORMED_LOSSLESS",
+    "justification": "candidate mapping preserves outcome",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "REVIEW",
+    "external_meaning": "incomplete evidence",
+    "fdht_representation": "UNRESOLVED -> STOP",
+    "translation_status": "TRANSFORMED_LOSSLESS",
+    "justification": "candidate mapping preserves outcome",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "CheckStatus.PASS",
+    "external_meaning": "check passed",
+    "fdht_representation": "preserved in check_results",
+    "translation_status": "EXACT",
+    "justification": "direct",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "CheckStatus.FAIL",
+    "external_meaning": "check failed",
+    "fdht_representation": "preserved in failed_checks",
+    "translation_status": "EXACT",
+    "justification": "direct",
+    "effect_on_consumer_outcome": "none"
+  },
+  {
+    "external_item": "CheckStatus.UNVERIFIABLE",
+    "external_meaning": "check cannot complete",
+    "fdht_representation": "preserved in unverifiable_checks",
+    "translation_status": "EXACT",
+    "justification": "direct",
+    "effect_on_consumer_outcome": "none"
+  }
+]

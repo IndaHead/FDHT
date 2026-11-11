@@ -1,0 +1,110 @@
+[
+  {
+    "fixture": "E1",
+    "expected": "ACCEPT",
+    "failed": [],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E2",
+    "expected": "REJECT",
+    "failed": [
+      "subject_binding"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E3",
+    "expected": "REJECT",
+    "failed": [
+      "subject_binding"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E4",
+    "expected": "REJECT",
+    "failed": [
+      "signature"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E5",
+    "expected": "REVIEW",
+    "failed": [],
+    "unverifiable": [
+      "signature"
+    ]
+  },
+  {
+    "fixture": "E6",
+    "expected": "REJECT",
+    "failed": [
+      "builder"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E7",
+    "expected": "REVIEW",
+    "failed": [],
+    "unverifiable": [
+      "builder"
+    ]
+  },
+  {
+    "fixture": "E8",
+    "expected": "REJECT",
+    "failed": [
+      "build_type"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E9",
+    "expected": "REVIEW",
+    "failed": [],
+    "unverifiable": [
+      "build_type"
+    ]
+  },
+  {
+    "fixture": "E10",
+    "expected": "REJECT",
+    "failed": [
+      "external_parameters"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E11",
+    "expected": "REJECT",
+    "failed": [
+      "external_parameters"
+    ],
+    "unverifiable": []
+  },
+  {
+    "fixture": "E12",
+    "expected": "REVIEW",
+    "failed": [],
+    "unverifiable": [
+      "subject_binding",
+      "signature",
+      "builder",
+      "build_type",
+      "external_parameters"
+    ]
+  },
+  {
+    "fixture": "E13",
+    "expected": "REJECT",
+    "failed": [
+      "subject_binding",
+      "builder",
+      "build_type"
+    ],
+    "unverifiable": []
+  }
+]
