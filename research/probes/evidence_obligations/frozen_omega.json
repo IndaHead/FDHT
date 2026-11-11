@@ -1,0 +1,47 @@
+{
+  "obligation_model": "Omega",
+  "obligations": [
+    {
+      "id": "omega_positive_support",
+      "applies_to": "ESTABLISHED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_applicability",
+      "applies_to": "ESTABLISHED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_scope",
+      "applies_to": "ESTABLISHED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_provenance",
+      "applies_to": "ESTABLISHED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_negative_witness",
+      "applies_to": "REFUTED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_refuted_applicability",
+      "applies_to": "REFUTED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_refuted_scope",
+      "applies_to": "REFUTED",
+      "mandatory": true
+    },
+    {
+      "id": "omega_refuted_provenance",
+      "applies_to": "REFUTED",
+      "mandatory": true
+    }
+  ],
+  "frozen_after_K": true,
+  "digest": "fb23f0fc2a584385a7d8e93f87cf3d02952fb7cfd9d886ec3754122355d5795d"
+}

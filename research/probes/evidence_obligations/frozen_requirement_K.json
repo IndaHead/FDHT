@@ -1,0 +1,14 @@
+{
+  "requirement_id": "K",
+  "description": "Establish whether relation R holds at source X under scope S with accepted provenance P",
+  "complete_requirement": {
+    "correct_polarity": true,
+    "applicable_witness": true,
+    "current_scope": true,
+    "accepted_provenance": true,
+    "required_verifier_acceptance": true,
+    "no_undefeated_opposing_evidence": true
+  },
+  "frozen_before_omega": true,
+  "digest": "cd58986cba1454ffbbbd8de4286b1b46c94bea821177710a629cf92c68550e03"
+}
