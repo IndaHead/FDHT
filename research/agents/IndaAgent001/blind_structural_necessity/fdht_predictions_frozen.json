@@ -1,0 +1,37 @@
+[
+  {
+    "a": "value",
+    "b": "path_tag",
+    "id": "FDHT_P1",
+    "justification": "Visible equal_projection example shows two states with same value but different tags. FDHT projection discipline requires distinguishing projected equality from full-state equality.",
+    "relation": "MUST_REMAIN_DISTINCT"
+  },
+  {
+    "a": "temporary_disagreement",
+    "b": "permanent_failure",
+    "id": "FDHT_P2",
+    "justification": "Visible partition example shows independent states with different values. FDHT does not treat temporary divergence as failure.",
+    "relation": "MUST_REMAIN_DISTINCT"
+  },
+  {
+    "a": "merge(a,b)",
+    "b": "merge(b,a)",
+    "id": "FDHT_P3",
+    "justification": "Visible merge takes maximum value. Order may not affect consumer-visible output.",
+    "relation": "MAY_COLLAPSE_FOR_CONSUMER"
+  },
+  {
+    "a": "merge_count_0",
+    "b": "merge_count_3",
+    "id": "FDHT_P4",
+    "justification": "Visible spec does not state whether merge_count has consumer significance. FDHT cannot determine from visible information alone.",
+    "relation": "UNKNOWN"
+  },
+  {
+    "a": "delivery_history",
+    "b": "final_state",
+    "id": "FDHT_P5",
+    "justification": "FDHT distinguishes history from state. Visible merge produces equivalent states from different paths. History identity may not be required for consumer.",
+    "relation": "MAY_COLLAPSE_FOR_CONSUMER"
+  }
+]

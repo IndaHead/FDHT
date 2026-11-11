@@ -1,0 +1,50 @@
+{
+  "H1": {
+    "s1_proj": 10,
+    "s2_proj": 10,
+    "s1_audit": "VALID",
+    "s2_audit": "INVALID",
+    "distinction_required": true
+  },
+  "H2": {
+    "s3_audit": "VALID",
+    "s4_audit": "VALID",
+    "distinction_required": false
+  },
+  "H3": {
+    "a_proj": 5,
+    "b_proj": 3,
+    "both_valid": true,
+    "distinction_required": false
+  },
+  "H4": {
+    "p1_proj": 10,
+    "p2_proj": 10,
+    "p1_audit": "VALID",
+    "p2_audit": "INVALID",
+    "distinction_required": true
+  },
+  "H5": {
+    "m1_proj": 5,
+    "m2_proj": 5,
+    "equal_proj": true,
+    "distinction_required": false
+  },
+  "H6": {
+    "t1_proj": 10,
+    "t2_proj": 10,
+    "t1_audit": "VALID",
+    "t2_audit": "VALID",
+    "distinction_required": false
+  },
+  "H7": {
+    "r1_audit": "VALID",
+    "r2_audit": "VALID",
+    "distinction_required": false
+  },
+  "H8": {
+    "m1_audit": "VALID",
+    "m2_audit": "INVALID",
+    "distinction_required": true
+  }
+}

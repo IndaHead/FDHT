@@ -1,0 +1,46 @@
+{
+  "v1_increment": {
+    "state": {
+      "value": 5,
+      "path_tag": "A+inc1",
+      "merge_count": 0
+    },
+    "projection": 5
+  },
+  "v2_partition": {
+    "a": {
+      "value": 5,
+      "path_tag": "A+inc1",
+      "merge_count": 0
+    },
+    "b": {
+      "value": 3,
+      "path_tag": "B+inc1",
+      "merge_count": 0
+    },
+    "a_proj": 5,
+    "b_proj": 3
+  },
+  "v3_merge": {
+    "result": {
+      "value": 5,
+      "path_tag": "M(A+inc1|B+inc1)",
+      "merge_count": 1
+    },
+    "projection": 5
+  },
+  "v4_equal_projection": {
+    "x": {
+      "value": 10,
+      "path_tag": "X",
+      "merge_count": 0
+    },
+    "y": {
+      "value": 10,
+      "path_tag": "Y",
+      "merge_count": 0
+    },
+    "x_proj": 10,
+    "y_proj": 10
+  }
+}
