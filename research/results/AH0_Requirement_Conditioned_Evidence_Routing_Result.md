@@ -53,3 +53,30 @@ ScriptedReasoner validated. Live Grok treatment remains not executed.
 Classification remains G.
 
 Permanent FDHT pressure: NONE
+
+
+## AH0-L -- LIVE GROK TREATMENT
+
+**Status:** NOT EXECUTED  
+**Classification:** G -- LIVE GROK TREATMENT NOT EXECUTED
+
+### Missing Prerequisites
+
+- `XAI_API_KEY` absent from runtime environment
+- `AH0_RUN_LIVE_GROK` not set to 1
+
+### Recorded Facts
+
+- Live Grok routing was not executed.
+- No comparison between fixed retrieval and live Grok routing exists.
+- The live AH0 hypothesis remains untested.
+- Deterministic harness and ScriptedReasoner remain validated.
+- No fabricated live results.
+
+### Permanent FDHT Pressure
+
+NONE
+
+### Recommended Action
+
+STOP. Re-run only when credentials and live flag are present and the frozen harness remains unchanged.
