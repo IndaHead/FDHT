@@ -1,13 +1,14 @@
 # AH0 — Requirement-Conditioned Evidence Routing Agent
 
 **Status:** HARNESS FROZEN; LIVE GROK NOT EXECUTED  
+**Correction (2026-11-12):** Classification corrected from unsupported C to G.  
 **Authority:** RESEARCH PROBE  
 **Promotion:** NOT PROMOTED  
 **Starting HEAD:** `6c180ab1ef8c0097cb97c8948a971b8719e341b5`
 
 ## Classification
 
-C — live run not executed (credentials unavailable)
+G — LIVE GROK TREATMENT NOT EXECUTED
 
 ## Summary
 
@@ -34,3 +35,21 @@ NONE
 ## Recommended Action
 
 STOP. Re-run live treatment only when credentials are available and the frozen harness remains unchanged.
+
+
+## Deterministic Harness Completion (2026-11-12)
+
+Core deterministic components implemented:
+- memory.py (read-only catalogue + index)
+- obligations.py
+- admission_gate.py
+- evidence_evaluator.py
+- oracle.py
+- fixtures.py
+- state_machine.py
+- event_log.py
+
+ScriptedReasoner validated. Live Grok treatment remains not executed.
+Classification remains G.
+
+Permanent FDHT pressure: NONE
