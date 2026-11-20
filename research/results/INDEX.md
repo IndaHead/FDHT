@@ -86,3 +86,17 @@ R1-R5 required. Without R1-R5, do not reopen #17.
 | IndaAgent001 I₀/I₁/I₂ | COMPLETE | [IndaAgent001_I0_I1_I2_Result.md](IndaAgent001_I0_I1_I2_Result.md) | NONE |
 | S₀ Agent State | PROBE COMPLETE | [S0_AgentState_Probe_Result.md](S0_AgentState_Probe_Result.md) | NONE |
 | A₀ Agent Consumer | PROBE COMPLETE | [A0_AgentConsumer_Probe_Result.md](A0_AgentConsumer_Probe_Result.md) | NONE |
+
+## MRT Programme — Memory Operations
+
+**Status:** ARCHIVED / FROZEN  
+**Authority:** RESEARCH EVIDENCE ONLY  
+**Promotion:** NOT PROMOTED
+
+| Stage | Status | Archive |
+|-------|--------|---------|
+| MRT-01 through MRT-01E-F | PROBE-LOCAL FIXTURES | [MRT_Memory_Operations_Programme_Archive.md](MRT_Memory_Operations_Programme_Archive.md) |
+| IA-MRT-01 | ABSORPTION — NO NEW OPERATIONAL DISTINCTION REQUIRED | [MRT_Memory_Operations_Programme_Archive.md](MRT_Memory_Operations_Programme_Archive.md) |
+| IA-MRT-01N | BEHAVIOURAL EQUIVALENCE CONFIRMED | [MRT_Memory_Operations_Programme_Archive.md](MRT_Memory_Operations_Programme_Archive.md) |
+
+No permanent FDHT mathematics, memory API, retrieval semantics, RecallState change, or promotion is introduced. Backlog #17 remains closed.
