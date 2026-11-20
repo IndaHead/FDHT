@@ -1,6 +1,6 @@
 """Deterministic obligation-profile construction."""
 from typing import List, Dict
-from .models import EvidenceObligation, EvidenceStatus, ObligationDischargeStatus, EvidenceItem
+from .models import EvidenceObligation, EvidenceStatus, ObligationDischargeStatus
 
 def build_obligation_profiles(
     obligations: List[EvidenceObligation],
