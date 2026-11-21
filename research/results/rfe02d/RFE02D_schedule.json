@@ -1,0 +1,10 @@
+{
+  "treatments": [
+    "G0",
+    "G2",
+    "GP"
+  ],
+  "order": "counterbalanced",
+  "planned_model": "grok-4",
+  "planned_reasoning_effort": "medium"
+}

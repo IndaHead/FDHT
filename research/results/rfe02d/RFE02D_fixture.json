@@ -1,0 +1,142 @@
+{
+  "fixtures": [
+    {
+      "fixture_id": "F1_BASIC",
+      "requirement": "Determine if the candidate provides complete information about both coordinates of a Bool × Bool pair.",
+      "parent_id": "T_parent",
+      "observable_loss_verified": true,
+      "observable_loss_evidence_id": "LOSS_T_001",
+      "expected_final_outcome": "SUFFICIENT",
+      "candidates": [
+        {
+          "candidate_id": "U1",
+          "payload": "Projection onto first coordinate only.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": true,
+          "factorisation_evidence_id": "FACTOR_U1_001",
+          "expected_g2_action": "PRUNE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "U2",
+          "payload": "Projection onto first coordinate with post-processing.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": true,
+          "factorisation_evidence_id": "FACTOR_U2_001",
+          "expected_g2_action": "PRUNE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "U3",
+          "payload": "Partial information from external source.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "U4",
+          "payload": "Complete pair observation from independent source.",
+          "expected_status": "SUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "U5",
+          "payload": "Second coordinate only (complementary to first).",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": "COMPLEMENTARY_PAIR_MEMBER"
+        },
+        {
+          "candidate_id": "U6",
+          "payload": "Irrelevant external measurement.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": null
+        }
+      ]
+    },
+    {
+      "fixture_id": "F2_FAMILY_EXHAUSTION",
+      "requirement": "Determine if any candidate provides complete information.",
+      "parent_id": "T_lossy",
+      "observable_loss_verified": true,
+      "observable_loss_evidence_id": "LOSS_T_002",
+      "expected_final_outcome": "STOP_FAMILY_EXHAUSTED",
+      "candidates": [
+        {
+          "candidate_id": "E1",
+          "payload": "Post-processing of lossy parent.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": true,
+          "factorisation_evidence_id": "FACTOR_E1_001",
+          "expected_g2_action": "PRUNE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "E2",
+          "payload": "Derived from lossy parent.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": true,
+          "factorisation_evidence_id": "FACTOR_E2_001",
+          "expected_g2_action": "PRUNE",
+          "complementary_label": null
+        },
+        {
+          "candidate_id": "E3",
+          "payload": "Transformation of lossy parent.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": true,
+          "factorisation_evidence_id": "FACTOR_E3_001",
+          "expected_g2_action": "PRUNE",
+          "complementary_label": null
+        }
+      ]
+    },
+    {
+      "fixture_id": "F3_COMPLEMENTARITY_GUARD",
+      "requirement": "Determine if the joint observation provides complete information.",
+      "parent_id": "T_comp",
+      "observable_loss_verified": true,
+      "observable_loss_evidence_id": "LOSS_T_003",
+      "expected_final_outcome": "SUFFICIENT",
+      "candidates": [
+        {
+          "candidate_id": "A",
+          "payload": "First component only.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": "JOINT_MEMBER_A"
+        },
+        {
+          "candidate_id": "B",
+          "payload": "Second component only.",
+          "expected_status": "INSUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": "JOINT_MEMBER_B"
+        },
+        {
+          "candidate_id": "J_AB",
+          "payload": "Joint observation of A and B.",
+          "expected_status": "SUFFICIENT",
+          "factors_through_parent": false,
+          "factorisation_evidence_id": null,
+          "expected_g2_action": "EVALUATE",
+          "complementary_label": "JOINT_ROUTE"
+        }
+      ]
+    }
+  ]
+}

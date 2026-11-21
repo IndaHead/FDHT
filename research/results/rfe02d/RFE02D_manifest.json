@@ -1,0 +1,45 @@
+{
+  "created_files": [
+    "RFE02D_fixture.json",
+    "RFE02D_controller.py",
+    "RFE02D_evaluator.py",
+    "RFE02D_dry_run.py",
+    "RFE02D_schedule.json",
+    "RFE02D_prompt_manifest.jsonl",
+    "RFE02D_events.jsonl",
+    "RFE02D_summary.json"
+  ],
+  "hashes": {
+    "fixture": "34e8eccc03564288284262c5627f6f9383294d59253a86c0aa12ab23e9ea7b5b",
+    "controller": "89534260045f1853397ed9a091dadf63fffcd276eecae35e4f3b73a513ebb042",
+    "evaluator": "23a96404224237055af9f5e5df21ae3ab540059e672542ef07686c9b786db440",
+    "dry_run": "edc31580deab1cbbe422d844b44e55e84924d3a1b34e98ec656f95c84b1c9b51",
+    "schedule": "b23069eda4f6a9259f1fa29af4f8919183759d5622b2039fcda5ec6668cee4d1",
+    "prompt_manifest": "f7bbc4bf3cdc435275e2294f67b592432ccbfb68a5f3eb5a498b46f4a876bea4"
+  },
+  "fixture_count": 3,
+  "candidate_count": 12,
+  "planned_model": "grok-4",
+  "planned_reasoning_effort": "medium",
+  "would_call_counts": {
+    "G0": 12,
+    "G2": 7,
+    "GP": 7
+  },
+  "api_requests_attempted": 0,
+  "validation_results": {
+    "theorem_false_pruning": 0,
+    "assertions_passed": 13,
+    "assertions_failed": 0
+  },
+  "attack_results": {
+    "A_false_factorisation": "PASS",
+    "B_complementary_deletion": "PASS",
+    "C_name_based_nesting": "PASS",
+    "D_missing_evidence": "PASS",
+    "E_globalise_family_stop": "PASS",
+    "F_gp_semantic_cheating": "PASS",
+    "G_api_accident": "PASS",
+    "H_metric_fabrication": "PASS"
+  }
+}
