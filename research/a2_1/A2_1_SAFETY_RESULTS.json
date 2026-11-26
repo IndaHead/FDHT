@@ -1,0 +1,424 @@
+{
+  "results": [
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    }
+  ]
+}
