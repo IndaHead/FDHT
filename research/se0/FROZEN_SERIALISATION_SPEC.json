@@ -1,0 +1,8 @@
+{
+  "encoding": "UTF-8",
+  "ascii_escaping": true,
+  "sorted_keys": true,
+  "separators": [",", ":"],
+  "no_whitespace": true,
+  "no_indentation": true
+}

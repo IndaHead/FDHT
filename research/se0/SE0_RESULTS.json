@@ -1,0 +1,77 @@
+{
+  "comparison": {
+    "exact_bytes_per_source_occurrence": 47.984375,
+    "exact_candidate_resolution": 0.015625,
+    "exact_query_source_inspections": 1,
+    "vrrd_bytes_per_source_occurrence": 80.0,
+    "vrrd_candidate_resolution": 0.125,
+    "vrrd_minus_exact_bytes": 2049,
+    "vrrd_query_source_inspections": 6,
+    "vrrd_to_exact_byte_ratio": 1.6672093780527515
+  },
+  "exact_address": {
+    "active_identity": "ac05",
+    "build_source_inspections": 64,
+    "candidate_fraction": 0.015625,
+    "candidate_source_occurrences": 1,
+    "logical": {
+      "address_references": 64,
+      "derived_references": 0,
+      "identity_keys": 64,
+      "prefix_keys": 0,
+      "range_descriptors": 0,
+      "structure_nodes": 64,
+      "validation_digest_fields": 2
+    },
+    "outcome": "ADMIT",
+    "query_metadata_inspections": 22,
+    "query_source_inspections": 1,
+    "storage": {
+      "canonical_key_bytes": 384,
+      "canonical_node_bytes": 2807,
+      "canonical_range_bytes": 0,
+      "canonical_reference_bytes": 246,
+      "canonical_serialised_bytes": 3071,
+      "canonical_sha256": "8b9aa64935738d7aa948cd29cf8de63b6a3c541f2147814d6a710f91f5574183",
+      "canonical_validation_metadata_bytes": 220
+    },
+    "validation_source_inspections": 64
+  },
+  "schema_version": "FDHT-SE0-v1",
+  "source": {
+    "occurrences": 64,
+    "requirement": "ac05",
+    "source_digest": "fb277a5844751bd1523d88424c30662fc4e9b9f4b69e19b2cf251b6a5df90a49"
+  },
+  "vrrd": {
+    "active_identity": "ac05",
+    "build_source_inspections": 64,
+    "candidate_fraction": 0.125,
+    "candidate_source_occurrences": 8,
+    "derived_order_reference_count": 64,
+    "logical": {
+      "address_references": 0,
+      "derived_references": 64,
+      "identity_keys": 0,
+      "prefix_keys": 8,
+      "range_descriptors": 8,
+      "structure_nodes": 8,
+      "validation_digest_fields": 2
+    },
+    "outcome": "ADMIT",
+    "query_metadata_inspections": 9,
+    "query_radix_node_probes": 3,
+    "query_range_reference_inspections": 6,
+    "query_source_inspections": 6,
+    "storage": {
+      "canonical_key_bytes": 32,
+      "canonical_node_bytes": 366,
+      "canonical_range_bytes": 366,
+      "canonical_reference_bytes": 4461,
+      "canonical_serialised_bytes": 5120,
+      "canonical_sha256": "6a3f976b2bca6ac6eced83b3f71323d341b6f75c5cfe2509157ee98e24e8d9f8",
+      "canonical_validation_metadata_bytes": 220
+    },
+    "validation_source_inspections": 64
+  }
+}

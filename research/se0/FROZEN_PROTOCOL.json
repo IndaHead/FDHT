@@ -1,0 +1,8 @@
+{
+  "schema_version": "FDHT-SE0-v1",
+  "source_order_seed": "FDHT-VRRD0-SOURCE-ORDER-v1",
+  "prefix_depth": 2,
+  "requirement": "ac05",
+  "source_size": 64,
+  "serialisation": "canonical_json"
+}

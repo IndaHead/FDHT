@@ -96,3 +96,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | VRRD₀ | CLOSED | MICROSCOPIC_PROBE | VRRD₀-F | — | research/results/FDHT_VRRD0_Microscopic_Radix_Range_Pruning.md |
 
 | VRRD₀-C | CLOSED | A0_CORRECTION | VRRD₀ | — | research/results/FDHT_VRRD0C_A0_Exhaustive_Trace_Correction.md |
+
+| SE₀ | CLOSED | STORAGE_PROBE | VRRD₀-C | — | research/results/FDHT_SE0_Derived_Storage_Versus_Routing_Resolution.md |
