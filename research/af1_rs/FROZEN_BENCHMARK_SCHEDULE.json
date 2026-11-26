@@ -1,0 +1,6 @@
+{
+  "runtime_warmup_runs": 5,
+  "runtime_measured_runs": 30,
+  "memory_warmup_runs": 3,
+  "memory_measured_runs": 10
+}

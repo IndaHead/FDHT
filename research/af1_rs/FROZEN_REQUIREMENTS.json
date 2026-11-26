@@ -1,0 +1,10 @@
+{
+  "requirements": [
+    {"id": "R1", "size": 1, "identities": ["entity_001"]},
+    {"id": "R2", "size": 2, "identities": ["entity_001", "entity_002"]},
+    {"id": "R4", "size": 4, "identities": ["entity_001", "entity_002", "entity_003", "entity_004"]},
+    {"id": "R8", "size": 8, "identities": ["entity_001", "entity_002", "entity_003", "entity_004", "entity_005", "entity_006", "entity_007", "entity_008"]},
+    {"id": "R16", "size": 16, "identities": ["entity_001", "entity_002", "entity_003", "entity_004", "entity_005", "entity_006", "entity_007", "entity_008", "entity_009", "entity_010", "entity_011", "entity_012", "entity_013", "entity_014", "entity_015", "entity_016"]}
+  ],
+  "nesting": "R1 ⊂ R2 ⊂ R4 ⊂ R8 ⊂ R16"
+}

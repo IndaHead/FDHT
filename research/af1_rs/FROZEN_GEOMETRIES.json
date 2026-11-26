@@ -1,0 +1,9 @@
+{
+  "geometries": [
+    {"id": "G0", "name": "CLUSTERED"},
+    {"id": "G1", "name": "UNIFORMLY_DISPERSED"},
+    {"id": "G2", "name": "EDGE_SEPARATED"},
+    {"id": "G3", "name": "RANDOMISED_FROZEN", "seed": 42},
+    {"id": "G4", "name": "DISTRACTOR_SHADOWED"}
+  ]
+}

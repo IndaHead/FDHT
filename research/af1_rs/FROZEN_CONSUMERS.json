@@ -1,0 +1,5 @@
+{
+  "consumer_family": "IDENTITY_SET",
+  "semantic_rule": "ADMIT iff every required identity is available",
+  "stop_condition": "STOP_INSUFFICIENT if any required identity absent"
+}

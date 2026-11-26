@@ -1,0 +1,7 @@
+{
+  "treatments": [
+    {"id": "A0", "name": "EXHAUSTIVE"},
+    {"id": "A1", "name": "REQUIREMENT_CONDITIONED"},
+    {"id": "A2", "name": "NOT_JUSTIFIED"}
+  ]
+}
