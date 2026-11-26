@@ -1,0 +1,5 @@
+{
+  "staircase": [16, 32, 64, 128, 256, 512, 1024],
+  "relevant_core_size": 1,
+  "growth": "consumer-irrelevant records only"
+}

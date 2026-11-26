@@ -1,0 +1,7 @@
+{
+  "consumer_id": "R1",
+  "name": "MISSING_IDENTITY",
+  "provenance": "SP1-R frozen consumer",
+  "deterministic": true,
+  "requirement": "entity identity"
+}

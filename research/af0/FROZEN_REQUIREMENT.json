@@ -1,0 +1,8 @@
+{
+  "consumer_id": "R1",
+  "required_distinctions": ["entity_identity"],
+  "optional_distinctions": [],
+  "irrelevant_distinctions": ["relation", "payload", "timestamp"],
+  "expected_result": "ADMIT",
+  "stop_conditions": ["identity_absent"]
+}

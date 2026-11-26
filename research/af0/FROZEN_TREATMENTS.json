@@ -1,0 +1,7 @@
+{
+  "treatments": [
+    {"id": "A0", "name": "EXHAUSTIVE", "description": "Inspect every record"},
+    {"id": "A1", "name": "REQUIREMENT_CONDITIONED", "description": "Stop when requirement satisfied"},
+    {"id": "A2", "name": "STRUCTURE_AWARE", "description": "NOT JUSTIFIED"}
+  ]
+}

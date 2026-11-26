@@ -1,0 +1,424 @@
+{
+  "results": [
+    {
+      "source_size": 16,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 16,
+      "active": 16,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 16,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.0625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 16,
+      "position": 8,
+      "treatment": "A0",
+      "inspected": 16,
+      "active": 16,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 16,
+      "position": 8,
+      "treatment": "A1",
+      "inspected": 9,
+      "active": 1,
+      "alpha_C": 0.0625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 16,
+      "position": 15,
+      "treatment": "A0",
+      "inspected": 16,
+      "active": 16,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 16,
+      "position": 15,
+      "treatment": "A1",
+      "inspected": 16,
+      "active": 1,
+      "alpha_C": 0.0625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 32,
+      "active": 32,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.03125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 16,
+      "treatment": "A0",
+      "inspected": 32,
+      "active": 32,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 16,
+      "treatment": "A1",
+      "inspected": 17,
+      "active": 1,
+      "alpha_C": 0.03125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 31,
+      "treatment": "A0",
+      "inspected": 32,
+      "active": 32,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "position": 31,
+      "treatment": "A1",
+      "inspected": 32,
+      "active": 1,
+      "alpha_C": 0.03125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 64,
+      "active": 64,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.015625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 32,
+      "treatment": "A0",
+      "inspected": 64,
+      "active": 64,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 32,
+      "treatment": "A1",
+      "inspected": 33,
+      "active": 1,
+      "alpha_C": 0.015625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 63,
+      "treatment": "A0",
+      "inspected": 64,
+      "active": 64,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "position": 63,
+      "treatment": "A1",
+      "inspected": 64,
+      "active": 1,
+      "alpha_C": 0.015625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 128,
+      "active": 128,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.0078125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 64,
+      "treatment": "A0",
+      "inspected": 128,
+      "active": 128,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 64,
+      "treatment": "A1",
+      "inspected": 65,
+      "active": 1,
+      "alpha_C": 0.0078125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 127,
+      "treatment": "A0",
+      "inspected": 128,
+      "active": 128,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "position": 127,
+      "treatment": "A1",
+      "inspected": 128,
+      "active": 1,
+      "alpha_C": 0.0078125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 256,
+      "active": 256,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.00390625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 128,
+      "treatment": "A0",
+      "inspected": 256,
+      "active": 256,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 128,
+      "treatment": "A1",
+      "inspected": 129,
+      "active": 1,
+      "alpha_C": 0.00390625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 255,
+      "treatment": "A0",
+      "inspected": 256,
+      "active": 256,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "position": 255,
+      "treatment": "A1",
+      "inspected": 256,
+      "active": 1,
+      "alpha_C": 0.00390625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 512,
+      "active": 512,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.001953125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 256,
+      "treatment": "A0",
+      "inspected": 512,
+      "active": 512,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 256,
+      "treatment": "A1",
+      "inspected": 257,
+      "active": 1,
+      "alpha_C": 0.001953125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 511,
+      "treatment": "A0",
+      "inspected": 512,
+      "active": 512,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "position": 511,
+      "treatment": "A1",
+      "inspected": 512,
+      "active": 1,
+      "alpha_C": 0.001953125,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 0,
+      "treatment": "A0",
+      "inspected": 1024,
+      "active": 1024,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 0,
+      "treatment": "A1",
+      "inspected": 1,
+      "active": 1,
+      "alpha_C": 0.0009765625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 512,
+      "treatment": "A0",
+      "inspected": 1024,
+      "active": 1024,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 512,
+      "treatment": "A1",
+      "inspected": 513,
+      "active": 1,
+      "alpha_C": 0.0009765625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 1023,
+      "treatment": "A0",
+      "inspected": 1024,
+      "active": 1024,
+      "alpha_C": 1.0,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "position": 1023,
+      "treatment": "A1",
+      "inspected": 1024,
+      "active": 1,
+      "alpha_C": 0.0009765625,
+      "consumer_match": true,
+      "gate": "ADMIT"
+    }
+  ]
+}
