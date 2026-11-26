@@ -94,3 +94,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | VRRD₀-F | CLOSED | FEASIBILITY_AUDIT | A2-SYN₁ | — | research/results/FDHT_VRRD0F_Feasibility_Audit.md |
 
 | VRRD₀ | CLOSED | MICROSCOPIC_PROBE | VRRD₀-F | — | research/results/FDHT_VRRD0_Microscopic_Radix_Range_Pruning.md |
+
+| VRRD₀-C | CLOSED | A0_CORRECTION | VRRD₀ | — | research/results/FDHT_VRRD0C_A0_Exhaustive_Trace_Correction.md |

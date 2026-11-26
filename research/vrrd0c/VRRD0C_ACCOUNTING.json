@@ -1,0 +1,9 @@
+{
+  "a0_exhaustive": 64,
+  "a1_query": 48,
+  "vrrd_build": 64,
+  "vrrd_full_validation": 64,
+  "vrrd_query": 6,
+  "vrrd_build_plus_query": 70,
+  "vrrd_full_validation_e2e": 134
+}

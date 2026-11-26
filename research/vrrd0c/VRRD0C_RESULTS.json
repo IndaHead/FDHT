@@ -1,0 +1,35 @@
+{
+  "original_a0_defect": "A0_RUNNER_EARLY_STOP",
+  "original_a0_reported": 48,
+  "corrected_a0_trace_length": 64,
+  "corrected_a0_unique_count": 64,
+  "corrected_a0_inspections": 64,
+  "corrected_a0_outcome": "ADMIT",
+  "a1_completion_position": 48,
+  "a1_inspections": 48,
+  "a1_outcome": "ADMIT",
+  "vrrd_radix_probes": 1,
+  "vrrd_range_refs": 6,
+  "vrrd_source_derefs": 6,
+  "vrrd_source_verifications": 6,
+  "vrrd_active": "ac05",
+  "vrrd_outcome": "ADMIT",
+  "oracle_outcome": "ADMIT",
+  "semantic_equivalence": "PASS",
+  "accounting": {
+    "a0_exhaustive": 64,
+    "a1_query": 48,
+    "vrrd_build": 64,
+    "vrrd_full_validation": 64,
+    "vrrd_query": 6,
+    "vrrd_build_plus_query": 70,
+    "vrrd_full_validation_e2e": 134
+  },
+  "claim_dispositions": {
+    "original_a0_48": "REFUTED",
+    "a1_48": "RETAIN",
+    "vrrd_6": "RETAIN",
+    "microscopic_query_pruning": "RETAIN",
+    "single_query_e2e_benefit": "NOT_ESTABLISHED"
+  }
+}
