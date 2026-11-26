@@ -1,0 +1,95 @@
+{
+  "C1_REQUIREMENT_BLINDNESS": {
+    "definition": "Build(X,R1)=Build(X,R2) for same source",
+    "domain": "construction algorithm",
+    "observable_inputs": [
+      "construction algorithm",
+      "source"
+    ],
+    "output_type": "boolean",
+    "unit": "boolean",
+    "calculated_before_treatment_outcome": true,
+    "dependent_on_source": false,
+    "dependent_on_requirement": false,
+    "dependent_on_workload": false,
+    "safety_precondition": "none",
+    "failure_interpretation": "requirement-aware construction",
+    "known_limitations": "does not guarantee utility",
+    "falsifier": "builder receives requirement"
+  },
+  "C2_SOURCE_SOUNDNESS": {
+    "definition": "Every semantic match requires concrete source verification",
+    "domain": "query algorithm",
+    "observable_inputs": [
+      "query algorithm",
+      "source"
+    ],
+    "output_type": "boolean",
+    "unit": "boolean",
+    "calculated_before_treatment_outcome": true,
+    "dependent_on_source": true,
+    "dependent_on_requirement": false,
+    "dependent_on_workload": false,
+    "safety_precondition": "exact identity equality",
+    "failure_interpretation": "derived structure outranks source",
+    "known_limitations": "does not guarantee efficiency",
+    "falsifier": "metadata satisfies requirement without source verification"
+  },
+  "C3_NO_FALSE_EXCLUSION": {
+    "definition": "For each present required identity r, Candidate(G,X,r) intersects TrueWitnesses(X,r)",
+    "domain": "query algorithm",
+    "observable_inputs": [
+      "structure",
+      "source",
+      "requirement"
+    ],
+    "output_type": "boolean",
+    "unit": "boolean",
+    "calculated_before_treatment_outcome": true,
+    "dependent_on_source": true,
+    "dependent_on_requirement": true,
+    "dependent_on_workload": false,
+    "safety_precondition": "valid structure",
+    "failure_interpretation": "false negative",
+    "known_limitations": "requires enumeration",
+    "falsifier": "present identity pruned"
+  },
+  "C4_CANDIDATE_SELECTIVITY": {
+    "definition": "sigma(G,X,r) = candidate source occurrences / |X|",
+    "domain": "structure",
+    "observable_inputs": [
+      "structure",
+      "source",
+      "identity"
+    ],
+    "output_type": "ratio",
+    "unit": "fraction",
+    "calculated_before_treatment_outcome": true,
+    "dependent_on_source": true,
+    "dependent_on_requirement": true,
+    "dependent_on_workload": false,
+    "safety_precondition": "C3",
+    "failure_interpretation": "sigma=1 means no pruning",
+    "known_limitations": "does not guarantee benefit",
+    "falsifier": "sigma=1 for all identities"
+  },
+  "C5_CANDIDATE_PRECISION": {
+    "definition": "pi(G,X,r) = verified exact / candidate source occurrences",
+    "domain": "structure",
+    "observable_inputs": [
+      "structure",
+      "source",
+      "identity"
+    ],
+    "output_type": "ratio",
+    "unit": "fraction",
+    "calculated_before_treatment_outcome": true,
+    "dependent_on_source": true,
+    "dependent_on_requirement": true,
+    "dependent_on_workload": false,
+    "safety_precondition": "C2",
+    "failure_interpretation": "low precision means false candidates",
+    "known_limitations": "requires verification",
+    "falsifier": "pi=0 for all identities"
+  }
+}

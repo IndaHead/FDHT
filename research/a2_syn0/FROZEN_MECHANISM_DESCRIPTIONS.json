@@ -1,0 +1,44 @@
+{
+  "M0_SEQUENTIAL_A1": {
+    "construction_input": "source",
+    "construction_output": "none (no derived structure)",
+    "query_input": "source, requirement",
+    "candidate_generation_rule": "sequential source order",
+    "exclusion_rule": "none (all inspected until completion)",
+    "verification_rule": "exact identity match",
+    "build_source_burden": 0,
+    "validation_burden": 0,
+    "metadata_burden": 0,
+    "possible_source_inspection_burden": "1 to |X|",
+    "freshness_mechanism": "none (no derived structure)",
+    "semantic_authority": "source"
+  },
+  "M1_EXACT_ADDRESS_A2": {
+    "construction_input": "source",
+    "construction_output": "identity-to-address index",
+    "query_input": "source, index, requirement",
+    "candidate_generation_rule": "exact identity lookup",
+    "exclusion_rule": "absent from index",
+    "verification_rule": "exact source dereference",
+    "build_source_burden": "|X|",
+    "validation_burden": "|X| (full)",
+    "metadata_burden": "|R| lookups",
+    "possible_source_inspection_burden": "|R|",
+    "freshness_mechanism": "source digest binding",
+    "semantic_authority": "source (after verification)"
+  },
+  "M2_VBPT": {
+    "construction_input": "source",
+    "construction_output": "hierarchical Bloom partition tree",
+    "query_input": "source, tree, requirement",
+    "candidate_generation_rule": "Bloom-positive region traversal",
+    "exclusion_rule": "Bloom-negative region",
+    "verification_rule": "exact source dereference",
+    "build_source_burden": "|X|",
+    "validation_burden": "|X| (full)",
+    "metadata_burden": "tree probes + Bloom probes",
+    "possible_source_inspection_burden": "leaf scans",
+    "freshness_mechanism": "source digest binding",
+    "semantic_authority": "source (after verification)"
+  }
+}

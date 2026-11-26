@@ -1,0 +1,17 @@
+{
+  "G1_requirement_blind": true,
+  "G2_exact_source_verification": true,
+  "G3_no_false_exclusion_testable": true,
+  "G4_candidate_set_observable": true,
+  "G5_build_burden_observable": true,
+  "G6_validation_burden_observable": true,
+  "G7_metadata_burden_observable": true,
+  "G8_source_verification_burden_observable": true,
+  "G9_freshness_enforcement_defined": true,
+  "G10_disposition_separation": true,
+  "G11_sigma_less_than_1": true,
+  "G12_structurally_distinct": true,
+  "G13_reuse_horizon_natural": true,
+  "G14_no_hidden_exact_address": true,
+  "G15_consumer_semantics_unchanged": true
+}

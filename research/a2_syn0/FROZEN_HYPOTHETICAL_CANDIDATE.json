@@ -1,0 +1,12 @@
+{
+  "name": "Verified Radix Range Directory",
+  "requirement_blind": true,
+  "deterministic": true,
+  "exact_prefix_range_summaries": true,
+  "contiguous_source_region_references": true,
+  "no_exact_identity_to_address_map": true,
+  "no_probabilistic_false_positives": true,
+  "possible_range_expansion": true,
+  "exact_source_verification_required": true,
+  "viability_gate_result": "ADMITTED"
+}
