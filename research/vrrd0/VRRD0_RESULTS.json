@@ -1,0 +1,23 @@
+{
+  "source_count": 64,
+  "distinct_identities": 64,
+  "requirement": "ac05",
+  "prefix": "ac",
+  "candidate_count": 8,
+  "sigma": 0.125,
+  "range_amplification": 8,
+  "a0_inspections": 48,
+  "a0_result": "ADMIT",
+  "a1_inspections": 48,
+  "a1_completion_position": 48,
+  "a1_result": "ADMIT",
+  "vrrd_radix_probes": 1,
+  "vrrd_range_refs": 6,
+  "vrrd_source_derefs": 6,
+  "vrrd_source_verifications": 6,
+  "vrrd_result": "ADMIT",
+  "vrrd_active": "ac05",
+  "build_source": 64,
+  "build_metadata": 8,
+  "validation_source": 64
+}
