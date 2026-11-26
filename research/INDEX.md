@@ -82,3 +82,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | A2₀-S | CLOSED | SAFETY_PROBE | A2₀-C | — | research/results/FDHT_A2_0S_Address_Index_Safety_Probe.md |
 
 | A2₁ | CLOSED | INDEPENDENT_REPLICATION | A2₀-S | — | research/results/FDHT_A2_1_Independent_Address_Pruning_Replication.md |
+
+| A2₂ | CLOSED | STRUCTURAL_PRUNING | A2₁ | — | research/results/FDHT_A2_2_Verified_Bloom_Partition_Tree.md |
