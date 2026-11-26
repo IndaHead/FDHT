@@ -1,0 +1,27 @@
+{
+  "IC1": {
+    "id": "C1_REQUIREMENT_BLINDNESS",
+    "name": "Requirement Blindness",
+    "mapping": "EXACT"
+  },
+  "IC2": {
+    "id": "C2_SOURCE_SOUNDNESS",
+    "name": "Source Soundness",
+    "mapping": "EXACT"
+  },
+  "IC3": {
+    "id": "C3_NO_FALSE_EXCLUSION",
+    "name": "No False Exclusion",
+    "mapping": "EXACT"
+  },
+  "IC4": {
+    "id": "C4_CANDIDATE_SELECTIVITY",
+    "name": "Candidate Selectivity",
+    "mapping": "EXACT"
+  },
+  "IC5": {
+    "id": "C5_CANDIDATE_PRECISION",
+    "name": "Candidate Precision",
+    "mapping": "EXACT"
+  }
+}

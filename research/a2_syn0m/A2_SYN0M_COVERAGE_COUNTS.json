@@ -1,0 +1,10 @@
+{
+  "full_count": 5,
+  "partial_count": 0,
+  "gate_only_count": 15,
+  "documentation_only_count": 0,
+  "absent_count": 0,
+  "underdetermined_count": 0,
+  "sum": 20,
+  "implemented_top_level_count": 5
+}

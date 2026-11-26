@@ -86,3 +86,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | A2₂ | CLOSED | STRUCTURAL_PRUNING | A2₁ | — | research/results/FDHT_A2_2_Verified_Bloom_Partition_Tree.md |
 
 | A2-SYN₀ | CLOSED | CRITERIA_SYNTHESIS | A2₂ | — | research/results/FDHT_A2_SYN0_Non_Circular_Pruning_Criteria.md |
+
+| A2-SYN₀-M | CLOSED | MAPPING_AUDIT | A2-SYN₀ | — | research/results/FDHT_A2_SYN0M_Criteria_Coverage_Mapping.md |

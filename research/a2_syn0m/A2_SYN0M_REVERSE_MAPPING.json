@@ -1,0 +1,122 @@
+{
+  "C1": {
+    "mapped_implemented": "IC1",
+    "mapping_class": "EXACT",
+    "executable_test": true,
+    "coverage_verdict": "FULL"
+  },
+  "C2": {
+    "mapped_implemented": "IC2",
+    "mapping_class": "EXACT",
+    "executable_test": true,
+    "coverage_verdict": "FULL"
+  },
+  "C3": {
+    "mapped_implemented": "IC3",
+    "mapping_class": "EXACT",
+    "executable_test": true,
+    "coverage_verdict": "FULL"
+  },
+  "C4": {
+    "mapped_implemented": "IC4",
+    "mapping_class": "EXACT",
+    "executable_test": true,
+    "coverage_verdict": "FULL"
+  },
+  "C5": {
+    "mapped_implemented": "IC5",
+    "mapping_class": "EXACT",
+    "executable_test": true,
+    "coverage_verdict": "FULL"
+  },
+  "C6": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C7": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C8": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C9": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C10": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C11": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C12": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C13": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C14": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C15": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C16": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C17": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C18": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C19": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  },
+  "C20": {
+    "mapped_implemented": null,
+    "mapping_class": "GATE_ONLY",
+    "executable_test": false,
+    "coverage_verdict": "GATE_ONLY"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "G1_requirement_blind": {
+    "supporting_criteria": [
+      "C1"
+    ],
+    "pass": true
+  },
+  "G2_exact_source_verification": {
+    "supporting_criteria": [
+      "C2"
+    ],
+    "pass": true
+  },
+  "G3_no_false_exclusion_testable": {
+    "supporting_criteria": [
+      "C3"
+    ],
+    "pass": true
+  },
+  "G4_candidate_set_observable": {
+    "supporting_criteria": [
+      "C4"
+    ],
+    "pass": true
+  },
+  "G5_build_burden_observable": {
+    "supporting_criteria": [
+      "C8"
+    ],
+    "pass": true,
+    "note": "C8 not implemented"
+  },
+  "G6_validation_burden_observable": {
+    "supporting_criteria": [
+      "C9"
+    ],
+    "pass": true,
+    "note": "C9 not implemented"
+  },
+  "G7_metadata_burden_observable": {
+    "supporting_criteria": [
+      "C7"
+    ],
+    "pass": true,
+    "note": "C7 not implemented"
+  },
+  "G8_source_verification_burden_observable": {
+    "supporting_criteria": [
+      "C6"
+    ],
+    "pass": true,
+    "note": "C6 not implemented"
+  },
+  "G9_freshness_enforcement_defined": {
+    "supporting_criteria": [
+      "C14"
+    ],
+    "pass": true,
+    "note": "C14 not implemented"
+  },
+  "G10_disposition_separation": {
+    "supporting_criteria": [
+      "C17"
+    ],
+    "pass": true,
+    "note": "C17 not implemented"
+  },
+  "G11_sigma_less_than_1": {
+    "supporting_criteria": [
+      "C4"
+    ],
+    "pass": true
+  },
+  "G12_structurally_distinct": {
+    "supporting_criteria": [
+      "C18"
+    ],
+    "pass": true,
+    "note": "C18 not implemented"
+  },
+  "G13_reuse_horizon_natural": {
+    "supporting_criteria": [
+      "C13"
+    ],
+    "pass": true,
+    "note": "C13 not implemented"
+  },
+  "G14_no_hidden_exact_address": {
+    "supporting_criteria": [
+      "C18"
+    ],
+    "pass": true,
+    "note": "C18 not implemented"
+  },
+  "G15_consumer_semantics_unchanged": {
+    "supporting_criteria": [
+      "C2"
+    ],
+    "pass": true
+  }
+}
