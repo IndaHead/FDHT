@@ -33,6 +33,12 @@ class LiveReasonerParseError(ValueError):
     """Raised when the model response cannot be parsed into AgentProposal."""
 
 
+
+def canonical_operation_values() -> tuple[str, ...]:
+    """Single-source canonical operation vocabulary derived from Operation."""
+    return tuple(op.value for op in Operation)
+
+
 def _is_enabled() -> bool:
     flag = os.environ.get("AH0_RUN_LIVE_GROK", "").strip().lower()
     key = os.environ.get("XAI_API_KEY", "").strip()
@@ -145,9 +151,20 @@ class LiveGrokReasoner:
         transport = self._transport or _default_transport
         # Visible state is serialised only for the prompt; oracle fields
         # are not part of AH0State, so they are not included.
+        ops = canonical_operation_values()
         prompt = json.dumps(
             {
-                "instruction": "Propose the next AH0 operation as JSON.",
+                "instruction": (
+                    "Propose the next AH0 operation as a JSON object. "
+                    "The operation field MUST be exactly one of: "
+                    + ", ".join(ops)
+                    + ". Synonyms, aliases, abbreviations, and unlisted values are invalid. "
+                    "INSPECT is invalid unless it appears in the list above. "
+                    "Output only the proposal object. "
+                    "justification and expected_information_gain are required. "
+                    "You propose only; you do not execute operations."
+                ),
+                "allowed_operations": list(ops),
                 "state": visible_state.model_dump() if hasattr(visible_state, "model_dump") else str(visible_state),
             },
             default=str,
