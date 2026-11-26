@@ -1,0 +1,7 @@
+{
+  "addressing": "EXACT_RANGE",
+  "organisation": "HIERARCHICAL",
+  "exclusion": "DETERMINISTIC_EXACT_PREFIX",
+  "source_position_relationship": "CONTIGUOUS_RANGE",
+  "candidate_granularity": "RANGE"
+}

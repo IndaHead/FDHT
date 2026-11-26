@@ -1,0 +1,7 @@
+{
+  "choice": "FEASIBLE",
+  "description": "VRRD FEASIBLE AS STRUCTURALLY DISTINCT",
+  "rationale": "All FQ1-FQ20 pass. No exact-address collapse. Distinct from A1, A2, and VBPT.",
+  "exact_address_collapse": "NOT_TRIGGERED",
+  "mechanism_distinctness": "PASS"
+}

@@ -1,0 +1,82 @@
+{
+  "FQ1_requirement_blind": {
+    "answer": "YES",
+    "evidence": "Construction receives source only"
+  },
+  "FQ2_deterministic": {
+    "answer": "YES",
+    "evidence": "Canonical key derivation is deterministic"
+  },
+  "FQ3_radix_key_space": {
+    "answer": "YES",
+    "evidence": "Identity maps to canonical byte key"
+  },
+  "FQ4_contiguous_ranges": {
+    "answer": "YES",
+    "evidence": "Terminal nodes reference source ranges"
+  },
+  "FQ5_candidate_enumeration": {
+    "answer": "YES",
+    "evidence": "Ranges enumerable before verification"
+  },
+  "FQ6_source_verification": {
+    "answer": "YES",
+    "evidence": "Exact source match required"
+  },
+  "FQ7_no_false_exclusion": {
+    "answer": "YES",
+    "evidence": "True occurrence must lie in candidate range"
+  },
+  "FQ8_build_burden": {
+    "answer": "YES",
+    "evidence": "Source reads during construction"
+  },
+  "FQ9_validation_burden": {
+    "answer": "YES",
+    "evidence": "Full validation rescans source"
+  },
+  "FQ10_metadata_burden": {
+    "answer": "YES",
+    "evidence": "Radix node probes countable"
+  },
+  "FQ11_verification_burden": {
+    "answer": "YES",
+    "evidence": "Range scans countable"
+  },
+  "FQ12_freshness": {
+    "answer": "YES",
+    "evidence": "Source digest binding"
+  },
+  "FQ13_invalidation": {
+    "answer": "YES",
+    "evidence": "Source change invalidates structure"
+  },
+  "FQ14_disposition_separation": {
+    "answer": "YES",
+    "evidence": "INVALID/STALE/UNVERIFIED distinct"
+  },
+  "FQ15_distinct_from_exact": {
+    "answer": "YES",
+    "evidence": "Ranges not exact addresses"
+  },
+  "FQ16_distinct_from_vbpt": {
+    "answer": "YES",
+    "evidence": "Deterministic not probabilistic"
+  },
+  "FQ17_sigma_less_than_1": {
+    "answer": "MEASURABLE",
+    "evidence": "Shared prefix fixtures"
+  },
+  "FQ18_sigma_without_treatment": {
+    "answer": "YES",
+    "evidence": "Structural calculation"
+  },
+  "FQ19_reuse_horizon": {
+    "answer": "YES",
+    "evidence": "Frozen structure serves multiple queries"
+  },
+  "FQ20_no_hidden_index": {
+    "answer": "YES",
+    "evidence": "No identity-to-position map"
+  }
+}

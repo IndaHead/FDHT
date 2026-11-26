@@ -1,0 +1,8 @@
+{
+  "EC1_full_identity_returns_positions": "NOT_TRIGGERED",
+  "EC2_terminal_stores_addresses": "NOT_TRIGGERED",
+  "EC3_auxiliary_identity_map": "NOT_TRIGGERED",
+  "EC4_range_length_forced_to_1": "NOT_TRIGGERED",
+  "EC5_query_output_exact_positions": "NOT_TRIGGERED",
+  "EC6_source_scan_skipped": "NOT_TRIGGERED"
+}

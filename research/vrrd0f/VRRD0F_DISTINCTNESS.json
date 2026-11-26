@@ -1,0 +1,5 @@
+{
+  "vs_sequential_A1": "DISTINCT (EXACT_RANGE vs SEQUENTIAL)",
+  "vs_exact_address_A2": "DISTINCT (EXACT_RANGE vs EXACT_ADDRESS)",
+  "vs_VBPT": "DISTINCT (DETERMINISTIC vs PROBABILISTIC)"
+}

@@ -90,3 +90,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | A2-SYN₀-M | CLOSED | MAPPING_AUDIT | A2-SYN₀ | — | research/results/FDHT_A2_SYN0M_Criteria_Coverage_Mapping.md |
 
 | A2-SYN₁ | CLOSED | OPERATIONALISATION | A2-SYN₀-M | — | research/results/FDHT_A2_SYN1_Operationalised_Criteria.md |
+
+| VRRD₀-F | CLOSED | FEASIBILITY_AUDIT | A2-SYN₁ | — | research/results/FDHT_VRRD0F_Feasibility_Audit.md |

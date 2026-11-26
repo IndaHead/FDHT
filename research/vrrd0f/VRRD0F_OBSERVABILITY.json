@@ -1,0 +1,17 @@
+{
+  "C6_verification_burden": "FULLY_OBSERVABLE",
+  "C7_metadata_burden": "FULLY_OBSERVABLE",
+  "C8_build_burden": "FULLY_OBSERVABLE",
+  "C9_validation_burden": "FULLY_OBSERVABLE",
+  "C10_exclusion_sharpness": "MEASURABLE",
+  "C11_range_amplification": "MEASURABLE",
+  "C12_placement_dependence": "MEASURABLE",
+  "C13_reuse_horizon": "MEASURABLE",
+  "C14_freshness_domain": "DEFINED",
+  "C15_invalidation_radius": "DEFINED",
+  "C16_assurance": "DEFINED",
+  "C17_disposition_separation": "DEFINED",
+  "C18_mechanism_distinctness": "PASS",
+  "C19_candidate_observability": "FULLY_OBSERVABLE",
+  "C20_cost_observability": "PASS"
+}
