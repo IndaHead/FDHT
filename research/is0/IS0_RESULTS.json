@@ -1,0 +1,814 @@
+{
+  "results": [
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 32,
+      "active_count": 1,
+      "completion_position": 32,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 32,
+      "active_count": 2,
+      "completion_position": 32,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 32,
+      "active_count": 4,
+      "completion_position": 32,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 32,
+      "active_count": 8,
+      "completion_position": 32,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 32,
+      "active_count": 16,
+      "completion_position": 32,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 64,
+      "active_count": 1,
+      "completion_position": 64,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 64,
+      "active_count": 2,
+      "completion_position": 64,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 64,
+      "active_count": 4,
+      "completion_position": 64,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 64,
+      "active_count": 8,
+      "completion_position": 64,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 64,
+      "active_count": 16,
+      "completion_position": 64,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 128,
+      "active_count": 1,
+      "completion_position": 128,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 128,
+      "active_count": 2,
+      "completion_position": 128,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 128,
+      "active_count": 4,
+      "completion_position": 128,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 128,
+      "active_count": 8,
+      "completion_position": 128,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 128,
+      "active_count": 16,
+      "completion_position": 128,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 256,
+      "active_count": 1,
+      "completion_position": 256,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 256,
+      "active_count": 2,
+      "completion_position": 256,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 256,
+      "active_count": 4,
+      "completion_position": 256,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 256,
+      "active_count": 8,
+      "completion_position": 256,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 256,
+      "active_count": 16,
+      "completion_position": 256,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 512,
+      "active_count": 1,
+      "completion_position": 512,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 512,
+      "active_count": 2,
+      "completion_position": 512,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 512,
+      "active_count": 4,
+      "completion_position": 512,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 512,
+      "active_count": 8,
+      "completion_position": 512,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 512,
+      "active_count": 16,
+      "completion_position": 512,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "inspected_count": 1024,
+      "active_count": 1,
+      "completion_position": 1024,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "DISPERSED",
+      "inspected_count": 1,
+      "active_count": 1,
+      "completion_position": 1,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "inspected_count": 1024,
+      "active_count": 2,
+      "completion_position": 1024,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "DISPERSED",
+      "inspected_count": 2,
+      "active_count": 2,
+      "completion_position": 2,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "inspected_count": 1024,
+      "active_count": 4,
+      "completion_position": 1024,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "DISPERSED",
+      "inspected_count": 4,
+      "active_count": 4,
+      "completion_position": 4,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "inspected_count": 1024,
+      "active_count": 8,
+      "completion_position": 1024,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "DISPERSED",
+      "inspected_count": 8,
+      "active_count": 8,
+      "completion_position": 8,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "inspected_count": 1024,
+      "active_count": 16,
+      "completion_position": 1024,
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "DISPERSED",
+      "inspected_count": 16,
+      "active_count": 16,
+      "completion_position": 16,
+      "result": "ADMIT"
+    }
+  ]
+}
