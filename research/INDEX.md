@@ -76,3 +76,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | IS₀ | CLOSED | INSPECTION_SCALING | TGAT₀-F | — | research/results/FDHT_IS0_Inspection_Scaling_Experiment.md |
 
 | A2₀ | CLOSED | ADDRESS_STRUCTURE | IS₀ | — | research/results/FDHT_A2_0_Address_Structure_Experiment.md |
+
+| A2₀-C | CLOSED | ACCOUNTING_CORRECTION | A2₀ | — | research/results/FDHT_A2_0C_Address_Structure_Accounting_Correction.md |

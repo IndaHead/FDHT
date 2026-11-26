@@ -1,0 +1,3604 @@
+{
+  "results": [
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 33,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 34,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 33,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 34,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 34,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 34,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 36,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 40,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 48,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 64,
+      "break_even": false
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 65,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 66,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 65,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 66,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 66,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 66,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 68,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 72,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 576,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 80,
+      "break_even": false
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 96,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 128,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 64,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 576,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 129,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 130,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 129,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 130,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 130,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 130,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 132,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 384,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 136,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 384,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 384,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 640,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 144,
+      "break_even": false
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 160,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 192,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 256,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 384,
+      "break_even": true
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 640,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 257,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 258,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 257,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 258,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 258,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 258,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 260,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 512,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 264,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 512,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 512,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 768,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 272,
+      "break_even": false
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 288,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 320,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 384,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 512,
+      "break_even": true
+    },
+    {
+      "source_size": 256,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 768,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 513,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 514,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 513,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 514,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 514,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 514,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 516,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 768,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 520,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 768,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 768,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 1024,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 528,
+      "break_even": false
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 544,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 576,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 640,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 768,
+      "break_even": true
+    },
+    {
+      "source_size": 512,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 1024,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 1,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 1025,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 1026,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 1,
+      "a2_e2e": 1025,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 1026,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 32768,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 2,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 1026,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 2,
+      "a2_e2e": 1026,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 2,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 32768,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 4,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 4,
+      "a2_e2e": 1028,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 32768,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 8,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 1280,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 8,
+      "a2_e2e": 1032,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 8,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 32768,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 1280,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 1,
+      "a1_cumulative": 16,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 2,
+      "a1_cumulative": 32,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 4,
+      "a1_cumulative": 64,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 8,
+      "a1_cumulative": 128,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 16,
+      "a1_cumulative": 256,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 1280,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "query_count": 32,
+      "a1_cumulative": 512,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 1536,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 1,
+      "a1_cumulative": 1024,
+      "a2_query_cumulative": 16,
+      "a2_e2e": 1040,
+      "break_even": false
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 2,
+      "a1_cumulative": 2048,
+      "a2_query_cumulative": 32,
+      "a2_e2e": 1056,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 4,
+      "a1_cumulative": 4096,
+      "a2_query_cumulative": 64,
+      "a2_e2e": 1088,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 8,
+      "a1_cumulative": 8192,
+      "a2_query_cumulative": 128,
+      "a2_e2e": 1152,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 16,
+      "a1_cumulative": 16384,
+      "a2_query_cumulative": 256,
+      "a2_e2e": 1280,
+      "break_even": true
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "query_count": 32,
+      "a1_cumulative": 32768,
+      "a2_query_cumulative": 512,
+      "a2_e2e": 1536,
+      "break_even": true
+    }
+  ]
+}
