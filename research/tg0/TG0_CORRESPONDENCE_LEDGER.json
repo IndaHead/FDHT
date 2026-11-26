@@ -1,0 +1,13 @@
+{
+  "correspondences": [
+    {"external": "event_history", "fdht": "history", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "memory_update", "fdht": "transformation", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "node_memory", "fdht": "persistent_state", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "temporal_neighbourhood", "fdht": "inspected_frontier", "classification": "PARTIAL"},
+    {"external": "attention_aggregation", "fdht": "active_frontier", "classification": "ARCHITECTURAL_ANALOGUE_ONLY"},
+    {"external": "temporal_walk", "fdht": "trajectory", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "anonymous_walk", "fdht": "quotient/projection", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "embedding", "fdht": "transformed_representation", "classification": "STRUCTURAL_ANALOGUE"},
+    {"external": "prediction_task", "fdht": "consumer", "classification": "NO_MATCH"}
+  ]
+}

@@ -70,3 +70,5 @@ OPEN: Downstream Oracle/A0/A1 behavioural representation invariance was not exec
 ## Supersession
 
 See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reduction.
+
+| TG₀ | CLOSED | REPOSITORY_AUDIT | ECD₀ | — | research/results/FDHT_TG0_Temporal_Graph_Information_Fate_Survey.md |

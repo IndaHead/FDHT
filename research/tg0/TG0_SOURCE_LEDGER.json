@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "TGN",
+      "paper": "Temporal Graph Networks for Deep Learning on Dynamic Graphs",
+      "arxiv": "2006.10637",
+      "authors": "Rossi, Chamberlain, Frasca, Eynard, Monti, Bronstein",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/2006.10637",
+      "task": "dynamic link prediction, node classification",
+      "metric": "AUC, AP",
+      "persistence": "PERSISTENT_MEMORY_CENTRED"
+    },
+    {
+      "id": "TGAT",
+      "paper": "Inductive Representation Learning on Temporal Graphs",
+      "arxiv": "2002.07962",
+      "authors": "Xu, Ruan, Korpeoglu, Kumar, Achan",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/2002.07962",
+      "task": "link prediction, node classification",
+      "metric": "AUC, AP",
+      "persistence": "QUERY_TIME_NEIGHBOURHOOD_CENTRED"
+    },
+    {
+      "id": "CAW-N",
+      "paper": "Inductive Representation Learning in Temporal Networks via Causal Anonymous Walks",
+      "arxiv": "2101.05974",
+      "authors": "Wang, Chang, Liu, Leskovec, Li",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2101.05974",
+      "task": "link prediction",
+      "metric": "AUC",
+      "persistence": "TRAJECTORY_SAMPLING_CENTRED"
+    }
+  ]
+}

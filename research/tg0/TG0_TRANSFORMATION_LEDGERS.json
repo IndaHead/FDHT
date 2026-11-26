@@ -1,0 +1,29 @@
+{
+  "TGN": {
+    "pipeline": [
+      {"stage": "timed_event", "input": "graph events", "output": "event records", "type": "RAW_SOURCE"},
+      {"stage": "message", "input": "event records", "output": "messages", "type": "TRANSFORMED_STATE"},
+      {"stage": "memory_update", "input": "messages", "output": "node memory", "type": "PERSISTENT_STATE"},
+      {"stage": "embedding", "input": "memory + neighbourhood", "output": "node embeddings", "type": "EMBEDDING"},
+      {"stage": "prediction", "input": "embeddings", "output": "scores", "type": "PREDICTION_OUTPUT"}
+    ]
+  },
+  "TGAT": {
+    "pipeline": [
+      {"stage": "temporal_neighbourhood", "input": "graph history", "output": "sampled neighbours", "type": "SELECTED_CONTEXT"},
+      {"stage": "time_encoding", "input": "timestamps", "output": "time features", "type": "TRANSFORMED_STATE"},
+      {"stage": "attention", "input": "neighbourhood + time", "output": "aggregated features", "type": "TRANSFORMED_STATE"},
+      {"stage": "embedding", "input": "attention output", "output": "node embeddings", "type": "EMBEDDING"},
+      {"stage": "prediction", "input": "embeddings", "output": "scores", "type": "PREDICTION_OUTPUT"}
+    ]
+  },
+  "CAW-N": {
+    "pipeline": [
+      {"stage": "temporal_walks", "input": "graph history", "output": "sampled walks", "type": "SAMPLED_TRAJECTORY"},
+      {"stage": "anonymisation", "input": "walks", "output": "anonymous walks", "type": "ANONYMISED_REPRESENTATION"},
+      {"stage": "encoding", "input": "anonymous walks", "output": "walk representations", "type": "TRANSFORMED_STATE"},
+      {"stage": "aggregation", "input": "walk representations", "output": "aggregated representation", "type": "EMBEDDING"},
+      {"stage": "prediction", "input": "aggregated representation", "output": "scores", "type": "PREDICTION_OUTPUT"}
+    ]
+  }
+}

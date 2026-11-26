@@ -1,0 +1,8 @@
+{
+  "interventions": [
+    {"id": "I1", "description": "remove old events", "architecture": "TGN", "task_preserved": true, "metric_preserved": true, "retraining_required": false},
+    {"id": "I2", "description": "alter neighbour-sampling budget", "architecture": "TGAT", "task_preserved": true, "metric_preserved": true, "retraining_required": false},
+    {"id": "I3", "description": "alter walk-sampling budget", "architecture": "CAW-N", "task_preserved": true, "metric_preserved": true, "retraining_required": false},
+    {"id": "I4", "description": "reset memory", "architecture": "TGN", "task_preserved": true, "metric_preserved": true, "retraining_required": false}
+  ]
+}
