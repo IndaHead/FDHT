@@ -1,0 +1,11 @@
+{
+  "AC1_REMOVE_OUTCOME_LABELS": "PASS",
+  "AC2_SWAP_MECHANISM_NAMES": "PASS",
+  "AC3_HIDE_BREAK_EVEN": "PASS",
+  "AC4_HIDE_A1_COMPARISON": "PASS",
+  "AC5_UNSEEN_STRUCTURE": "PASS",
+  "AC6_WHOLE_SOURCE_PATHOLOGY": "PASS (sigma=1, epsilon=0)",
+  "AC7_PRUNE_EVERYTHING_PATHOLOGY": "PASS (C3 FAIL, gate rejects)",
+  "AC8_EXPENSIVE_EXACT_PATHOLOGY": "PASS (high selectivity, high precision, high metadata)",
+  "AC9_CHEAP_IMPRECISE_PATHOLOGY": "PASS (low metadata, low selectivity, high verification)"
+}

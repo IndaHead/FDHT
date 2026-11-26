@@ -1,0 +1,56 @@
+{
+  "S0_SEQUENTIAL": {
+    "addressing": "SEQUENTIAL",
+    "organisation": "NONE",
+    "exclusion": "NONE"
+  },
+  "S1_EXACT_ADDRESS": {
+    "addressing": "EXACT_ADDRESS",
+    "organisation": "FLAT",
+    "exclusion": "DETERMINISTIC_EXACT"
+  },
+  "S2_WHOLE_SOURCE": {
+    "addressing": "SEQUENTIAL",
+    "organisation": "NONE",
+    "exclusion": "NONE"
+  },
+  "S3_PRUNE_EVERYTHING": {
+    "addressing": "EXACT_ADDRESS",
+    "organisation": "FLAT",
+    "exclusion": "DETERMINISTIC_EXACT",
+    "unsafe": true
+  },
+  "S4_EXPENSIVE_EXACT": {
+    "addressing": "EXACT_ADDRESS",
+    "organisation": "HIERARCHICAL",
+    "exclusion": "DETERMINISTIC_EXACT"
+  },
+  "S5_CHEAP_IMPRECISE": {
+    "addressing": "APPROXIMATE_REGION",
+    "organisation": "FLAT",
+    "exclusion": "PROBABILISTIC_ONE_SIDED"
+  },
+  "S6_FALSE_POSITIVE": {
+    "addressing": "APPROXIMATE_REGION",
+    "organisation": "HIERARCHICAL",
+    "exclusion": "PROBABILISTIC_ONE_SIDED"
+  },
+  "S7_OPAQUE": {
+    "addressing": "OTHER",
+    "organisation": "OTHER",
+    "exclusion": "OTHER",
+    "observable": false
+  },
+  "S8_STALE": {
+    "addressing": "EXACT_ADDRESS",
+    "organisation": "FLAT",
+    "exclusion": "DETERMINISTIC_EXACT",
+    "stale": true
+  },
+  "S9_INVALID": {
+    "addressing": "EXACT_ADDRESS",
+    "organisation": "FLAT",
+    "exclusion": "DETERMINISTIC_EXACT",
+    "invalid": true
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "C6_VERIFICATION_BURDEN": {
+    "definition": "V(G,X,R) = number of concrete source occurrences dereferenced to verify consumer requirement",
+    "unit": "source occurrences",
+    "counterexamples": [
+      "V6-A: exact one-candidate",
+      "V6-B: whole-source",
+      "V6-C: duplicate addresses"
+    ],
+    "falsifier": "verification burden assigned from |R| rather than trace"
+  },
+  "C7_METADATA_BURDEN": {
+    "definition": "M(G,R) = number of derived-structure elements inspected during candidate generation",
+    "unit": "metadata operations",
+    "counterexamples": [
+      "M7-A: flat exact address",
+      "M7-B: deep hierarchical"
+    ],
+    "falsifier": "metadata traversal omitted because no source occurrence touched"
+  },
+  "C8_BUILD_BURDEN": {
+    "definition": "B(G,X) = number of concrete source occurrences inspected during construction",
+    "unit": "source occurrences",
+    "counterexamples": [
+      "B8-A: single-pass",
+      "B8-B: pre-existing structure"
+    ],
+    "falsifier": "build work omitted from end-to-end accounting"
+  },
+  "C9_FULL_VALIDATION_BURDEN": {
+    "definition": "F(G,X) = number of concrete source occurrences inspected during FULL validation",
+    "unit": "source occurrences",
+    "counterexamples": [
+      "F9-A: full rescan",
+      "F9-B: BOUND validation"
+    ],
+    "falsifier": "BOUND validation counted as zero-cost FULL"
+  },
+  "C10_EXCLUSION_SHARPNESS": {
+    "definition": "epsilon(G,X,R) = 1 - sigma(G,X,R)",
+    "unit": "fraction",
+    "counterexamples": [
+      "C10-A: whole-source (epsilon=0)",
+      "C10-B: prune-everything (epsilon=1, C3 fails)"
+    ],
+    "falsifier": "epsilon interpreted as utility without C3"
+  },
+  "C11_FALSE_CANDIDATE_AMPLIFICATION": {
+    "definition": "phi(G,X,R) = |Cand| / max(1, Useful)",
+    "unit": "candidate per useful",
+    "counterexamples": [
+      "C11-A: one exact per identity",
+      "C11-B: 100 candidates for one useful"
+    ],
+    "falsifier": "false candidates omitted because outcome correct"
+  },
+  "C12_PLACEMENT_DEPENDENCE": {
+    "definition": "rho_P(G,R) = range of V across permitted reorderings",
+    "unit": "source occurrences",
+    "counterexamples": [
+      "C12-A: sequential scan",
+      "C12-B: placement-independent addressing"
+    ],
+    "falsifier": "source-size change used instead of placement change"
+  },
+  "C13_REUSE_HORIZON": {
+    "definition": "q_valid(G,X,W) = number of queries served by same valid structure",
+    "unit": "queries",
+    "counterexamples": [
+      "C13-A: one-query",
+      "C13-B: 32-query"
+    ],
+    "falsifier": "amortisation horizon invented after break-even"
+  },
+  "C14_FRESHNESS_DOMAIN": {
+    "definition": "FreshDomain(G_X) = source states for which G_X remains valid",
+    "unit": "classification",
+    "counterexamples": [
+      "C14-A: position-address invalidated by reorder",
+      "C14-B: payload-excluded binding"
+    ],
+    "falsifier": "stale structure accepted because outcome correct"
+  },
+  "C15_UPDATE_INVALIDATION_RADIUS": {
+    "definition": "InvRadius(G,deltaX) = derived-structure elements invalidated by source update",
+    "unit": "count/fraction",
+    "counterexamples": [
+      "C15-A: local subtree",
+      "C15-B: entire structure"
+    ],
+    "falsifier": "radius inferred from repair rather than validity"
+  },
+  "C16_ASSURANCE_REQUIREMENT": {
+    "definition": "States: FULLY_REVALIDATED, BOUND_TO_FROZEN_BUILD, UNVERIFIED, INVALID, STALE",
+    "unit": "state",
+    "counterexamples": [
+      "UNVERIFIED->FULL",
+      "FULL+change->STALE",
+      "corrupt->INVALID"
+    ],
+    "falsifier": "BOUND presented as FULL"
+  },
+  "C17_SEMANTIC_DISPOSITION_SEPARATION": {
+    "definition": "STRUCTURE_INVALID != STRUCTURE_STALE != STRUCTURE_UNVERIFIED != SOURCE_INSUFFICIENT",
+    "unit": "boolean",
+    "counterexamples": [
+      "missing candidate under unvalidated structure"
+    ],
+    "falsifier": "derived-structure failure launders into source-semantic"
+  },
+  "C18_MECHANISM_DISTINCTNESS": {
+    "definition": "Structural axes: addressing type, organisation, exclusion, position relationship, granularity",
+    "unit": "signature",
+    "counterexamples": [
+      "defaultdict vs sorted-tuple: implementation-distinct, mechanism-equivalent"
+    ],
+    "falsifier": "new experiment admitted because class name changed"
+  },
+  "C19_CANDIDATE_SET_OBSERVABILITY": {
+    "definition": "Candidate set is observable iff complete set can be enumerated before verification",
+    "unit": "state",
+    "counterexamples": [
+      "C19-A: exact address list",
+      "C19-B: opaque embedding"
+    ],
+    "falsifier": "selectivity claimed when candidate set cannot be enumerated"
+  },
+  "C20_COST_OBSERVABILITY": {
+    "definition": "Required channels: BUILD_SOURCE, VALIDATION_SOURCE, QUERY_METADATA, QUERY_SOURCE_VERIFICATION",
+    "unit": "boolean",
+    "counterexamples": [
+      "single opaque operations counter"
+    ],
+    "falsifier": "aggregate count used to infer pruning mechanism"
+  }
+}

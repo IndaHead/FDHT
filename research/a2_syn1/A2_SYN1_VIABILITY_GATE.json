@@ -1,0 +1,62 @@
+{
+  "G1_C1_requirement_blindness": {
+    "criterion": "C1",
+    "status": "PASS"
+  },
+  "G2_C2_source_soundness": {
+    "criterion": "C2",
+    "status": "PASS"
+  },
+  "G3_C3_no_false_exclusion": {
+    "criterion": "C3",
+    "status": "PASS"
+  },
+  "G4_C19_candidate_observability": {
+    "criterion": "C19",
+    "status": "PASS"
+  },
+  "G5_C8_build_burden": {
+    "criterion": "C8",
+    "status": "PASS"
+  },
+  "G6_C9_validation_burden": {
+    "criterion": "C9",
+    "status": "PASS"
+  },
+  "G7_C7_metadata_burden": {
+    "criterion": "C7",
+    "status": "PASS"
+  },
+  "G8_C6_verification_burden": {
+    "criterion": "C6",
+    "status": "PASS"
+  },
+  "G9_C14_freshness_domain": {
+    "criterion": "C14",
+    "status": "PASS"
+  },
+  "G10_C16_assurance_semantics": {
+    "criterion": "C16",
+    "status": "PASS"
+  },
+  "G11_C17_disposition_separation": {
+    "criterion": "C17",
+    "status": "PASS"
+  },
+  "G12_C4_selectivity_measurable": {
+    "criterion": "C4",
+    "status": "PASS"
+  },
+  "G13_C13_reuse_horizon": {
+    "criterion": "C13",
+    "status": "PASS"
+  },
+  "G14_C18_mechanism_distinctness": {
+    "criterion": "C18",
+    "status": "PASS"
+  },
+  "G15_C20_cost_channels": {
+    "criterion": "C20",
+    "status": "PASS"
+  }
+}
