@@ -1,0 +1,382 @@
+{
+  "results": [
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 32,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 128,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 1,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 4,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "EARLY",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "S0_VALID",
+      "result": "ADMIT"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "C1_MISSING_BUCKET",
+      "result": "STOP_INDEX_INVALID"
+    },
+    {
+      "source_size": 1024,
+      "requirement_size": 16,
+      "placement": "LATE",
+      "attack": "R1_SOURCE_REVISION",
+      "result": "STOP_INDEX_STALE"
+    }
+  ]
+}
