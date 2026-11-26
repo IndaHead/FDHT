@@ -1,0 +1,16 @@
+{
+  "fixtures": [
+    {"consumer": "R1", "variant": "I", "sufficient": false},
+    {"consumer": "R1", "variant": "S", "sufficient": true},
+    {"consumer": "R2", "variant": "I", "sufficient": false},
+    {"consumer": "R2", "variant": "S", "sufficient": true},
+    {"consumer": "R3", "variant": "I", "sufficient": false},
+    {"consumer": "R3", "variant": "S", "sufficient": true},
+    {"consumer": "R4", "variant": "I", "sufficient": false},
+    {"consumer": "R4", "variant": "S", "sufficient": true},
+    {"consumer": "R5", "variant": "I", "sufficient": false},
+    {"consumer": "R5", "variant": "S", "sufficient": true},
+    {"consumer": "R6", "variant": "I", "sufficient": false},
+    {"consumer": "R6", "variant": "S", "sufficient": true}
+  ]
+}

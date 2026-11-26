@@ -1,0 +1,16 @@
+{
+  "treatments": [
+    {
+      "id": "R-T0",
+      "name": "STOP_AUTHORITY",
+      "description": "Full SP0 with insufficiency-triggered STOP",
+      "stop_on_insufficient": true
+    },
+    {
+      "id": "R-T1",
+      "name": "NO_STOP_AUTHORITY",
+      "description": "Sufficiency measured but no stop authority",
+      "stop_on_insufficient": false
+    }
+  ]
+}

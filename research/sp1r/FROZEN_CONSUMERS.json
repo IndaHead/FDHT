@@ -1,0 +1,46 @@
+{
+  "consumers": [
+    {
+      "id": "R1",
+      "name": "MISSING_IDENTITY",
+      "required": "entity identity",
+      "insufficient": "relation known, identity absent",
+      "sufficient": "identity present"
+    },
+    {
+      "id": "R2",
+      "name": "MISSING_NEGATIVE_HISTORY",
+      "required": "verified absence of negative evidence",
+      "insufficient": "no negative observed",
+      "sufficient": "verified absence"
+    },
+    {
+      "id": "R3",
+      "name": "MISSING_PROVENANCE",
+      "required": "evidence provenance",
+      "insufficient": "evidence exists, provenance absent",
+      "sufficient": "provenance present"
+    },
+    {
+      "id": "R4",
+      "name": "MISSING_TEMPORAL_DISTINCTION",
+      "required": "temporal ordering",
+      "insufficient": "events present, ordering absent",
+      "sufficient": "ordering present"
+    },
+    {
+      "id": "R5",
+      "name": "MISSING_RELATIONAL_DISTINCTION",
+      "required": "structural relation",
+      "insufficient": "objects present, relation absent",
+      "sufficient": "relation present"
+    },
+    {
+      "id": "R6",
+      "name": "PARTIAL_REQUIREMENT_WITH_DISTRACTOR",
+      "required": "A and B",
+      "insufficient": "A present, B absent, distractor present",
+      "sufficient": "A and B present"
+    }
+  ]
+}

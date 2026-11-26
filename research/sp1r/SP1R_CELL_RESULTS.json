@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "consumer": "R1",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R1",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R1",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R1",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R2",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R2",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R2",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R2",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R3",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R3",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R3",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R3",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R4",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R4",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R4",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R4",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R5",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R5",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R5",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R5",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R6",
+      "variant": "I",
+      "treatment": "R-T0",
+      "gate": "STOP",
+      "evaluation": false,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R6",
+      "variant": "I",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "consumer": "R6",
+      "variant": "S",
+      "treatment": "R-T0",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "consumer": "R6",
+      "variant": "S",
+      "treatment": "R-T1",
+      "gate": "ADMIT",
+      "evaluation": true,
+      "sufficiency": "SUFFICIENT"
+    }
+  ]
+}

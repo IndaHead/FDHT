@@ -1,0 +1,8 @@
+{
+  "expected": {
+    "R-T0_I": {"gate": "STOP", "evaluation": false},
+    "R-T0_S": {"gate": "ADMIT", "evaluation": true},
+    "R-T1_I": {"gate": "ADMIT", "evaluation": true},
+    "R-T1_S": {"gate": "ADMIT", "evaluation": true}
+  }
+}
