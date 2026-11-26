@@ -73,3 +73,86 @@ NO
 ## Next transition
 
 STOP
+
+## Evidence and audit summary
+
+Repository: IndaHead/FDHT
+
+Branch: research/agent-ah0-r4-contract
+
+SE₀ starting HEAD: 5cda43651a570c85a04d9b9daa037e7f4c310fce
+
+SE₀ result commit: a37d0a363e1b7d61572ca3b2288642f4062f7e44
+
+SE₀ result file: research/results/FDHT_SE0_Derived_Storage_Versus_Routing_Resolution.md
+
+Original SE₀ push status: SUCCESS
+
+Permanent fdht/ changes: NONE
+
+### Frozen fixture
+
+- Source occurrences: 64
+- Requirement: ac05
+
+### Exact-address results
+
+- Canonical serialised bytes: 3071
+- Candidate fraction: 1/64 = 0.015625
+- Query source inspections: 1
+- Build source inspections: 64
+- Full-validation source inspections: 64
+
+### VRRD depth-2 results
+
+- Canonical serialised bytes: 5120
+- Storage ratio relative to exact: 1.667×
+- Candidate fraction: 8/64 = 0.125
+- Query source inspections: 6
+- Build source inspections: 64
+- Full-validation source inspections: 64
+
+### Bounded result
+
+Within the frozen 64-occurrence source and canonical serialisation, exact addressing used less measured derived storage, provided sharper routing resolution, and required fewer query source inspections than depth-2 VRRD.
+
+VRRD's coarser range representation produced no compensating storage advantage in this fixture.
+
+Coarser routing resolution does not imply smaller derived structure.
+
+### Audit outcomes
+
+- lake build: EXIT 0
+- strict trust/axiom audit: PASS
+- sorryAx: ABSENT
+- new Classical.choice footprint: not introduced
+- custom axioms: ABSENT
+- fdht/ changed: NO
+- network/API requests: 0
+- XAI_API_KEY accessed: NO
+- push: SUCCESS
+
+### Command provenance
+
+SE₀ preserves the audit outcomes but does not preserve complete literal command provenance for every audit step. No command line is reconstructed as historical execution evidence.
+
+### Evidence boundary
+
+SE₀ does NOT establish:
+
+- asymptotic storage complexity;
+- in-memory or heap footprint;
+- runtime reduction;
+- compute reduction;
+- scaling with source size;
+- scaling with prefix depth;
+- repeated-query amortisation;
+- cache behaviour;
+- generic superiority of exact addressing;
+- generic inferiority of VRRD;
+- trajectory-projection storage compression;
+- permanent FDHT pressure;
+- new mathematics;
+- promotion.
+
+Trajectory projection is a semantic quotient, not an established physical storage-compression mechanism.
