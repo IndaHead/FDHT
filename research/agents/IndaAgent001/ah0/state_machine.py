@@ -7,11 +7,12 @@ import hashlib
 import json
 
 class AH0StateMachine:
-    def __init__(self, initial_state: AH0State, reasoner):
+    def __init__(self, initial_state: AH0State, reasoner, catalogue=None):
         self.state = initial_state
         self.reasoner = reasoner
         self.gate = AdmissionGate()
         self.events = []
+        self.catalogue = catalogue
 
     def step(self):
         if self.state.terminal:
@@ -31,7 +32,23 @@ class AH0StateMachine:
             timestamp="deterministic",
         )
         self.events.append(event)
-        if decision == ProposalDecision.ADMITTED and proposal.operation.value == "STOP":
-            self.state.terminal = True
+        if decision == ProposalDecision.ADMITTED:
+            if proposal.operation.value == "STOP":
+                self.state.terminal = True
+                event.executed_operation = "STOP"
+                event.operation_result_summary = "TERMINAL"
+            elif proposal.operation.value == "INSPECT_RECORD":
+                event.executed_operation = "INSPECT_RECORD"
+                if self.catalogue is None:
+                    event.operation_result_summary = "NO_CATALOGUE"
+                else:
+                    record = self.catalogue.inspect_record(proposal.target_record_id)
+                    if record is None:
+                        event.operation_result_summary = "UNKNOWN_RECORD"
+                    else:
+                        if proposal.target_record_id not in self.state.inspected_record_ids:
+                            self.state.inspected_record_ids.append(proposal.target_record_id)
+                        self.state.remaining_retrieval_budget = max(0, self.state.remaining_retrieval_budget - 1)
+                        event.operation_result_summary = "INSPECTION_SUCCESS"
         self.state.step_number += 1
         return event
