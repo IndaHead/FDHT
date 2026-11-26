@@ -1,0 +1,7 @@
+{
+  "occurrence": "one position in source sequence",
+  "record_identity": "identifier distinguishing record instance",
+  "payload": "informational content",
+  "provenance_lineage": "declared source/derivation lineage",
+  "independent_evidence": "not equivalent to duplicate occurrence"
+}

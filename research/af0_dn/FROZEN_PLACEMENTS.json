@@ -1,0 +1,8 @@
+{
+  "placements": [
+    {"id": "P0", "name": "DUPLICATES_BEFORE_RELEVANT"},
+    {"id": "P1", "name": "DUPLICATES_AFTER_RELEVANT"},
+    {"id": "P2", "name": "DUPLICATES_SPLIT_AROUND_RELEVANT"},
+    {"id": "P3", "name": "DUPLICATES_INTERLEAVED"}
+  ]
+}

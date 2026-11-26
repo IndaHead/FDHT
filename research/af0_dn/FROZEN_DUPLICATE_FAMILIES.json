@@ -1,0 +1,9 @@
+{
+  "families": [
+    {"id": "D0", "name": "UNIQUE_NOISE_BASELINE", "description": "Every irrelevant record unique"},
+    {"id": "D1", "name": "EXACT_DUPLICATE_OCCURRENCES", "description": "Same identity, payload, lineage"},
+    {"id": "D2", "name": "SAME_PAYLOAD_DISTINCT_IDENTITIES", "description": "Different identities, same payload"},
+    {"id": "D3", "name": "SAME_PAYLOAD_SHARED_LINEAGE", "description": "Different identities, same payload, shared lineage"},
+    {"id": "D4", "name": "MIXED_DUPLICATE_NOISE", "description": "Mixture of all regimes"}
+  ]
+}
