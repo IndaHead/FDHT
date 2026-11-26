@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "TGB",
+      "name": "Temporal Graph Benchmark",
+      "url": "https://tgb.complexdatalab.com/",
+      "paper": "https://arxiv.org/abs/2307.01026",
+      "task": "dynamic link property prediction",
+      "metric": "Mean Reciprocal Rank (MRR)",
+      "input": "temporal graph (nodes, edges, timestamps)",
+      "output": "ranking of candidate edges",
+      "temporal_required": true,
+      "relational_required": true,
+      "classification": "TGB_NATURAL_BUT_WRONG_PRESSURE"
+    },
+    {
+      "id": "SLSA",
+      "name": "SLSA Specification v1.0",
+      "url": "https://slsa.dev/spec/v1.0/requirements",
+      "task": "provenance verification",
+      "metric": "ACCEPT/REJECT",
+      "input": "artefact + provenance attestation",
+      "output": "ACCEPT/REJECT/REVIEW",
+      "temporal_required": false,
+      "relational_required": false,
+      "classification": "NATURAL_BUT_IDENTITY_EQUIVALENT"
+    }
+  ]
+}
