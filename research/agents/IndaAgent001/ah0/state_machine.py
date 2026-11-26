@@ -50,5 +50,25 @@ class AH0StateMachine:
                             self.state.inspected_record_ids.append(proposal.target_record_id)
                         self.state.remaining_retrieval_budget = max(0, self.state.remaining_retrieval_budget - 1)
                         event.operation_result_summary = "INSPECTION_SUCCESS"
+            elif proposal.operation.value == "SUBMIT_EVIDENCE":
+                event.executed_operation = "SUBMIT_EVIDENCE"
+                if not proposal.target_record_id:
+                    event.operation_result_summary = "MISSING_EVIDENCE_TARGET"
+                elif self.catalogue is None:
+                    event.operation_result_summary = "NO_CATALOGUE"
+                else:
+                    record = self.catalogue.inspect_record(proposal.target_record_id)
+                    if record is None:
+                        event.operation_result_summary = "UNKNOWN_EVIDENCE_RECORD"
+                    elif proposal.target_record_id not in self.state.inspected_record_ids:
+                        event.operation_result_summary = "EVIDENCE_NOT_INSPECTED"
+                    elif proposal.target_record_id in self.state.admitted_evidence_ids or proposal.target_record_id in self.state.opposing_evidence_ids:
+                        event.operation_result_summary = "ALREADY_SUBMITTED"
+                    else:
+                        if getattr(record, "polarity", True):
+                            self.state.admitted_evidence_ids.append(proposal.target_record_id)
+                        else:
+                            self.state.opposing_evidence_ids.append(proposal.target_record_id)
+                        event.operation_result_summary = "EVIDENCE_SUBMISSION_SUCCESS"
         self.state.step_number += 1
         return event
