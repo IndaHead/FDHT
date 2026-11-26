@@ -1,0 +1,9 @@
+{
+  "regimes": [
+    {"id": "DS0", "name": "NO_DUPLICATE_SHADOW"},
+    {"id": "DS1", "name": "EXACT_DUPLICATE_PRESENT_REQUIREMENTS"},
+    {"id": "DS2", "name": "SAME_PAYLOAD_DISTINCT_ID_PRESENT_REQUIREMENTS"},
+    {"id": "DS3", "name": "SHARED_LINEAGE_PRESENT_REQUIREMENT_COPIES"},
+    {"id": "DS4", "name": "MIXED_SHADOW"}
+  ]
+}

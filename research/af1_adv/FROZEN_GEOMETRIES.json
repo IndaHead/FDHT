@@ -1,0 +1,9 @@
+{
+  "geometries": [
+    {"id": "G0", "name": "CLUSTERED", "description": "Required records adjacent"},
+    {"id": "G1", "name": "UNIFORMLY_DISPERSED", "description": "Required records evenly distributed"},
+    {"id": "G2", "name": "EDGE_SEPARATED", "description": "Required records at early and late regions"},
+    {"id": "G3", "name": "RANDOMISED_FROZEN", "seed": 42},
+    {"id": "G4", "name": "DISTRACTOR_SHADOWED", "description": "Near matches around required identities"}
+  ]
+}

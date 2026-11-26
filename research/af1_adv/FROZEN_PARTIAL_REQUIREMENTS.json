@@ -1,0 +1,8 @@
+{
+  "attacks": [
+    {"id": "M0", "name": "NONE_MISSING", "expected": "ADMIT"},
+    {"id": "M1", "name": "ONE_MISSING", "expected": "STOP_INSUFFICIENT"},
+    {"id": "M25", "name": "TWENTY_FIVE_PERCENT_MISSING", "expected": "STOP_INSUFFICIENT"},
+    {"id": "M50", "name": "FIFTY_PERCENT_MISSING", "expected": "STOP_INSUFFICIENT"}
+  ]
+}
