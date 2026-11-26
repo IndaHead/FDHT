@@ -1,4 +1,4 @@
-# FDHT AF₀-DN: Duplicate-Noise Control
+# FDHT AF₀-DN: Duplicate-Noise Robustness Control
 
 ## Classification
 
@@ -6,43 +6,43 @@ A — DUPLICATE NOISE INERT TO ACTIVE FRONTIER AND CONSUMER OUTCOME
 
 ## Summary
 
-Duplicate irrelevant information does not change consumer outcome, active-frontier size, or requirement discharge. A1 active count remains exactly 1 across all duplicate regimes. Zero live requests were issued.
+Duplicate consumer-irrelevant information does not change the frozen consumer outcome or the measured A1 active frontier. A1 active_occurrences remains exactly 1 across all tested families, densities and placements. Inspection trajectory remains position-sensitive. Zero live requests were issued.
 
 ## AF₀ baseline reproduction
 
-| Treatment | Consumer match | Active count |
-|---|---|---|
-| A0 | YES | = source size |
-| A1 | YES | = 1 |
+PASS. A0 and A1 both produce the frozen consumer outcome. A1 active count = 1.
 
 ## Duplicate families
 
-| ID | Name |
+| ID | Name | Result |
+|---|---|---|
+| D0 | UNIQUE_NOISE_BASELINE | STABLE |
+| D1 | EXACT_DUPLICATE_OCCURRENCES | STABLE |
+| D2 | SAME_PAYLOAD_DISTINCT_IDENTITIES | STABLE |
+| D3 | SAME_PAYLOAD_SHARED_LINEAGE | STABLE |
+| D4 | MIXED_DUPLICATE_NOISE | STABLE |
+
+## Density response
+
+INERT. Changing density from 0.00 to 0.90 does not alter consumer result or A1 active count.
+
+## Placement response
+
+POSITION_SENSITIVE for inspection count. Active frontier remains stable under position matching.
+
+## Expanded metrics
+
+| Metric | A1 value |
 |---|---|
-| D0 | UNIQUE_NOISE_BASELINE |
-| D1 | EXACT_DUPLICATE_OCCURRENCES |
-| D2 | SAME_PAYLOAD_DISTINCT_IDENTITIES |
-| D3 | SAME_PAYLOAD_SHARED_LINEAGE |
-| D4 | MIXED_DUPLICATE_NOISE |
-
-## Duplicate densities
-
-0.00, 0.25, 0.50, 0.75, 0.90
-
-## Placement schedule
-
-P0 DUPLICATES_BEFORE_RELEVANT; P1 DUPLICATES_AFTER_RELEVANT; P2 DUPLICATES_SPLIT_AROUND_RELEVANT; P3 DUPLICATES_INTERLEAVED
-
-## Results
-
-| Metric | Value |
-|---|---|
-| Cells executed | 1400 |
-| A1 active count | 1 (all cells) |
-| Consumer match | YES (all cells) |
-| False discharge | 0 |
-| Semantic inflation | 0 |
-| Authority inflation | 0 |
+| active_occurrences | 1 |
+| active_unique_ids | 1 |
+| active_unique_payloads | 1 |
+| active_unique_lineages | 1 |
+| consumer_match | true |
+| false_discharge | 0 |
+| semantic_inflation | 0 |
+| gate_inflation | 0 |
+| authority_inflation | 0 |
 
 ## Integrity
 
@@ -51,21 +51,25 @@ P0 DUPLICATES_BEFORE_RELEVANT; P1 DUPLICATES_AFTER_RELEVANT; P2 DUPLICATES_SPLIT
 - fdht/ changed: NO
 - lake build: EXIT 0
 - Strict axiom audit: PASS
+- Cells executed: 1400
 
 ## Evidence-supported claim
 
-Duplicate irrelevant information does not change consumer outcome or active-frontier size. A1 active count remains exactly 1 across all duplicate regimes. Inspection trajectory may vary with placement, but active frontier remains stable.
+Within the tested R1 identity consumer, source sizes, duplicate families, densities and placements, duplicate consumer-irrelevant information did not change the frozen consumer outcome or measured A1 active frontier. Inspection trajectory remains position-sensitive. Available ≠ Inspected ≠ Active.
 
 ## Claims explicitly NOT established
 
-- Permanent FDHT mathematics
-- Asymptotic scaling
-- Compute reduction
+- Generic duplicate robustness
+- Generic deduplication correctness
+- Generic evidence independence
 - Runtime improvement
 - Memory improvement
+- Compute reduction
+- Asymptotic scaling
 - Optimal retrieval
-- Independence detection
-- Generic deduplication correctness
+- Fractal scaling
+- Permanent FDHT pressure
+- New mathematics
 
 ## Permanent FDHT pressure
 
