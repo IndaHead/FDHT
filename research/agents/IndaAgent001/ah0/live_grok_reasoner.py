@@ -38,6 +38,15 @@ def canonical_operation_values() -> tuple[str, ...]:
     """Single-source canonical operation vocabulary derived from Operation."""
     return tuple(op.value for op in Operation)
 
+def operation_required_fields() -> dict[str, list[str]]:
+    """Single-source operation-specific required fields derived from admission contract."""
+    return {
+        "INSPECT_RECORD": ["target_record_id"],
+        "DECLARE_STATUS": ["proposed_status"],
+    }
+
+
+
 
 def _is_enabled() -> bool:
     flag = os.environ.get("AH0_RUN_LIVE_GROK", "").strip().lower()
@@ -162,8 +171,12 @@ class LiveGrokReasoner:
                     "INSPECT is invalid unless it appears in the list above. "
                     "Output only the proposal object. "
                     "justification and expected_information_gain are required. "
+                    "Operation-specific required fields: "
+                    + "; ".join(f"{op} requires {', '.join(fs)}" for op, fs in operation_required_fields().items())
+                    + ". Null is invalid for a required field. "
                     "You propose only; you do not execute operations."
                 ),
+                "operation_required_fields": operation_required_fields(),
                 "allowed_operations": list(ops),
                 "state": visible_state.model_dump() if hasattr(visible_state, "model_dump") else str(visible_state),
             },
