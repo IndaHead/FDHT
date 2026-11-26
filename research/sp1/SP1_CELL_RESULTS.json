@@ -1,0 +1,1156 @@
+{
+  "results": [
+    {
+      "workload": "W1",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P4",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P4",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P4",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P4",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W1",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P4",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P4",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P4",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P4",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W2",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P4",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P4",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P4",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P4",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P6",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P6",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P6",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W3",
+      "perturbation": "P6",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P4",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P4",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P4",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P4",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P6",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P6",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P6",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W4",
+      "perturbation": "P6",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "STOP",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "STOP",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "STOP",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "STOP",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "STOP",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W5",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "INSUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P0",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P0",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P0",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P0",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P1",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P1",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P1",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P1",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P2",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P2",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P2",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P2",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P3",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P3",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P3",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P3",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P5",
+      "treatment": "T0",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P5",
+      "treatment": "T1",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P5",
+      "treatment": "T2",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": null
+    },
+    {
+      "workload": "W6",
+      "perturbation": "P5",
+      "treatment": "T3",
+      "consumer_match": true,
+      "gate": "ADMIT",
+      "sufficiency": "SUFFICIENT"
+    }
+  ]
+}

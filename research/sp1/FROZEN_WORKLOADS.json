@@ -1,0 +1,41 @@
+{
+  "workloads": [
+    {
+      "id": "W1",
+      "name": "LONG_RANGE_RETRIEVAL",
+      "description": "Large source with small consumer-relevant subset",
+      "consumer_requirement": "historical distinction outside local subset",
+      "source_sizes": [10, 100, 1000, 10000]
+    },
+    {
+      "id": "W2",
+      "name": "EVOLVING_INFORMATION",
+      "description": "Historical value A, current value B",
+      "consumer_requirement": "present applicability with historical provenance"
+    },
+    {
+      "id": "W3",
+      "name": "NEGATIVE_INFORMATION_DEPENDENCY",
+      "description": "Positive evidence with relevant negative record",
+      "consumer_requirement": "negative information changes satisfaction"
+    },
+    {
+      "id": "W4",
+      "name": "CONFLICTING_EVIDENCE",
+      "description": "Valid support for incompatible dispositions",
+      "consumer_requirement": "preserve conflict"
+    },
+    {
+      "id": "W5",
+      "name": "INFORMATION_INSUFFICIENT",
+      "description": "Required distinction absent from source",
+      "consumer_requirement": "STOP when distinction absent"
+    },
+    {
+      "id": "W6",
+      "name": "EXTERNAL_CONSUMER_BOUNDARY",
+      "description": "Frozen XC1 SLSA external consumer",
+      "consumer_requirement": "domain-specific verification stays adapter-local"
+    }
+  ]
+}

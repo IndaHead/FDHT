@@ -1,0 +1,32 @@
+{
+  "treatments": [
+    {
+      "id": "T0",
+      "name": "BASELINE",
+      "description": "No SP0 orchestration. Direct evaluation without sufficiency check.",
+      "sufficiency_check": false,
+      "stop_on_insufficient": false
+    },
+    {
+      "id": "T1",
+      "name": "FULL_SP0",
+      "description": "Full SP0: transform → bounded sufficiency → evaluate → gate",
+      "sufficiency_check": true,
+      "stop_on_insufficient": true
+    },
+    {
+      "id": "T2",
+      "name": "NO_SUFFICIENCY",
+      "description": "SP0 without sufficiency check: transform → evaluate → gate",
+      "sufficiency_check": false,
+      "stop_on_insufficient": false
+    },
+    {
+      "id": "T3",
+      "name": "NO_INSUFFICIENCY_STOP",
+      "description": "SP0 with sufficiency measurement but no stop authority",
+      "sufficiency_check": true,
+      "stop_on_insufficient": false
+    }
+  ]
+}

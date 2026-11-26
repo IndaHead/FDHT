@@ -1,0 +1,10 @@
+{
+  "outcomes": {
+    "W1": {"consumer_match": true, "gate": "ADMIT"},
+    "W2": {"consumer_match": true, "gate": "ADMIT"},
+    "W3": {"consumer_match": true, "gate": "REJECT"},
+    "W4": {"consumer_match": true, "gate": "STOP"},
+    "W5": {"consumer_match": true, "gate": "STOP"},
+    "W6": {"consumer_match": true, "gate": "EXTERNAL"}
+  }
+}

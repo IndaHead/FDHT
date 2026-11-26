@@ -1,0 +1,10 @@
+{
+  "mask": {
+    "W1": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": true, "P5": true, "P6": false},
+    "W2": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": true, "P5": true, "P6": false},
+    "W3": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": true, "P5": true, "P6": true},
+    "W4": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": true, "P5": true, "P6": true},
+    "W5": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": false, "P5": true, "P6": false},
+    "W6": {"P0": true, "P1": true, "P2": true, "P3": true, "P4": false, "P5": true, "P6": false}
+  }
+}
