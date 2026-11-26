@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "id": "VALID",
+      "provenance_exists": true,
+      "signature_valid": true,
+      "builder_trusted": true,
+      "build_type_matches": true,
+      "external_params_match": true,
+      "digest_matches": true
+    },
+    {
+      "id": "MISSING_PROVENANCE",
+      "provenance_exists": false,
+      "signature_valid": false,
+      "builder_trusted": false,
+      "build_type_matches": false,
+      "external_params_match": false,
+      "digest_matches": false
+    },
+    {
+      "id": "INVALID_SIGNATURE",
+      "provenance_exists": true,
+      "signature_valid": false,
+      "builder_trusted": true,
+      "build_type_matches": true,
+      "external_params_match": true,
+      "digest_matches": true
+    },
+    {
+      "id": "UNTRUSTED_BUILDER",
+      "provenance_exists": true,
+      "signature_valid": true,
+      "builder_trusted": false,
+      "build_type_matches": true,
+      "external_params_match": true,
+      "digest_matches": true
+    },
+    {
+      "id": "BUILDTYPE_MISMATCH",
+      "provenance_exists": true,
+      "signature_valid": true,
+      "builder_trusted": true,
+      "build_type_matches": false,
+      "external_params_match": true,
+      "digest_matches": true
+    },
+    {
+      "id": "DIGEST_MISMATCH",
+      "provenance_exists": true,
+      "signature_valid": true,
+      "builder_trusted": true,
+      "build_type_matches": true,
+      "external_params_match": true,
+      "digest_matches": false
+    },
+    {
+      "id": "IRRELEVANT_EXTRA",
+      "provenance_exists": true,
+      "signature_valid": true,
+      "builder_trusted": true,
+      "build_type_matches": true,
+      "external_params_match": true,
+      "digest_matches": true,
+      "extra_field": "ignored"
+    }
+  ]
+}
