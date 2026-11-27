@@ -1,0 +1,38 @@
+{
+  "authority": "POST_REVEAL_COMPARISON",
+  "sealed_digest_verified": true,
+  "count_alignment": {
+    "discovered_stages": 5,
+    "candidate_layers": 8,
+    "discovered_channels": 5,
+    "candidate_channels": 3,
+    "discovered_product": 25,
+    "candidate_product": 24,
+    "classification": "NO_COUNT_ALIGNMENT"
+  },
+  "structural_alignment": {
+    "stage_mapping": "PARTIAL",
+    "channel_mapping": "PARTIAL",
+    "classification": "PARTIAL_ALIGNMENT"
+  },
+  "interpretation": {
+    "second_dimension": "CONSUMER_DISTINCTIONS",
+    "not": "TRANSITION_OPERATORS"
+  },
+  "orbit_audit": {
+    "closing_edge": "NO_CLOSING_EDGE",
+    "classification": "LINEAR_PIPELINE"
+  },
+  "a2_incorporation": {
+    "candidate_sufficient_for_membership": true,
+    "candidate_sufficient_for_multiplicity": true,
+    "candidate_insufficient_for_complete_record": true,
+    "candidate_insufficient_for_provenance": true,
+    "verified_sufficient_for_identity": true
+  },
+  "trajectory_incorporation": {
+    "factorised_consumers_safe": true,
+    "raw_identity_unsafe": true,
+    "foldkernel_alignment": true
+  }
+}
