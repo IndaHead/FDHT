@@ -1,0 +1,42 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "consumers": [
+    {
+      "id": "rawIdentityConsumer",
+      "carrier": "RawHistory",
+      "codomain": "RawHistory",
+      "authority": "RESEARCH"
+    },
+    {
+      "id": "identityMembershipConsumer",
+      "carrier": "SourceState",
+      "codomain": "Bool",
+      "authority": "RESEARCH"
+    },
+    {
+      "id": "identityMultiplicityConsumer",
+      "carrier": "SourceState",
+      "codomain": "Nat",
+      "authority": "RESEARCH"
+    },
+    {
+      "id": "completeRecordConsumer",
+      "carrier": "SourceState",
+      "codomain": "Option SourceRecord",
+      "authority": "RESEARCH"
+    },
+    {
+      "id": "provenanceConsumer",
+      "carrier": "SourceState",
+      "codomain": "Option Lineage",
+      "authority": "RESEARCH"
+    }
+  ],
+  "count_by_carrier": {
+    "RawHistory": 1,
+    "SourceState": 4,
+    "TrajectoryBoundary": 0,
+    "ExactIndex": 0,
+    "CandidateRepresentation": 0
+  }
+}

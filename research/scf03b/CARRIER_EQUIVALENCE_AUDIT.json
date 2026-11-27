@@ -1,0 +1,10 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "pairs": [
+    {"pair": ["RawHistory", "SourceState"], "relation": "DOMAIN_MISMATCH"},
+    {"pair": ["RawHistory", "TrajectoryBoundary"], "relation": "PROJECTION_ONLY"},
+    {"pair": ["SourceState", "ExactIndex"], "relation": "RELATED_BUT_DISTINCT"},
+    {"pair": ["SourceState", "CandidateRepresentation"], "relation": "RELATED_BUT_DISTINCT"},
+    {"pair": ["ExactIndex", "CandidateRepresentation"], "relation": "RELATED_BUT_DISTINCT"}
+  ]
+}

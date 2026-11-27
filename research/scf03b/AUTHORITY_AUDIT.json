@@ -1,0 +1,7 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "authority_preserving": ["trajectoryProjection", "buildExactIndex", "candidateT"],
+  "authority_reducing": [],
+  "authority_promoting": [],
+  "classification": "AUTHORITY_PRESERVING"
+}

@@ -1,0 +1,8 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "full_graph": "DISCONNECTED",
+  "component_topologies": {
+    "A2_SourceState": "BRANCHING",
+    "Permanent_FDHT": "LINEAR"
+  }
+}

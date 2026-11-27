@@ -1,0 +1,29 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "transformations": [
+    {
+      "id": "trajectoryProjection",
+      "source": "RawHistory",
+      "target": "TrajectoryBoundary",
+      "authority": "PERMANENT",
+      "source_threaded": false
+    },
+    {
+      "id": "buildExactIndex",
+      "source": "SourceState",
+      "target": "ExactIndex",
+      "authority": "RESEARCH",
+      "source_threaded": false
+    },
+    {
+      "id": "candidateT",
+      "source": "SourceState",
+      "target": "CandidateRepresentation",
+      "authority": "RESEARCH",
+      "source_threaded": false
+    }
+  ],
+  "permanent_count": 1,
+  "research_count": 2,
+  "multi_input_count": 0
+}

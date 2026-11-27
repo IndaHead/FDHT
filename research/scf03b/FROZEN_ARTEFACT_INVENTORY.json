@@ -1,0 +1,37 @@
+{
+  "authority": "FROZEN_BEFORE_EXTRACTION",
+  "starting_head": "3998a4131f69c08938d389845582ff3071124696",
+  "artefacts": [
+    {
+      "path": "fdht/FDHT_Audit_ArbitraryCollision.lean",
+      "authority": "PERMANENT",
+      "reason": "RawHistory, TrajectoryBoundary, trajectoryProjection"
+    },
+    {
+      "path": "research/probes/mrt05a/MRT05A_TrajectoryProjectionAdapter.lean",
+      "authority": "RESEARCH",
+      "reason": "rawIdentityConsumer"
+    },
+    {
+      "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+      "authority": "RESEARCH",
+      "reason": "SourceState, ExactIndex, candidateT, consumers"
+    },
+    {
+      "path": "research/scf01/BLIND_STAGE_INVENTORY.json",
+      "authority": "RESEARCH",
+      "reason": "SCF-01 stage extraction"
+    },
+    {
+      "path": "research/scf01/BLIND_CHANNEL_INVENTORY.json",
+      "authority": "RESEARCH",
+      "reason": "SCF-01 channel extraction"
+    },
+    {
+      "path": "research/scf03a/SCF03A_RESULTS.json",
+      "authority": "RESEARCH",
+      "reason": "SCF-03A adapter search result"
+    }
+  ],
+  "artefact_count": 6
+}

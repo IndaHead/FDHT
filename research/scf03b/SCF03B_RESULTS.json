@@ -1,0 +1,11 @@
+{
+  "authority": "SCF03B_RESULTS",
+  "classification": "B",
+  "classification_text": "TYPED-CARRIER GRAPH ESTABLISHED WITH MULTIPLE CONNECTED COMPONENTS",
+  "carrier_count": 5,
+  "transformation_count": 3,
+  "consumer_count": 5,
+  "component_count": 2,
+  "cross_carrier_adapter": false,
+  "graph_sha256": "3852b20d6ca1e56b0fdab3a4bda6444ff98eb10b7e253ba6b1e207ec697395b9"
+}

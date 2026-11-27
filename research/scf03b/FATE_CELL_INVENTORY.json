@@ -1,0 +1,14 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "cells": [
+    {"transformation": "candidateT", "consumer": "identityMembershipConsumer", "status": "SUFFICIENT"},
+    {"transformation": "candidateT", "consumer": "identityMultiplicityConsumer", "status": "SUFFICIENT"},
+    {"transformation": "candidateT", "consumer": "completeRecordConsumer", "status": "OBSERVABLE_LOSS", "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"},
+    {"transformation": "candidateT", "consumer": "provenanceConsumer", "status": "OBSERVABLE_LOSS", "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"}
+  ],
+  "sufficient_count": 2,
+  "observable_loss_count": 2,
+  "unresolved_count": 0,
+  "not_applicable_count": 0,
+  "invalid_domain_count": 0
+}

@@ -1,0 +1,39 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "carriers": [
+    {
+      "id": "RawHistory",
+      "type": "List KernelExprContext",
+      "authority": "PERMANENT",
+      "classification": "PERMANENT_CARRIER"
+    },
+    {
+      "id": "TrajectoryBoundary",
+      "type": "TrajectoryBoundary resolve",
+      "authority": "PERMANENT",
+      "classification": "PERMANENT_CARRIER"
+    },
+    {
+      "id": "SourceState",
+      "type": "List SourceRecord",
+      "authority": "RESEARCH",
+      "classification": "RESEARCH_CARRIER"
+    },
+    {
+      "id": "ExactIndex",
+      "type": "Identity -> List Position",
+      "authority": "RESEARCH",
+      "classification": "RESEARCH_CARRIER"
+    },
+    {
+      "id": "CandidateRepresentation",
+      "type": "List Position",
+      "authority": "RESEARCH",
+      "classification": "RESEARCH_CARRIER"
+    }
+  ],
+  "permanent_count": 2,
+  "research_count": 3,
+  "experimental_count": 0,
+  "derived_product_count": 0
+}

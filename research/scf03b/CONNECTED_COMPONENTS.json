@@ -1,0 +1,20 @@
+{
+  "authority": "SCF03B_EXTRACTION",
+  "components": [
+    {
+      "id": "A2_SourceState",
+      "carriers": ["SourceState", "ExactIndex", "CandidateRepresentation"],
+      "transformations": ["buildExactIndex", "candidateT"],
+      "consumers": ["identityMembershipConsumer", "identityMultiplicityConsumer", "completeRecordConsumer", "provenanceConsumer"],
+      "authority_mix": "RESEARCH"
+    },
+    {
+      "id": "Permanent_FDHT",
+      "carriers": ["RawHistory", "TrajectoryBoundary"],
+      "transformations": ["trajectoryProjection"],
+      "consumers": ["rawIdentityConsumer"],
+      "authority_mix": "PERMANENT"
+    }
+  ],
+  "component_count": 2
+}
