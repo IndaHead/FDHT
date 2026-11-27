@@ -1,14 +1,13 @@
-# FDHT CMIM6-BRIDGE-02G-R3-R3 Generic Four-Branch Reassembly
+# FDHT CMIM6-BRIDGE-02G-R3-R3 Generic Four-Branch Reassembly (Re-entry)
 
 ## Classification
-D1 — UNSUPPORTED-SOURCE BRANCH FAILED ON REASSEMBLY
+D3 — R1 CONSUMER-MISMATCH BRANCH FAILED ON REASSEMBLY
 
 ## Summary
-Generic full-match branch from R3-R2 is available as compiled input.
+Branch 1 (unsupported source) and branch 2 (representation mismatch) are available as compiled theorems from R4.
+Branch 4 (full match) is available as compiled theorems from R3-R2.
 
-Zero lemmas for unsupported source and representation mismatch failed to recompile cleanly in the assembly module due to case-analysis obligations in the ENNReal.tsum_eq_zero route.
-
-Consumer-mismatch R1 reproduction also blocked on support membership for the witness.
+Branch 3 (R1 consumer mismatch) failed to reassemble cleanly due to module-qualification conflicts between the verified support-zero module and the generic atom module when both are imported into a single assembly module.
 
 No DecidableEq introduced.
 No custom axioms.
