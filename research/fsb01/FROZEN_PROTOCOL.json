@@ -1,0 +1,17 @@
+{
+  "probe": "FSB-01",
+  "version": "1.0",
+  "frozen_before_execution": true,
+  "primary_question": "Requirement-relative activity across increasing SourceState size with frozen consumer requirements and A2 semantics.",
+  "hypotheses": {
+    "primary": "For fixed |R| and increasing N, active fraction alpha_N may decline (empirical, no assumed monotonicity or asymptotics).",
+    "secondary": "Exact-index query inspection may track requirement-relevant multiplicity rather than total N."
+  },
+  "scale_family": [64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384],
+  "requirements": ["R1_single", "R2_four", "R_absent"],
+  "treatments": ["T0_oracle", "T1_sequential_A1", "T2_exact_index", "T3_source_threaded_verification", "T4_consumer"],
+  "no_fractality": true,
+  "no_asymptotic_claims": true,
+  "no_fdht_modification": true,
+  "a2_semantics_frozen": true
+}

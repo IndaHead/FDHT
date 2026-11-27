@@ -1,0 +1,20 @@
+[
+  {
+    "N": 64,
+    "membership_ok": true,
+    "multiplicity_ok": true,
+    "absent_ok": true
+  },
+  {
+    "N": 1024,
+    "membership_ok": true,
+    "multiplicity_ok": true,
+    "absent_ok": true
+  },
+  {
+    "N": 16384,
+    "membership_ok": true,
+    "multiplicity_ok": true,
+    "absent_ok": true
+  }
+]

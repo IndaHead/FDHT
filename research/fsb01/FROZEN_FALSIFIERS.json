@@ -1,0 +1,23 @@
+{
+  "probe": "FSB-01",
+  "falsifiers": [
+    "F1_source_family_changed_after_results",
+    "F2_required_identity_repositioned",
+    "F3_multiplicity_unintentionally_changes",
+    "F4_requirement_size_changes_across_N",
+    "F5_candidate_inspected_active_collapsed",
+    "F6_build_cost_omitted",
+    "F7_validation_cost_omitted",
+    "F8_index_storage_python_heap_only",
+    "F9_doubling_ratio_called_big_o",
+    "F10_declining_active_fraction_called_compute_reduction",
+    "F11_declining_candidate_fraction_called_runtime_reduction",
+    "F12_semantic_divergence_ignored",
+    "F13_failed_scale_silently_removed",
+    "F14_timing_without_repetitions",
+    "F15_null_family_mixed_with_primary",
+    "F16_observed_scaling_called_fractality",
+    "F17_FG03_rewritten",
+    "F18_fdht_modified"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "probe": "FSB-01",
+  "scales": [64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384],
+  "generator_rule": "Deterministic prefix family: X_N = first N records of a fixed infinite generator. Smaller sources are exact prefixes.",
+  "resource_stop_boundary": "Record exact largest completed N if any scale fails; do not silently drop."
+}

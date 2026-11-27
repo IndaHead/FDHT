@@ -1,0 +1,17 @@
+{
+  "probe": "FSB-01",
+  "R1": {
+    "description": "Single exact identity present from N=64 with multiplicity 1, fixed payload and lineage.",
+    "identity": "id_r1",
+    "multiplicity_target": 1
+  },
+  "R2": {
+    "description": "Four exact identities present from N=64, fixed records.",
+    "identities": ["id_r2a", "id_r2b", "id_r2c", "id_r2d"],
+    "multiplicity_target_each": 1
+  },
+  "R_absent": {
+    "description": "Identity that never appears in any X_N.",
+    "identity": "id_absent"
+  }
+}

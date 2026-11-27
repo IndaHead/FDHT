@@ -1,0 +1,6 @@
+{
+  "N0_irrelevant_growth": "Primary family already grows only irrelevant identities after fixed R1/R2 placements.",
+  "N1_requirement_relevant_multiplicity": "Not mixed with primary; separate control not executed in this bounded probe to avoid contamination.",
+  "N2_physical_reordering": "At N=256, reordering would change A1 position but not exact candidate count or verified outcome (multiset preserved).",
+  "N3_payload_variation": "At N=256, changing payload of id_r1 preserves ExactIndex positions but distinguishes complete-record consumer."
+}

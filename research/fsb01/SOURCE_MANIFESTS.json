@@ -1,0 +1,47 @@
+[
+  {
+    "N": 64,
+    "digest": "3b3532ccec469a4569463fcfeb30acb577f31dd741abfbb2f43c045560483e46",
+    "len": 64
+  },
+  {
+    "N": 128,
+    "digest": "272a3249492ce121f81a939635bf79718165767da4ac7730cb8891f0cf1e8438",
+    "len": 128
+  },
+  {
+    "N": 256,
+    "digest": "fa6b1e93b98503b24874102cfdd7b972c0334646f4af1f966189f1f9181ec684",
+    "len": 256
+  },
+  {
+    "N": 512,
+    "digest": "95ea99d5a36d5c5aae4cc3bdb1af197b9b90e8588b648f2b65a11a735a82f904",
+    "len": 512
+  },
+  {
+    "N": 1024,
+    "digest": "c620384597e07dd33d50fc04ceb29293f983bef4d49b6d4fb7f028a29dfcdf31",
+    "len": 1024
+  },
+  {
+    "N": 2048,
+    "digest": "fcd7ee7653213feb4b673b0a72cce2a8f559129b7c59e9c37907689a1b15b079",
+    "len": 2048
+  },
+  {
+    "N": 4096,
+    "digest": "09339c6e6bb82b80344027bd38ae171565056e2f3eb4e7ba178c03513496b4f7",
+    "len": 4096
+  },
+  {
+    "N": 8192,
+    "digest": "100d5a55dd4f7c868a016a593a579b0daee1e85e777b9cfa2e4b6134b4ff94ff",
+    "len": 8192
+  },
+  {
+    "N": 16384,
+    "digest": "6c58fbc1a626e8c13d10c36d97c36a5699d0206e5241eecf10737da4f14d4ef7",
+    "len": 16384
+  }
+]

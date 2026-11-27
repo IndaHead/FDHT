@@ -1,0 +1,17 @@
+{
+  "probe": "FSB-01",
+  "generator": {
+    "type": "deterministic_prefix",
+    "seed_rule": "identity = f'id_{i:08d}' for i in 0..; payload = f'payload_{i:08d}'; lineage = f'lineage_{i:08d}'",
+    "special_placements": {
+      "id_r1": "fixed at position 0 (always first record for all N >= 64)",
+      "id_r2a": "position 1",
+      "id_r2b": "position 2",
+      "id_r2c": "position 3",
+      "id_r2d": "position 4",
+      "all_other": "sequential deterministic ids starting from id_00000005"
+    },
+    "absent_identity": "id_absent never generated",
+    "digest": "SHA-256 of canonical serialisation of each X_N"
+  }
+}

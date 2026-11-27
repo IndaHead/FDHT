@@ -1,0 +1,24 @@
+{
+  "probe": "FSB-01",
+  "classification": "A \u2014 REQUIREMENT-RELATIVE ACTIVE AND QUERY BEHAVIOUR OBSERVED ACROSS FULL TESTED SCALE",
+  "scales_executed": [
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "largest_N": 16384,
+  "semantic_equivalence_all": true,
+  "active_for_R1": "FIXED at 1 for all N",
+  "candidate_for_R1": "FIXED at 1 for all N",
+  "query_inspections_exact": "REQUIREMENT_TRACKING (1 for present, full for absent)",
+  "index_storage": "MEASURED_APPROX_LINEAR_OVER_TESTED_RANGE (descriptive)",
+  "fate_regression_passed": true,
+  "no_fractality_tested": true,
+  "fdht_unchanged": true
+}

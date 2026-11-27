@@ -1,0 +1,14 @@
+{
+  "probe": "FSB-01",
+  "channels": [
+    "N_source", "R_size", "source_serialised_bytes", "index_identity_key_count",
+    "index_position_reference_count", "index_canonical_bytes", "build_source_inspections",
+    "validation_source_inspections", "candidate_count", "candidate_fraction",
+    "sequential_source_inspections", "verified_source_inspections", "active_count",
+    "active_fraction", "consumer_outcome", "oracle_outcome", "semantic_equivalence"
+  ],
+  "derived": ["alpha_R(N) = active_count / N", "gamma_R(N) = candidate_count / N", "iota_exact(N) = verified_source_inspections / N"],
+  "descriptive_fits_only": true,
+  "no_big_o": true,
+  "no_fractal_dimension": true
+}
