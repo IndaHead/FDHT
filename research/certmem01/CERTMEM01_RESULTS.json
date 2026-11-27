@@ -1,0 +1,10 @@
+{
+  "probe": "CERTMEM-01",
+  "classification": "A \u2014 SIX EXISTING MEMORY CLASSES ABSORB CERTIFICATION; NO SEVENTH CLASS REQUIRED",
+  "primary_disposition": "CERTIFIED_VALID",
+  "primary_outcome": "CertifiedAbsent",
+  "controls_passed": true,
+  "seventh_class_pressure": false,
+  "authority_not_promoted": true,
+  "fdht_unchanged": true
+}

@@ -1,0 +1,19 @@
+{
+  "probe": "CERTMEM-01",
+  "frozen_before_mapping": true,
+  "obligations": {
+    "O1_source_identity_snapshot_binding": "Which exact source snapshot is certified?",
+    "O2_derived_artefact_identity": "Which exact index or representation is certified?",
+    "O3_transformation_provenance": "Which builder/transformation produced the representation?",
+    "O4_domain_interpretation_contract": "Under which identity/equality/canonicalisation semantics is the claim valid?",
+    "O5_certified_claim_and_completeness_scope": "Exactly what relationship is claimed to be complete/sound/current?",
+    "O6_validity_historical_state_binding": "At which source/version/checkpoint is the claim valid?",
+    "O7_supporting_evidence": "What evidence establishes O1–O6?",
+    "O8_negative_invalidating_evidence": "What evidence would invalidate, refute or block certification?",
+    "O9_consumer_objective_binding": "For which declared downstream obligation is the certified distinction sufficient?",
+    "O10_authority_boundary": "What authority, if any, is permitted to follow from certification?"
+  },
+  "six_classes": ["ObservationRecord", "ClaimRecord", "EvidenceRecord", "NegativeRecord", "ObjectiveRecord", "CheckpointRecord"],
+  "no_seventh_class": true,
+  "no_fdht_modification": true
+}
