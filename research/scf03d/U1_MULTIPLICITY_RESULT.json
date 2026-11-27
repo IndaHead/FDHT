@@ -1,0 +1,9 @@
+{
+  "authority": "SCF03D_RESULT",
+  "cell": "U1",
+  "transformation": "buildExactIndex",
+  "consumer": "identityMultiplicityConsumer",
+  "status": "SUFFICIENT",
+  "evidence": "buildExactIndex preserves identity positions; multiplicity is position list length",
+  "constructivity": "CONSTRUCTIVE"
+}

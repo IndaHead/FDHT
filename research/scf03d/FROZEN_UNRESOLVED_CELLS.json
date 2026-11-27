@@ -1,0 +1,15 @@
+{
+  "authority": "FROZEN_BEFORE_TESTING",
+  "cells": [
+    {"id": "U0", "transformation": "buildExactIndex", "consumer": "identityMembershipConsumer"},
+    {"id": "U1", "transformation": "buildExactIndex", "consumer": "identityMultiplicityConsumer"},
+    {"id": "U2", "transformation": "buildExactIndex", "consumer": "completeRecordConsumer"},
+    {"id": "U3", "transformation": "buildExactIndex", "consumer": "provenanceConsumer"}
+  ],
+  "definitions": {
+    "SourceRecord": "structure with recordId, exactIdentity, payload, lineage",
+    "SourceState": "List SourceRecord",
+    "ExactIndex": "Identity -> List Position",
+    "buildExactIndex": "fun ident => (source.enum.filter (r.exactIdentity = ident)).map Prod.fst"
+  }
+}

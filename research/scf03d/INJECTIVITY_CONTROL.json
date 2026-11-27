@@ -1,0 +1,7 @@
+{
+  "authority": "SCF03D_CONTROL",
+  "transformation": "buildExactIndex",
+  "injectivity": "REFUTED_BY_COLLISION",
+  "witness": "U2 witness: same index, different payload",
+  "note": "CONTROL ONLY, not a natural consumer"
+}

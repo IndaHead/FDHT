@@ -1,0 +1,11 @@
+{
+  "authority": "SCF03D_AUDIT",
+  "properties": {
+    "INDEX_SOUND": "DEFINITIONAL",
+    "INDEX_COMPLETE": "DEFINITIONAL",
+    "INDEX_POSITION_VALID": "DEFINITIONAL",
+    "INDEX_MULTIPLICITY_PRESERVED": "DEFINITIONAL",
+    "INDEX_ORDER_PRESERVED": "DEFINITIONAL"
+  },
+  "note": "buildExactIndex preserves identity positions and multiplicities by construction"
+}

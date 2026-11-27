@@ -1,0 +1,25 @@
+{
+  "authority": "SCF03D_WITNESSES",
+  "witnesses": [
+    {
+      "cell": "U2",
+      "s1": "[{recordId: r1, exactIdentity: id1, payload: payload1, lineage: lineage1}]",
+      "s2": "[{recordId: r2, exactIdentity: id1, payload: payload2, lineage: lineage1}]",
+      "index_equal": true,
+      "consumer_distinct": true,
+      "distinguished_field": "payload",
+      "minimal": true
+    },
+    {
+      "cell": "U3",
+      "s1": "[{recordId: r1, exactIdentity: id1, payload: payload1, lineage: lineage1}]",
+      "s2": "[{recordId: r1, exactIdentity: id1, payload: payload1, lineage: lineage2}]",
+      "index_equal": true,
+      "consumer_distinct": true,
+      "distinguished_field": "lineage",
+      "minimal": true
+    }
+  ],
+  "count": 2,
+  "minimal_count": 2
+}

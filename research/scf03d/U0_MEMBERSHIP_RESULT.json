@@ -1,0 +1,9 @@
+{
+  "authority": "SCF03D_RESULT",
+  "cell": "U0",
+  "transformation": "buildExactIndex",
+  "consumer": "identityMembershipConsumer",
+  "status": "SUFFICIENT",
+  "evidence": "buildExactIndex preserves identity positions; membership is non-empty position list",
+  "constructivity": "CONSTRUCTIVE"
+}

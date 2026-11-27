@@ -1,0 +1,10 @@
+{
+  "authority": "SCF03D_CONSISTENCY",
+  "checks": [
+    {"cell": "U0", "status": "SUFFICIENT", "observable_loss_excluded": true},
+    {"cell": "U1", "status": "SUFFICIENT", "observable_loss_excluded": true},
+    {"cell": "U2", "status": "OBSERVABLE_LOSS", "sufficiency_excluded": true},
+    {"cell": "U3", "status": "OBSERVABLE_LOSS", "sufficiency_excluded": true}
+  ],
+  "consistency": "PASSED"
+}

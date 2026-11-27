@@ -1,0 +1,7 @@
+{
+  "authority": "SCF03D_COMPARISON",
+  "F_index": ["SUFFICIENT", "SUFFICIENT", "OBSERVABLE_LOSS", "OBSERVABLE_LOSS"],
+  "F_candidate": ["SUFFICIENT", "SUFFICIENT", "OBSERVABLE_LOSS", "OBSERVABLE_LOSS"],
+  "relationship": "IDENTICAL_FATE_PROFILE",
+  "note": "Vector equality does not establish transformation identity"
+}

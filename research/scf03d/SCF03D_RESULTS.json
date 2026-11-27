@@ -1,0 +1,11 @@
+{
+  "authority": "SCF03D_RESULTS",
+  "classification": "A",
+  "classification_text": "ALL FOUR buildExactIndex CELLS SETTLED",
+  "U0": "SUFFICIENT",
+  "U1": "SUFFICIENT",
+  "U2": "OBSERVABLE_LOSS",
+  "U3": "OBSERVABLE_LOSS",
+  "injectivity": "REFUTED_BY_COLLISION",
+  "fate_vector": ["SUFFICIENT", "SUFFICIENT", "OBSERVABLE_LOSS", "OBSERVABLE_LOSS"]
+}

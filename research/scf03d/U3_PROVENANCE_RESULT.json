@@ -1,0 +1,16 @@
+{
+  "authority": "SCF03D_RESULT",
+  "cell": "U3",
+  "transformation": "buildExactIndex",
+  "consumer": "provenanceConsumer",
+  "status": "OBSERVABLE_LOSS",
+  "evidence": "Explicit witness: same identity, different lineage",
+  "witness": {
+    "s1": "[{recordId: r1, exactIdentity: id1, payload: payload1, lineage: lineage1}]",
+    "s2": "[{recordId: r1, exactIdentity: id1, payload: payload1, lineage: lineage2}]",
+    "index_equal": true,
+    "consumer_distinct": true,
+    "distinguished_field": "lineage"
+  },
+  "constructivity": "CONSTRUCTIVE"
+}
