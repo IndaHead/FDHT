@@ -1,0 +1,288 @@
+{
+  "carriers": [
+    {
+      "description": "Research-local A2 candidate representation.",
+      "id": "CandidateRepresentation",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "candidateT"
+      },
+      "type_expression": "List Position"
+    },
+    {
+      "description": "Research-local A2 exact index carrier.",
+      "id": "ExactIndex",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "ExactIndex"
+      },
+      "type_expression": "Identity -> List Position"
+    },
+    {
+      "description": "Permanent FDHT raw-history carrier.",
+      "id": "RawHistory",
+      "provenance": {
+        "authority": "PERMANENT",
+        "commit": "c657979fc81295ad8b02a57ea08c006d674de765",
+        "evidence": "PROVED",
+        "note": "",
+        "path": "fdht/FDHT_Audit_ArbitraryCollision.lean",
+        "symbol": "RawHistory"
+      },
+      "type_expression": "List KernelExprContext"
+    },
+    {
+      "description": "Research-local A2 source state carrier.",
+      "id": "SourceState",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "SourceState"
+      },
+      "type_expression": "List SourceRecord"
+    },
+    {
+      "description": "Permanent trajectory quotient carrier.",
+      "id": "TrajectoryBoundary",
+      "provenance": {
+        "authority": "PERMANENT",
+        "commit": "c657979fc81295ad8b02a57ea08c006d674de765",
+        "evidence": "PROVED",
+        "note": "",
+        "path": "fdht/FDHT_Audit_ArbitraryCollision.lean",
+        "symbol": "TrajectoryBoundary"
+      },
+      "type_expression": "TrajectoryBoundary resolve"
+    }
+  ],
+  "connected_components": [
+    [
+      "CandidateRepresentation",
+      "ExactIndex",
+      "SourceState"
+    ],
+    [
+      "RawHistory",
+      "TrajectoryBoundary"
+    ]
+  ],
+  "consumer_transports": [],
+  "consumers": [
+    {
+      "carrier": "SourceState",
+      "codomain": "Option SourceRecord",
+      "description": "Complete record consumer.",
+      "id": "completeRecordConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "completeRecordConsumer"
+      },
+      "type_expression": "Identity -> SourceState -> Option SourceRecord"
+    },
+    {
+      "carrier": "SourceState",
+      "codomain": "Bool",
+      "description": "Identity membership consumer.",
+      "id": "identityMembershipConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "identityMembershipConsumer"
+      },
+      "type_expression": "Identity -> SourceState -> Bool"
+    },
+    {
+      "carrier": "SourceState",
+      "codomain": "Nat",
+      "description": "Identity multiplicity consumer.",
+      "id": "identityMultiplicityConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "identityMultiplicityConsumer"
+      },
+      "type_expression": "Identity -> SourceState -> Nat"
+    },
+    {
+      "carrier": "SourceState",
+      "codomain": "Option Lineage",
+      "description": "Provenance consumer.",
+      "id": "provenanceConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "provenanceConsumer"
+      },
+      "type_expression": "Identity -> SourceState -> Option Lineage"
+    },
+    {
+      "carrier": "RawHistory",
+      "codomain": "RawHistory",
+      "description": "Identity consumer over complete raw history.",
+      "id": "rawIdentityConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "dd321fc9d77f5f1a93600daaa5e32bf8d66e1c0f",
+        "evidence": "PROVED",
+        "note": "",
+        "path": "research/probes/mrt05a/MRT05A_TrajectoryProjectionAdapter.lean",
+        "symbol": "rawIdentityConsumer"
+      },
+      "type_expression": "RawHistory -> RawHistory"
+    }
+  ],
+  "consumers_by_carrier": {
+    "CandidateRepresentation": [],
+    "ExactIndex": [],
+    "RawHistory": [
+      "rawIdentityConsumer"
+    ],
+    "SourceState": [
+      "completeRecordConsumer",
+      "identityMembershipConsumer",
+      "identityMultiplicityConsumer",
+      "provenanceConsumer"
+    ],
+    "TrajectoryBoundary": []
+  },
+  "fate_cells": [
+    {
+      "assumptions": [],
+      "consumer": "completeRecordConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "c2_observableLoss_completeRecord"
+      },
+      "status": "OBSERVABLE_LOSS",
+      "transformation": "candidateT",
+      "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"
+    },
+    {
+      "assumptions": [],
+      "consumer": "identityMembershipConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "UNDERDETERMINED",
+        "note": "Structural observation, not fully proved.",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "c0_membership_structural"
+      },
+      "status": "SUFFICIENT",
+      "transformation": "candidateT",
+      "witness": null
+    },
+    {
+      "assumptions": [],
+      "consumer": "identityMultiplicityConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "UNDERDETERMINED",
+        "note": "Structural observation, not fully proved.",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "c1_multiplicity_structural"
+      },
+      "status": "SUFFICIENT",
+      "transformation": "candidateT",
+      "witness": null
+    },
+    {
+      "assumptions": [],
+      "consumer": "provenanceConsumer",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "c3_observableLoss_provenance"
+      },
+      "status": "OBSERVABLE_LOSS",
+      "transformation": "candidateT",
+      "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"
+    }
+  ],
+  "transformations": [
+    {
+      "description": "Requirement-blind index construction.",
+      "id": "buildExactIndex",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "buildExactIndex"
+      },
+      "source_carrier": "SourceState",
+      "source_threaded": false,
+      "target_carrier": "ExactIndex",
+      "type_expression": "SourceState -> ExactIndex",
+      "validity_preconditions": []
+    },
+    {
+      "description": "Candidate position lookup.",
+      "id": "candidateT",
+      "provenance": {
+        "authority": "RESEARCH",
+        "commit": "9bfc78261e05b166edb4726c6f7e896f7a5ad8d2",
+        "evidence": "EXECUTABLE_BOUNDED",
+        "note": "",
+        "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+        "symbol": "candidateT"
+      },
+      "source_carrier": "SourceState",
+      "source_threaded": false,
+      "target_carrier": "CandidateRepresentation",
+      "type_expression": "Identity -> SourceState -> List Position",
+      "validity_preconditions": []
+    },
+    {
+      "description": "Permanent quotient projection.",
+      "id": "trajectoryProjection",
+      "provenance": {
+        "authority": "PERMANENT",
+        "commit": "c657979fc81295ad8b02a57ea08c006d674de765",
+        "evidence": "PROVED",
+        "note": "",
+        "path": "fdht/FDHT_Audit_ArbitraryCollision.lean",
+        "symbol": "trajectoryProjection"
+      },
+      "source_carrier": "RawHistory",
+      "source_threaded": false,
+      "target_carrier": "TrajectoryBoundary",
+      "type_expression": "RawHistory -> TrajectoryBoundary resolve",
+      "validity_preconditions": []
+    }
+  ],
+  "validation_errors": []
+}
