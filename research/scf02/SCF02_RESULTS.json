@@ -1,0 +1,10 @@
+{
+  "authority": "SCF02_RESULTS",
+  "classification": "G",
+  "classification_text": "INDEPENDENCE REMAINS UNDERDETERMINED",
+  "reason": "Domain mismatch: C4 (RawHistory) is not comparable with C0-C3 (SourceState). Independence cannot be tested across domain boundaries.",
+  "channel5": "C4",
+  "domain_mismatch": true,
+  "independent_channel_count": 4,
+  "note": "C4 is a valid consumer on its own domain (RawHistory) but is not an independent fifth axis relative to the four established channels on SourceState."
+}

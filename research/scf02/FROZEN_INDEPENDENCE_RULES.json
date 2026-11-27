@@ -1,0 +1,16 @@
+{
+  "authority": "FROZEN_BEFORE_WITNESS_SEARCH",
+  "independence_criteria": [
+    "fate_separation_witness",
+    "outcome_crossing",
+    "factorisation_test",
+    "combined_consumer_test"
+  ],
+  "domain_restrictions": [
+    "full_domain",
+    "valid_index_domain",
+    "unique_identity_domain",
+    "projection_collision_domain"
+  ],
+  "note": "No preferred final count. Neutral identifiers during witness construction."
+}

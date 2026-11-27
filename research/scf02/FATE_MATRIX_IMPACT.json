@@ -1,0 +1,9 @@
+{
+  "authority": "SCF02_AUDIT",
+  "M4_dimensions": {"stages": 5, "channels": 4, "product": 20},
+  "M5_dimensions": {"stages": 5, "channels": 5, "product": 25},
+  "C5_unique_fate_pattern": false,
+  "C5_changes_stage_classification": false,
+  "C5_fate_redundant": "NOT_APPLICABLE",
+  "reason": "C4 operates on a different domain and cannot be compared with C0-C3"
+}

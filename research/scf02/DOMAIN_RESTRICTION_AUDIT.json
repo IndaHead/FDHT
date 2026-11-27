@@ -1,0 +1,10 @@
+{
+  "authority": "SCF02_AUDIT",
+  "restrictions": {
+    "full_domain": "DOMAIN_MISMATCH",
+    "valid_index_domain": "NOT_APPLICABLE",
+    "unique_identity_domain": "NOT_APPLICABLE",
+    "projection_collision_domain": "APPLICABLE_TO_C4_ONLY"
+  },
+  "conclusion": "C4 operates on a different carrier (RawHistory) from C0-C3 (SourceState). Independence cannot be tested across domain boundaries."
+}

@@ -1,0 +1,8 @@
+{
+  "authority": "SCF02_AUDIT",
+  "combined_consumer": "C0 × C1 × C2 × C3",
+  "combined_domain": "SourceState",
+  "channel5_domain": "RawHistory",
+  "derivable_from_combined": "NOT_APPLICABLE",
+  "reason": "Domain mismatch: combined consumer operates on SourceState, C4 operates on RawHistory"
+}

@@ -1,0 +1,11 @@
+{
+  "authority": "SCF02_AUDIT",
+  "lattice": {
+    "C4_vs_C0": "DOMAIN_MISMATCH",
+    "C4_vs_C1": "DOMAIN_MISMATCH",
+    "C4_vs_C2": "DOMAIN_MISMATCH",
+    "C4_vs_C3": "DOMAIN_MISMATCH",
+    "C4_vs_combined": "DOMAIN_MISMATCH"
+  },
+  "conclusion": "C4 is not comparable with C0-C3 due to domain mismatch. It is not an independent fifth axis relative to the four established channels; it is a separate domain."
+}

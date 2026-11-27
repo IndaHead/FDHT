@@ -1,0 +1,18 @@
+{
+  "authority": "FROZEN_BEFORE_WITNESS_SEARCH",
+  "scf01_commit": "c50fde85ea65866c3123cdc9d47e65abb3545d14",
+  "channel_id": "C4",
+  "human_name": "rawIdentityConsumer",
+  "exact_definition": "id : RawHistory → RawHistory",
+  "domain": "RawHistory",
+  "codomain": "RawHistory",
+  "authority": "identity",
+  "source_artefacts": [
+    "research/probes/mrt05a/MRT05A_TrajectoryProjectionAdapter.lean"
+  ],
+  "predecessor_status": "NOT_COMPARABLE with C0 (domain mismatch)",
+  "candidate_dependence_relations": [
+    "C0_C4: NOT_COMPARABLE (different domains)"
+  ],
+  "reason_unresolved": "Domain mismatch: C4 operates on RawHistory, C0-C3 operate on SourceState"
+}

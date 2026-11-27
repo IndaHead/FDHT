@@ -1,0 +1,22 @@
+{
+  "authority": "SCF02_AUDIT",
+  "channel5": "C4",
+  "domain": "RawHistory",
+  "established_channels": {
+    "C0": {"domain": "SourceState", "relation": "DOMAIN_MISMATCH"},
+    "C1": {"domain": "SourceState", "relation": "DOMAIN_MISMATCH"},
+    "C2": {"domain": "SourceState", "relation": "DOMAIN_MISMATCH"},
+    "C3": {"domain": "SourceState", "relation": "DOMAIN_MISMATCH"}
+  },
+  "factorisation_tests": {
+    "C4_to_C0": "NOT_APPLICABLE",
+    "C0_to_C4": "NOT_APPLICABLE",
+    "C4_to_C1": "NOT_APPLICABLE",
+    "C1_to_C4": "NOT_APPLICABLE",
+    "C4_to_C2": "NOT_APPLICABLE",
+    "C2_to_C4": "NOT_APPLICABLE",
+    "C4_to_C3": "NOT_APPLICABLE",
+    "C3_to_C4": "NOT_APPLICABLE"
+  },
+  "reason": "Domain mismatch prevents factorisation tests"
+}
