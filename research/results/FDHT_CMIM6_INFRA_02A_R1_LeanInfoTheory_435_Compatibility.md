@@ -1,26 +1,28 @@
-# FDHT CMIM6-INFRA-02A-R1 Corrected LeanInfoTheory v0.2.0 Baseline and 4.35 Compatibility
+# FDHT CMIM6-INFRA-02A-R1 LeanInfoTheory v0.2.0 → Lean 4.35.0 Compatibility
 
 ## Classification
 D — LEAN 4.35 COMPATIBILITY REMAINS BLOCKED
 
 ## Summary
-Correct upstream located and frozen: https://github.com/serhatemrecoban/LeanInfoTheory tag v0.2.0 resolves to 953b785fbdbcc9bffe22834124d5e1cbd14a4835.
+Phase 0–3 succeeded for the correct upstream:
 
-Baseline under declared Lean 4.33.1 / mathlib v4.33.1:
-- Full lake build succeeded.
-- Load-bearing API confirmed:
-  IsMarkovChainOf p X Y Z := IsCondIndependentOf p X Z Y
-  condMutualInfoOf p X Z Y = 0 ↔ IsMarkovChainOf p X Y Z
-- Axiom footprint: propext, Classical.choice, Quot.sound.
+- Repository: https://github.com/serhatemrecoban/LeanInfoTheory
+- Tag v0.2.0 → 953b785fbdbcc9bffe22834124d5e1cbd14a4835
+- Upstream toolchain: leanprover/lean4:v4.33.1
+- Upstream mathlib: v4.33.1
+- Full LeanInfoTheory build under Lean 4.33.1: SUCCESS (2605 jobs)
+- Load-bearing API present and matches expected form:
+  - IsMarkovChainOf p X Y Z := IsCondIndependentOf p X Z Y
+  - condMutualInfoOf p X Z Y = 0 ↔ IsMarkovChainOf p X Y Z
+- No sorry/admit/axiom in Markov.lean
 
-Minimal metadata port (lean-toolchain and lakefile.toml mathlib rev changed to v4.35.0) failed at dependency resolution:
+Phase 5 (isolated 4.35 port) failed at dependency resolution.
 
-error: mathlib/lakefile.lean:53:48: expected token
-error: mathlib/lakefile.lean: package configuration has errors
+After changing only lean-toolchain and lakefile.toml to request Lean 4.35.0 / mathlib v4.35.0, `lake update` produced parser errors in `.lake/packages/mathlib/lakefile.lean` (unknown namespace Lake, unexpected identifiers, CoeFun unknown). This is a DEPENDENCY_RESOLUTION failure.
 
-First-failure class: DEPENDENCY_RESOLUTION / PARSER_OR_SYNTAX_CHANGE.
+No mathematical source was edited. No sorry/admit/custom axioms introduced. Baseline evidence preserved.
 
-No mathematical source edited. No sorry/admit/custom axioms introduced. REENTRY_ELIGIBLE = NO.
+REENTRY_ELIGIBLE = NO
 
 ## Claim boundary
-Infrastructure only. Does not establish the SufficientForP ↔ Markov ↔ CMI bridge.
+Infrastructure only. Does not establish the SufficientForP ↔ Markov ↔ CMI bridge, nor any CERTMEM-02 probabilistic result.
