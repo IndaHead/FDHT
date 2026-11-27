@@ -1,0 +1,13 @@
+{
+  "probe": "CIDX-01",
+  "frozen_before_execution": true,
+  "primary_question": "Can a certificate binding immutable SourceState snapshot + complete ExactIndex + builder semantics turn empty lookup into verified absence without full-source rescan at query time?",
+  "scales": [64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384],
+  "requirements": ["R1", "R_absent"],
+  "treatments": ["T0_oracle", "T1_full_scan_absence", "T2_uncertified_empty", "T3_certified_absence", "T4_certified_presence", "T5_certificate_generation"],
+  "trust_models": ["M0_self_verified_snapshot", "M1_external_certificate_claim"],
+  "no_fdht_modification": true,
+  "no_asymptotic_claims": true,
+  "no_cryptographic_security_claims": true,
+  "source_unavailable_policy": "STOP_SOURCE_UNAVAILABLE for presence; for absence under M0 if binding metadata available without full source bytes, allow if certificate valid; else STOP_SOURCE_UNAVAILABLE"
+}

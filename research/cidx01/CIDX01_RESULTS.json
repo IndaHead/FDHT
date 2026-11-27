@@ -1,0 +1,23 @@
+{
+  "probe": "CIDX-01",
+  "classification": "A \u2014 CERTIFIED INDEX SUPPORTS QUERY-LOCAL VERIFIED ABSENCE ACROSS FULL TESTED SCALE",
+  "secondary": "D \u2014 CERTIFICATE INTEGRITY HOLDS; EXTERNAL AUTHORITY REMAINS UNESTABLISHED (M1)",
+  "scales_executed": [
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "semantic_eq_all": true,
+  "t2_always_insufficient": true,
+  "t3_absent_zero_source_inspections": true,
+  "attacks_rejected": true,
+  "cert_bytes_fixed": true,
+  "no_security_claim": true,
+  "fdht_unchanged": true
+}

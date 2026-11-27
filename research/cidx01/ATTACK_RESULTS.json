@@ -1,0 +1,110 @@
+[
+  {
+    "N": 64,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 64,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 128,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 128,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 256,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 256,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 512,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 512,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 1024,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 1024,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 2048,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 2048,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 4096,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 4096,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 8192,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 8192,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 16384,
+    "attack": "A1_stale_source",
+    "disposition": "CERT_SOURCE_MISMATCH",
+    "rejected": true
+  },
+  {
+    "N": 16384,
+    "attack": "A2_omitted_key",
+    "disposition": "CERT_INDEX_MISMATCH",
+    "rejected": true
+  }
+]
