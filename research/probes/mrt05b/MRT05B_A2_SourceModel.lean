@@ -106,21 +106,55 @@ theorem c0_membership_structural (r : Identity) :
 def identityMultiplicityConsumer (r : Identity) (source : SourceState) : Nat :=
   (source.filter (fun rec => rec.exactIdentity = r)).length
 
+-- Probe-local helpers for C1 multiplicity sufficiency
+theorem map_length_eq
+    {α β : Type} (f : α → β) (xs : List α) :
+    (xs.map f).length = xs.length := by
+  induction xs with
+  | nil => rfl
+  | cons _ _ ih => simp [ih]
+
+theorem zipIdx_filter_length_eq_source_filter_length
+    (offset : Nat)
+    (r : Identity)
+    (source : SourceState) :
+    ((source.zipIdx offset).filter (fun ⟨rec, _⟩ => rec.exactIdentity = r)).length
+    =
+    (source.filter (fun rec => rec.exactIdentity = r)).length := by
+  induction source generalizing offset with
+  | nil =>
+    simp
+  | cons head tail ih =>
+    rw [zipIdx_cons]
+    simp [List.filter_cons]
+    by_cases h : head.exactIdentity = r
+    · simp [h, ih (offset + 1)]
+    · simp [h, ih (offset + 1)]
+
+theorem zipIdx_filter_map_length_eq_source_filter_length
+    (offset : Nat)
+    (r : Identity)
+    (source : SourceState) :
+    (((source.zipIdx offset).filter (fun ⟨rec, _⟩ => rec.exactIdentity = r)).map Prod.snd).length
+    =
+    (source.filter (fun rec => rec.exactIdentity = r)).length := by
+  rw [map_length_eq]
+  exact zipIdx_filter_length_eq_source_filter_length offset r source
+
+theorem candidateT_length_eq_multiplicity
+    (r : Identity)
+    (source : SourceState) :
+    (candidateT r source).length = identityMultiplicityConsumer r source := by
+  unfold candidateT buildExactIndex identityMultiplicityConsumer
+  exact zipIdx_filter_map_length_eq_source_filter_length 0 r source
+
 theorem c1_multiplicity_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMultiplicityConsumer r) := by
-  intro s₁ s₂ h
-  -- Direct proof by induction
-  induction s₁ generalizing s₂ with
-  | nil =>
-    cases s₂ with
-    | nil => rfl
-    | cons _ _ => simp [candidateT, buildExactIndex] at h
-  | cons rec tail ih =>
-    cases s₂ with
-    | nil => simp [candidateT, buildExactIndex] at h
-    | cons rec₂ tail₂ =>
-      simp [identityMultiplicityConsumer, candidateT, buildExactIndex, List.filter_cons] at h ⊢
-      exact ih tail₂ h
+  intro s₁ s₂ hCandidates
+  have hLength : (candidateT r s₁).length = (candidateT r s₂).length :=
+    congrArg List.length hCandidates
+  rw [candidateT_length_eq_multiplicity r s₁, candidateT_length_eq_multiplicity r s₂] at hLength
+  exact hLength
 
 /-! ## C2: Complete record consumer (negative) -/
 
