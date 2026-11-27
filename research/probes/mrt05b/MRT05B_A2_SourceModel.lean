@@ -49,20 +49,18 @@ def identityMembershipConsumer (r : Identity) (source : SourceState) : Bool :=
 theorem c0_membership_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMembershipConsumer r) := by
   intro s₁ s₂ h
-  -- Membership is determined by non-empty position list
-  simp [identityMembershipConsumer, candidateT, buildExactIndex] at h ⊢
-  -- The position list equality determines membership
-  cases s₁ with
+  -- Direct proof by induction
+  induction s₁ generalizing s₂ with
   | nil =>
     cases s₂ with
     | nil => rfl
-    | cons _ _ => simp at h
-  | cons rec₁ rest₁ =>
+    | cons _ _ => simp [candidateT, buildExactIndex] at h
+  | cons rec tail ih =>
     cases s₂ with
-    | nil => simp at h
-    | cons rec₂ rest₂ =>
-      simp [List.any_cons] at *
-      exact h
+    | nil => simp [candidateT, buildExactIndex] at h
+    | cons rec₂ tail₂ =>
+      simp [identityMembershipConsumer, candidateT, buildExactIndex, List.any_cons] at h ⊢
+      exact ih tail₂ h
 
 /-! ## C1: Identity multiplicity consumer -/
 
@@ -72,20 +70,18 @@ def identityMultiplicityConsumer (r : Identity) (source : SourceState) : Nat :=
 theorem c1_multiplicity_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMultiplicityConsumer r) := by
   intro s₁ s₂ h
-  -- Multiplicity equals candidate list length
-  simp [identityMultiplicityConsumer, candidateT, buildExactIndex] at h ⊢
-  -- The position list equality determines multiplicity
-  cases s₁ with
+  -- Direct proof by induction
+  induction s₁ generalizing s₂ with
   | nil =>
     cases s₂ with
     | nil => rfl
-    | cons _ _ => simp at h
-  | cons rec₁ rest₁ =>
+    | cons _ _ => simp [candidateT, buildExactIndex] at h
+  | cons rec tail ih =>
     cases s₂ with
-    | nil => simp at h
-    | cons rec₂ rest₂ =>
-      simp [List.filter_cons] at *
-      exact h
+    | nil => simp [candidateT, buildExactIndex] at h
+    | cons rec₂ tail₂ =>
+      simp [identityMultiplicityConsumer, candidateT, buildExactIndex, List.filter_cons] at h ⊢
+      exact ih tail₂ h
 
 /-! ## C2: Complete record consumer (negative) -/
 
@@ -133,37 +129,36 @@ def verifiedIdentityConsumer (r : Identity) (source : SourceState) : Bool :=
 theorem c4_verified_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (verifiedIdentityConsumer r) := by
   intro s₁ s₂ h
-  simp [verifiedIdentityConsumer, verifiedQueryT] at h ⊢
-  cases h₁ : List.find? (fun rec => rec.exactIdentity = r) s₁ with
-  | none =>
-    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
-    | none => simp [h₁, h₂]
-    | some _ => simp [h₁, h₂] at h
-  | some rec₁ =>
-    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
-    | none => simp [h₁, h₂] at h
-    | some rec₂ =>
-      simp [h₁, h₂] at h
-      simp [List.any_eq_true]
-      exact ⟨rec₁, by simp [List.mem_of_find?_eq_some h₁], rfl⟩
+  -- Direct proof by induction
+  induction s₁ generalizing s₂ with
+  | nil =>
+    cases s₂ with
+    | nil => rfl
+    | cons _ _ => simp [verifiedQueryT] at h
+  | cons rec tail ih =>
+    cases s₂ with
+    | nil => simp [verifiedQueryT] at h
+    | cons rec₂ tail₂ =>
+      simp [verifiedIdentityConsumer, verifiedQueryT, List.any_cons] at h ⊢
+      exact ih tail₂ h
 
 /-! ## C5: Verified complete record -/
 
 theorem c5_verified_completeRecord_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (completeRecordConsumer r) := by
   intro s₁ s₂ h
-  simp [completeRecordConsumer, verifiedQueryT] at h ⊢
-  cases h₁ : List.find? (fun rec => rec.exactIdentity = r) s₁ with
-  | none =>
-    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
-    | none => simp [h₁, h₂]
-    | some _ => simp [h₁, h₂] at h
-  | some rec₁ =>
-    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
-    | none => simp [h₁, h₂] at h
-    | some rec₂ =>
-      simp [h₁, h₂] at h
-      exact h
+  -- Direct proof by induction
+  induction s₁ generalizing s₂ with
+  | nil =>
+    cases s₂ with
+    | nil => rfl
+    | cons _ _ => simp [verifiedQueryT] at h
+  | cons rec tail ih =>
+    cases s₂ with
+    | nil => simp [verifiedQueryT] at h
+    | cons rec₂ tail₂ =>
+      simp [completeRecordConsumer, verifiedQueryT] at h ⊢
+      exact ih tail₂ h
 
 /-! ## Key negative results (compiled) -/
 
