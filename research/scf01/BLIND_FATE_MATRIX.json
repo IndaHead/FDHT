@@ -1,0 +1,11 @@
+{
+  "authority": "BLIND_EXTRACTION",
+  "matrix": {
+    "S0": {"C0": "SUFFICIENT", "C1": "SUFFICIENT", "C2": "OBSERVABLE_LOSS", "C3": "OBSERVABLE_LOSS", "C4": "NOT_APPLICABLE"},
+    "S1": {"C0": "SUFFICIENT", "C1": "SUFFICIENT", "C2": "OBSERVABLE_LOSS", "C3": "OBSERVABLE_LOSS", "C4": "NOT_APPLICABLE"},
+    "S2": {"C0": "SUFFICIENT", "C1": "SUFFICIENT", "C2": "SUFFICIENT", "C3": "SUFFICIENT", "C4": "NOT_APPLICABLE"},
+    "S3": {"C0": "SUFFICIENT", "C1": "SUFFICIENT", "C2": "SUFFICIENT", "C3": "SUFFICIENT", "C4": "NOT_APPLICABLE"},
+    "S4": {"C0": "NOT_APPLICABLE", "C1": "NOT_APPLICABLE", "C2": "NOT_APPLICABLE", "C3": "NOT_APPLICABLE", "C4": "OBSERVABLE_LOSS"}
+  },
+  "dimensions": {"stages": 5, "channels": 5, "product": 25}
+}

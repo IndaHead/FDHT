@@ -1,0 +1,59 @@
+{
+  "authority": "BLIND_EXTRACTION",
+  "stages": [
+    {
+      "id": "S0",
+      "input": "SourceState",
+      "output": "ExactIndex",
+      "transformation": "buildExactIndex",
+      "authority": "source-derived",
+      "obligation": "requirement-blind index construction",
+      "boundary": "index construction vs lookup"
+    },
+    {
+      "id": "S1",
+      "input": "ExactIndex × Identity",
+      "output": "List Position",
+      "transformation": "lookup",
+      "authority": "index-derived",
+      "obligation": "candidate position retrieval",
+      "boundary": "candidate vs verified"
+    },
+    {
+      "id": "S2",
+      "input": "SourceState × List Position",
+      "output": "List SourceRecord",
+      "transformation": "dereference",
+      "authority": "source-threaded",
+      "obligation": "concrete source access",
+      "boundary": "candidate position vs source record"
+    },
+    {
+      "id": "S3",
+      "input": "List SourceRecord × Identity",
+      "output": "VerifiedResult",
+      "transformation": "exact verification",
+      "authority": "source-verified",
+      "obligation": "identity confirmation",
+      "boundary": "verified vs unverified"
+    },
+    {
+      "id": "S4",
+      "input": "RawHistory",
+      "output": "TrajectoryBoundary",
+      "transformation": "trajectoryProjection",
+      "authority": "quotient",
+      "obligation": "trajectory class assignment",
+      "boundary": "raw vs projected"
+    }
+  ],
+  "raw_count": 5,
+  "admitted_count": 5,
+  "merge_tests": {
+    "S0_S1": "MERGE_LOSSY",
+    "S1_S2": "MERGE_LOSSY",
+    "S2_S3": "MERGE_LOSSY",
+    "S3_S4": "NOT_ADJACENT"
+  },
+  "structure": "LINEAR_PIPELINE"
+}

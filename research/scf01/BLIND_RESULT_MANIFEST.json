@@ -1,0 +1,14 @@
+{
+  "authority": "BLIND_FREEZE",
+  "stage_count": 5,
+  "channel_count": 5,
+  "independent_channel_count": 4,
+  "product": 25,
+  "structure": "LINEAR_PIPELINE",
+  "unresolved_merges": 0,
+  "unresolved_dependencies": 0,
+  "artefact_digests": {
+    "SEALED_COMPARISON_SPEC.json": "3a07211330de78d8090a10874858b2514e93e1aed362b4fb6056e9f244ec9435",
+    "FROZEN_EXTRACTION_RULES.json": "computed_at_freeze"
+  }
+}

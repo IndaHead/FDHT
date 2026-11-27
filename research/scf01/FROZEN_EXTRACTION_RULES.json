@@ -1,0 +1,50 @@
+{
+  "authority": "FROZEN_BEFORE_EXTRACTION",
+  "stage_admission": {
+    "required_fields": [
+      "explicit_input_carrier",
+      "explicit_output_carrier",
+      "explicit_transformation",
+      "declared_authority_level",
+      "declared_information_obligation",
+      "adjacent_boundary_distinction"
+    ],
+    "rejection_criteria": [
+      "narrative_label_only",
+      "renamed_copy",
+      "formatting_boundary",
+      "no_distinct_information_contract",
+      "assumed_architectural_position"
+    ]
+  },
+  "stage_merge_test": {
+    "lossy_distinctions": [
+      "carrier_schema_difference",
+      "authoritative_source_difference",
+      "candidate_vs_verified_status",
+      "persistent_vs_active_status",
+      "sufficiency_vs_evaluation",
+      "evaluation_vs_gate",
+      "invalid_vs_stale_vs_insufficient",
+      "source_threading_requirement",
+      "independently_observable_boundary"
+    ]
+  },
+  "channel_admission": {
+    "required_fields": [
+      "explicit_consumer_function",
+      "defined_codomain",
+      "meaningful_equality",
+      "testable_against_stage",
+      "independence_witness"
+    ]
+  },
+  "channel_independence": {
+    "witness_cases": [
+      "sufficient_vs_lossy",
+      "lossy_vs_sufficient",
+      "independent_variation",
+      "one_way_factorisation"
+    ]
+  }
+}

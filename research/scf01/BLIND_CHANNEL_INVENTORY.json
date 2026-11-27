@@ -1,0 +1,59 @@
+{
+  "authority": "BLIND_EXTRACTION",
+  "channels": [
+    {
+      "id": "C0",
+      "consumer": "identityMembershipConsumer",
+      "domain": "SourceState",
+      "codomain": "Bool",
+      "authority": "source-oracle",
+      "sufficient_stages": ["S0", "S1"],
+      "lossy_stages": []
+    },
+    {
+      "id": "C1",
+      "consumer": "identityMultiplicityConsumer",
+      "domain": "SourceState",
+      "codomain": "Nat",
+      "authority": "source-oracle",
+      "sufficient_stages": ["S0", "S1"],
+      "lossy_stages": []
+    },
+    {
+      "id": "C2",
+      "consumer": "completeRecordConsumer",
+      "domain": "SourceState",
+      "codomain": "Option SourceRecord",
+      "authority": "source-oracle",
+      "sufficient_stages": ["S2", "S3"],
+      "lossy_stages": ["S0", "S1"]
+    },
+    {
+      "id": "C3",
+      "consumer": "provenanceConsumer",
+      "domain": "SourceState",
+      "codomain": "Option Lineage",
+      "authority": "source-oracle",
+      "sufficient_stages": ["S2", "S3"],
+      "lossy_stages": ["S0", "S1"]
+    },
+    {
+      "id": "C4",
+      "consumer": "rawIdentityConsumer",
+      "domain": "RawHistory",
+      "codomain": "RawHistory",
+      "authority": "identity",
+      "sufficient_stages": [],
+      "lossy_stages": ["S4"]
+    }
+  ],
+  "raw_count": 5,
+  "independence_tests": {
+    "C0_C1": "C0_WEAKER_THAN_C1",
+    "C0_C2": "INDEPENDENT",
+    "C1_C2": "INDEPENDENT",
+    "C2_C3": "INDEPENDENT",
+    "C0_C4": "NOT_COMPARABLE"
+  },
+  "independent_count": 4
+}

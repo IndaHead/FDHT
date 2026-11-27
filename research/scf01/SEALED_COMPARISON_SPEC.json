@@ -1,0 +1,13 @@
+{
+  "authority": "WITHHELD_COMPARISON_TARGET_ONLY",
+  "source": "user-supplied architectural hypothesis",
+  "candidate_geometry": {
+    "layer_count": 8,
+    "distinction_channel_count": 3,
+    "product_cardinality": 24,
+    "interpretation": "state components, not transition operators",
+    "dynamics": "between layers",
+    "cyclic_closure": false
+  },
+  "note": "This file is a contamination-control artefact, not evidence. Do not read during blind extraction."
+}
