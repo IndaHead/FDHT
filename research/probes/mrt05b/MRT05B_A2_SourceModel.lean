@@ -46,21 +46,60 @@ def candidateT (r : Identity) (source : SourceState) : List Position :=
 def identityMembershipConsumer (r : Identity) (source : SourceState) : Bool :=
   source.any (fun rec => rec.exactIdentity = r)
 
+-- Probe-local helpers for C0 membership sufficiency
+theorem zipIdx_cons
+    {α : Type} (x : α) (xs : List α) (n : Nat) :
+    (x :: xs).zipIdx n = (x, n) :: xs.zipIdx (n + 1) := by
+  rfl
+
+theorem filter_map_snd_isEmpty_iff_no_match
+    (r : Identity)
+    (pairs : List (SourceRecord × Nat)) :
+    ((pairs.filter (fun ⟨rec, _⟩ => rec.exactIdentity = r)).map Prod.snd).isEmpty =
+      (pairs.filter (fun ⟨rec, _⟩ => rec.exactIdentity = r)).isEmpty := by
+  induction pairs with
+  | nil => rfl
+  | cons p ps ih =>
+    match p with
+    | (rec, idx) =>
+      by_cases h : rec.exactIdentity = r
+      · simp [h]
+      · simp [h, ih]
+
+theorem zipIdx_filter_empty_iff_source_no_match
+    (offset : Nat)
+    (r : Identity)
+    (source : SourceState) :
+    (source.zipIdx offset |>.filter (fun ⟨rec, _⟩ => rec.exactIdentity = r)).isEmpty =
+      !(source.any (fun rec => rec.exactIdentity = r)) := by
+  induction source generalizing offset with
+  | nil =>
+    simp
+  | cons head tail ih =>
+    rw [zipIdx_cons]
+    simp [List.filter_cons, List.any_cons]
+    by_cases h : head.exactIdentity = r
+    · simp [h]
+    · simp [h, ih (offset + 1)]
+
+theorem candidateT_isEmpty_eq_not_membership
+    (r : Identity)
+    (source : SourceState) :
+    (candidateT r source).isEmpty = !(identityMembershipConsumer r source) := by
+  unfold candidateT buildExactIndex identityMembershipConsumer
+  rw [filter_map_snd_isEmpty_iff_no_match]
+  exact zipIdx_filter_empty_iff_source_no_match 0 r source
+
 theorem c0_membership_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMembershipConsumer r) := by
-  intro s₁ s₂ h
-  -- Direct proof by induction
-  induction s₁ generalizing s₂ with
-  | nil =>
-    cases s₂ with
-    | nil => rfl
-    | cons _ _ => simp [candidateT, buildExactIndex] at h
-  | cons rec tail ih =>
-    cases s₂ with
-    | nil => simp [candidateT, buildExactIndex] at h
-    | cons rec₂ tail₂ =>
-      simp [identityMembershipConsumer, candidateT, buildExactIndex, List.any_cons] at h ⊢
-      exact ih tail₂ h
+  intro s₁ s₂ hCand
+  have h1 := candidateT_isEmpty_eq_not_membership r s₁
+  have h2 := candidateT_isEmpty_eq_not_membership r s₂
+  have hEmptyEq : (candidateT r s₁).isEmpty = (candidateT r s₂).isEmpty :=
+    congrArg List.isEmpty hCand
+  rw [h1, h2] at hEmptyEq
+  simp only [Bool.not_eq_eq_eq_not, Bool.not_not] at hEmptyEq
+  exact hEmptyEq
 
 /-! ## C1: Identity multiplicity consumer -/
 
@@ -173,3 +212,4 @@ theorem c5_verified_completeRecord_structural (r : Identity) :
 #print axioms c3_observableLoss_provenance
 #print axioms c4_verified_structural
 #print axioms c5_verified_completeRecord_structural
+#print axioms candidateT_isEmpty_eq_not_membership
