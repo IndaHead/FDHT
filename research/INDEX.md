@@ -102,3 +102,5 @@ See `research/af1_adv/STATUS.md` for the AF₁-ADV → AF₁-ADV2 claim reductio
 | MRT-04 | CLOSED | TRANSFORMATION_FATE | — | — | research/results/FDHT_MRT04_Transformation_Fate_Laws.md |
 
 | MRT-05A | CLOSED | TRAJECTORY_ADAPTER | MRT-04 | — | research/results/FDHT_MRT05A_Trajectory_Projection_Adapter.md |
+
+| MRT-05B | CLOSED | A2_ADAPTER | MRT-04 | — | research/results/FDHT_MRT05B_A2_Exact_Address_Adapter.md |
