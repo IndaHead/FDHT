@@ -1,0 +1,9 @@
+{
+  "authority": "PD3_FROZEN",
+  "target": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+  "sha256": "6fbae4e85af92cc301be8f47a56a865caf12a265b10b27cc33b28678bf5ab174",
+  "byte_length": 5768,
+  "frozen_before_control": true,
+  "frozen_after_435": true,
+  "frozen_after_436": true
+}

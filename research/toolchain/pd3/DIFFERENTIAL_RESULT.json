@@ -1,0 +1,9 @@
+{
+  "authority": "PD3_DIFFERENTIAL",
+  "case": "D2",
+  "classification": "NO_TOOLCHAIN_RELIEF_IDENTICAL_FAILURE",
+  "435_exit": 1,
+  "436_exit": 1,
+  "first_error_match": true,
+  "error_count_match": true
+}

@@ -1,0 +1,8 @@
+{
+  "authority": "PD3_ENVIRONMENT",
+  "toolchain": "leanprover/lean4:v4.36.0",
+  "version": "4.36.0",
+  "method": "direct binary",
+  "os": "linux",
+  "architecture": "x86_64"
+}

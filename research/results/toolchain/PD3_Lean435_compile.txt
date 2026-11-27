@@ -1,0 +1,141 @@
+note: using toolchain 'leanprover/lean4:v4.35.0' from override set on '/tmp/FDHT_cycle_audit'
+note: to remove: elan override unset --path '/tmp/FDHT_cycle_audit' | to suppress: ELAN_NO_OVERRIDE_NOTICE=1
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:57:15: error: unsolved goals
+case nil.cons
+r : Identity
+head✝ : SourceRecord
+tail✝ : List SourceRecord
+h : ¬head✝.exactIdentity = r ∧ ∀ (a : SourceRecord) (b : Nat), (a, b) ∈ tail✝.zipIdx 1 → ¬a.exactIdentity = r
+⊢ identityMembershipConsumer r [] = identityMembershipConsumer r (head✝ :: tail✝)
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:60:10: error: unsolved goals
+case cons.nil
+r : Identity
+rec : SourceRecord
+tail : List SourceRecord
+ih :
+  ∀ (s₂ : SourceState),
+    candidateT r tail = candidateT r s₂ → identityMembershipConsumer r tail = identityMembershipConsumer r s₂
+h : ¬rec.exactIdentity = r ∧ ∀ (a : SourceRecord) (b : Nat), (a, b) ∈ tail.zipIdx 1 → ¬a.exactIdentity = r
+⊢ identityMembershipConsumer r (rec :: tail) = identityMembershipConsumer r []
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:63:21: error: Application type mismatch: The argument
+  h
+has type
+  List.map Prod.snd (List.filter (fun x => decide (x.fst.exactIdentity = r)) ((rec, 0) :: tail.zipIdx 1)) =
+    List.map Prod.snd (List.filter (fun x => decide (x.fst.exactIdentity = r)) ((rec₂, 0) :: tail₂.zipIdx 1))
+but is expected to have type
+  candidateT r tail = candidateT r tail₂
+in the application
+  ih tail₂ h
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:78:15: error: unsolved goals
+case nil.cons
+r : Identity
+head✝ : SourceRecord
+tail✝ : List SourceRecord
+h : ¬head✝.exactIdentity = r ∧ ∀ (a : SourceRecord) (b : Nat), (a, b) ∈ tail✝.zipIdx 1 → ¬a.exactIdentity = r
+⊢ identityMultiplicityConsumer r [] = identityMultiplicityConsumer r (head✝ :: tail✝)
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:81:10: error: unsolved goals
+case cons.nil
+r : Identity
+rec : SourceRecord
+tail : List SourceRecord
+ih :
+  ∀ (s₂ : SourceState),
+    candidateT r tail = candidateT r s₂ → identityMultiplicityConsumer r tail = identityMultiplicityConsumer r s₂
+h : ¬rec.exactIdentity = r ∧ ∀ (a : SourceRecord) (b : Nat), (a, b) ∈ tail.zipIdx 1 → ¬a.exactIdentity = r
+⊢ identityMultiplicityConsumer r (rec :: tail) = identityMultiplicityConsumer r []
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:84:21: error: Application type mismatch: The argument
+  h
+has type
+  List.map Prod.snd
+      (if rec.exactIdentity = r then (rec, 0) :: List.filter (fun x => decide (x.fst.exactIdentity = r)) (tail.zipIdx 1)
+      else List.filter (fun x => decide (x.fst.exactIdentity = r)) (tail.zipIdx 1)) =
+    List.map Prod.snd
+      (if rec₂.exactIdentity = r then
+        (rec₂, 0) :: List.filter (fun x => decide (x.fst.exactIdentity = r)) (tail₂.zipIdx 1)
+      else List.filter (fun x => decide (x.fst.exactIdentity = r)) (tail₂.zipIdx 1))
+but is expected to have type
+  candidateT r tail = candidateT r tail₂
+in the application
+  ih tail₂ h
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:137:15: error: unsolved goals
+case nil.cons
+r : Identity
+head✝ : SourceRecord
+tail✝ : List SourceRecord
+h :
+  VerifiedResult.verifiedAbsent =
+    match List.find? (fun rec => decide (rec.exactIdentity = r)) (head✝ :: tail✝) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent
+⊢ verifiedIdentityConsumer r [] = verifiedIdentityConsumer r (head✝ :: tail✝)
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:140:10: error: unsolved goals
+case cons.nil
+r : Identity
+rec : SourceRecord
+tail : List SourceRecord
+ih :
+  ∀ (s₂ : SourceState),
+    verifiedQueryT r tail = verifiedQueryT r s₂ → verifiedIdentityConsumer r tail = verifiedIdentityConsumer r s₂
+h :
+  (match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec :: tail) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent) =
+    VerifiedResult.verifiedAbsent
+⊢ verifiedIdentityConsumer r (rec :: tail) = verifiedIdentityConsumer r []
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:143:21: error: Application type mismatch: The argument
+  h
+has type
+  (match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec :: tail) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent) =
+    match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec₂ :: tail₂) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent
+but is expected to have type
+  verifiedQueryT r tail = verifiedQueryT r tail₂
+in the application
+  ih tail₂ h
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:155:15: error: unsolved goals
+case nil.cons
+r : Identity
+head✝ : SourceRecord
+tail✝ : List SourceRecord
+h :
+  VerifiedResult.verifiedAbsent =
+    match List.find? (fun rec => decide (rec.exactIdentity = r)) (head✝ :: tail✝) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent
+⊢ completeRecordConsumer r [] = completeRecordConsumer r (head✝ :: tail✝)
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:158:10: error: unsolved goals
+case cons.nil
+r : Identity
+rec : SourceRecord
+tail : List SourceRecord
+ih :
+  ∀ (s₂ : SourceState),
+    verifiedQueryT r tail = verifiedQueryT r s₂ → completeRecordConsumer r tail = completeRecordConsumer r s₂
+h :
+  (match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec :: tail) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent) =
+    VerifiedResult.verifiedAbsent
+⊢ completeRecordConsumer r (rec :: tail) = completeRecordConsumer r []
+research/probes/mrt05b/MRT05B_A2_SourceModel.lean:161:21: error: Application type mismatch: The argument
+  h
+has type
+  (match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec :: tail) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent) =
+    match List.find? (fun rec => decide (rec.exactIdentity = r)) (rec₂ :: tail₂) with
+    | some rec => VerifiedResult.verifiedPresent rec
+    | none => VerifiedResult.verifiedAbsent
+but is expected to have type
+  verifiedQueryT r tail = verifiedQueryT r tail₂
+in the application
+  ih tail₂ h
+'c0_membership_structural' depends on axioms: [sorryAx]
+'c1_multiplicity_structural' depends on axioms: [sorryAx]
+'c2_observableLoss_completeRecord' depends on axioms: [c2_observableLoss_completeRecord._native.native_decide.ax_1_4]
+'c3_observableLoss_provenance' depends on axioms: [c3_observableLoss_provenance._native.native_decide.ax_1_4]
+'c4_verified_structural' depends on axioms: [sorryAx]
+'c5_verified_completeRecord_structural' depends on axioms: [sorryAx]

@@ -1,0 +1,11 @@
+{
+  "authority": "PD3_COMPARISON",
+  "theorems": {
+    "c0_membership_structural": {"435": "FAILED", "436": "FAILED"},
+    "c1_multiplicity_structural": {"435": "FAILED", "436": "FAILED"},
+    "c4_verified_structural": {"435": "FAILED", "436": "FAILED"},
+    "c5_verified_completeRecord_structural": {"435": "FAILED", "436": "FAILED"},
+    "c2_observableLoss_completeRecord": {"435": "COMPILED", "436": "COMPILED"},
+    "c3_observableLoss_provenance": {"435": "COMPILED", "436": "COMPILED"}
+  }
+}

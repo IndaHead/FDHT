@@ -1,0 +1,9 @@
+{
+  "authority": "PD3_RESULT",
+  "toolchain": "4.35.0",
+  "exit_code": 1,
+  "error_count": 12,
+  "first_error": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean:57:15: error: unsolved goals",
+  "failing_theorem": "c0_membership_structural",
+  "source_position": "57:15"
+}

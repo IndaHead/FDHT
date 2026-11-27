@@ -1,0 +1,9 @@
+{
+  "authority": "PD3_RESULTS",
+  "classification": "B",
+  "classification_text": "IDENTICAL FROZEN PROOF FAILS IDENTICALLY ON BOTH TOOLCHAINS",
+  "source_identity": true,
+  "435_exit": 1,
+  "436_exit": 1,
+  "error_equivalence": true
+}
