@@ -1,0 +1,9 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "R1_permanent_consumer": "NOT_SATISFIED",
+  "R2_identity_constraint": "NOT_SATISFIED",
+  "R3_independent_identity_provenance": "NOT_SATISFIED",
+  "R4_verified_address_traversal": "NOT_SATISFIED",
+  "R5_boundary_changing_counterexample": "NOT_SATISFIED",
+  "retrieval_frontier_disposition": "REMAINS_CLOSED"
+}

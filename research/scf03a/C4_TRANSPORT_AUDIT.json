@@ -1,0 +1,7 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "C4_transport_applicable": false,
+  "reason": "No SourceState → RawHistory adapter found",
+  "transportedC4_definition": "NOT_APPLICABLE",
+  "transportedC4_classification": "NOT_APPLICABLE"
+}

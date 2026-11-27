@@ -1,0 +1,10 @@
+{
+  "authority": "SCF03A_RESULTS",
+  "classification": "G",
+  "classification_text": "NO EXISTING ADAPTER FOUND IN SEARCHED ARTEFACTS",
+  "direct_adapters": 0,
+  "composite_adapters": 0,
+  "common_carriers": 0,
+  "domain_mismatch_resolved": false,
+  "note": "No existing adapter was found in the searched repository artefacts. Absence of artefact is not mathematical impossibility."
+}

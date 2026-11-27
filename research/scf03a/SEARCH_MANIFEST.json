@@ -1,0 +1,12 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "starting_head": "f6dd71d810e68dd789dc6e98c435e65787df135f",
+  "search_scope": ["fdht/", "research/", "scripts/", "tests/"],
+  "search_terms": [
+    "SourceState", "SourceRecord", "RawHistory", "KernelExprContext",
+    "adapter", "translate", "convert", "map", "mapping", "projection",
+    "reconstruct", "embed", "lift", "lower", "coerce", "transport"
+  ],
+  "artefact_count": 77,
+  "query_count": 20
+}

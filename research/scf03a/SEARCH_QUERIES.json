@@ -1,0 +1,12 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "queries": [
+    {"query": "SourceState.*RawHistory", "hits": 0},
+    {"query": "RawHistory.*SourceState", "hits": 0},
+    {"query": "KernelExprContext.*SourceRecord", "hits": 0},
+    {"query": "SourceRecord.*KernelExprContext", "hits": 0},
+    {"query": "def.*SourceState", "hits": 1},
+    {"query": "def.*RawHistory", "hits": 3},
+    {"query": "def.*SourceRecord", "hits": 1}
+  ]
+}

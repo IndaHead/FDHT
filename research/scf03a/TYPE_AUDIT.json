@@ -1,0 +1,23 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "SourceState": {
+    "definition": "List SourceRecord",
+    "authority": "RESEARCH",
+    "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean"
+  },
+  "RawHistory": {
+    "definition": "List KernelExprContext",
+    "authority": "PERMANENT",
+    "path": "fdht/FDHT_Audit_ArbitraryCollision.lean"
+  },
+  "SourceRecord": {
+    "fields": ["recordId", "exactIdentity", "payload", "lineage"],
+    "authority": "RESEARCH"
+  },
+  "KernelExprContext": {
+    "authority": "PERMANENT",
+    "note": "Permanent FDHT type"
+  },
+  "type_match": false,
+  "adapter_exists": false
+}

@@ -1,0 +1,23 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "direct_SourceState_to_RawHistory": [],
+  "direct_RawHistory_to_SourceState": [],
+  "composite_adapters": [],
+  "common_carriers": [],
+  "related_structures": [
+    {
+      "name": "SourceState",
+      "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+      "authority": "RESEARCH",
+      "type": "List SourceRecord",
+      "note": "Research-local definition, not permanent FDHT"
+    },
+    {
+      "name": "RawHistory",
+      "path": "fdht/FDHT_Audit_ArbitraryCollision.lean",
+      "authority": "PERMANENT",
+      "type": "List KernelExprContext",
+      "note": "Permanent FDHT definition"
+    }
+  ]
+}

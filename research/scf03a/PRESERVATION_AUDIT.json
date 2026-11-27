@@ -1,0 +1,18 @@
+{
+  "authority": "SCF03A_SEARCH",
+  "preservation_properties": {
+    "P1_occurrence_identity": "NOT_APPLICABLE",
+    "P2_semantic_identity": "NOT_APPLICABLE",
+    "P3_source_order": "NOT_APPLICABLE",
+    "P4_multiplicity": "NOT_APPLICABLE",
+    "P5_payload": "NOT_APPLICABLE",
+    "P6_provenance": "NOT_APPLICABLE",
+    "P7_negative_history": "NOT_APPLICABLE",
+    "P8_source_authority": "NOT_APPLICABLE",
+    "P9_injectivity": "NOT_APPLICABLE",
+    "P10_left_inverse": "NOT_APPLICABLE",
+    "P11_right_inverse": "NOT_APPLICABLE",
+    "P12_consumer_sufficiency": "NOT_APPLICABLE"
+  },
+  "reason": "No adapter found"
+}
