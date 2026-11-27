@@ -34,7 +34,7 @@ abbrev ExactIndex := Identity → List Position
 
 def buildExactIndex (source : SourceState) : ExactIndex :=
   fun ident =>
-    (source.enum.filter (fun ⟨_, r⟩ => r.exactIdentity = ident)).map Prod.fst
+    (source.zipIdx.filter (fun ⟨rec, _⟩ => rec.exactIdentity = ident)).map Prod.snd
 
 /-! ## Candidate transformation -/
 
@@ -46,27 +46,46 @@ def candidateT (r : Identity) (source : SourceState) : List Position :=
 def identityMembershipConsumer (r : Identity) (source : SourceState) : Bool :=
   source.any (fun rec => rec.exactIdentity = r)
 
--- Structural observation: membership is determined by non-empty position list.
--- Full proof requires list reasoning orthogonal to the adapter claim.
 theorem c0_membership_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMembershipConsumer r) := by
   intro s₁ s₂ h
-  -- Membership is a function of the position list
-  simp [identityMembershipConsumer, candidateT, buildExactIndex]
+  -- Membership is determined by non-empty position list
+  simp [identityMembershipConsumer, candidateT, buildExactIndex] at h ⊢
   -- The position list equality determines membership
-  sorry
+  cases s₁ with
+  | nil =>
+    cases s₂ with
+    | nil => rfl
+    | cons _ _ => simp at h
+  | cons rec₁ rest₁ =>
+    cases s₂ with
+    | nil => simp at h
+    | cons rec₂ rest₂ =>
+      simp [List.any_cons] at *
+      exact h
 
 /-! ## C1: Identity multiplicity consumer -/
 
 def identityMultiplicityConsumer (r : Identity) (source : SourceState) : Nat :=
   (source.filter (fun rec => rec.exactIdentity = r)).length
 
--- Structural observation: multiplicity equals position list length.
 theorem c1_multiplicity_structural (r : Identity) :
     SufficientFor (candidateT r) (identityMultiplicityConsumer r) := by
   intro s₁ s₂ h
-  simp [identityMultiplicityConsumer, candidateT, buildExactIndex]
-  sorry
+  -- Multiplicity equals candidate list length
+  simp [identityMultiplicityConsumer, candidateT, buildExactIndex] at h ⊢
+  -- The position list equality determines multiplicity
+  cases s₁ with
+  | nil =>
+    cases s₂ with
+    | nil => rfl
+    | cons _ _ => simp at h
+  | cons rec₁ rest₁ =>
+    cases s₂ with
+    | nil => simp at h
+    | cons rec₂ rest₂ =>
+      simp [List.filter_cons] at *
+      exact h
 
 /-! ## C2: Complete record consumer (negative) -/
 
@@ -78,12 +97,8 @@ theorem c2_observableLoss_completeRecord :
   let s₁ : SourceState := [⟨"r1", "id1", "payload1", "lineage1"⟩]
   let s₂ : SourceState := [⟨"r2", "id1", "payload2", "lineage2"⟩]
   refine ⟨s₁, s₂, ?_, ?_⟩
-  · -- candidateT equal: both have identity at position 0
-    simp [candidateT, buildExactIndex]
-    rfl
-  · -- completeRecord different
-    simp [completeRecordConsumer]
-    native_decide
+  · simp [candidateT, buildExactIndex]; rfl
+  · simp [completeRecordConsumer]; native_decide
 
 /-! ## C3: Provenance consumer (negative) -/
 
@@ -115,21 +130,40 @@ def verifiedQueryT (r : Identity) (source : SourceState) : VerifiedResult :=
 def verifiedIdentityConsumer (r : Identity) (source : SourceState) : Bool :=
   source.any (fun rec => rec.exactIdentity = r)
 
--- Structural observation: verified result determines membership.
 theorem c4_verified_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (verifiedIdentityConsumer r) := by
   intro s₁ s₂ h
-  simp [verifiedIdentityConsumer, verifiedQueryT]
-  sorry
+  simp [verifiedIdentityConsumer, verifiedQueryT] at h ⊢
+  cases h₁ : List.find? (fun rec => rec.exactIdentity = r) s₁ with
+  | none =>
+    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
+    | none => simp [h₁, h₂]
+    | some _ => simp [h₁, h₂] at h
+  | some rec₁ =>
+    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
+    | none => simp [h₁, h₂] at h
+    | some rec₂ =>
+      simp [h₁, h₂] at h
+      simp [List.any_eq_true]
+      exact ⟨rec₁, by simp [List.mem_of_find?_eq_some h₁], rfl⟩
 
 /-! ## C5: Verified complete record -/
 
--- Structural observation: verified result contains complete record.
 theorem c5_verified_completeRecord_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (completeRecordConsumer r) := by
   intro s₁ s₂ h
-  simp [completeRecordConsumer, verifiedQueryT]
-  sorry
+  simp [completeRecordConsumer, verifiedQueryT] at h ⊢
+  cases h₁ : List.find? (fun rec => rec.exactIdentity = r) s₁ with
+  | none =>
+    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
+    | none => simp [h₁, h₂]
+    | some _ => simp [h₁, h₂] at h
+  | some rec₁ =>
+    cases h₂ : List.find? (fun rec => rec.exactIdentity = r) s₂ with
+    | none => simp [h₁, h₂] at h
+    | some rec₂ =>
+      simp [h₁, h₂] at h
+      exact h
 
 /-! ## Key negative results (compiled) -/
 
@@ -138,5 +172,9 @@ theorem c5_verified_completeRecord_structural (r : Identity) :
 
 /-! ## Axiom audit -/
 
+#print axioms c0_membership_structural
+#print axioms c1_multiplicity_structural
 #print axioms c2_observableLoss_completeRecord
 #print axioms c3_observableLoss_provenance
+#print axioms c4_verified_structural
+#print axioms c5_verified_completeRecord_structural
