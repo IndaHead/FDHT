@@ -199,21 +199,68 @@ def verifiedQueryT (r : Identity) (source : SourceState) : VerifiedResult :=
 def verifiedIdentityConsumer (r : Identity) (source : SourceState) : Bool :=
   source.any (fun rec => rec.exactIdentity = r)
 
+-- Probe-local helpers for C4 verified membership sufficiency
+theorem find?_none_iff_any_false
+    (r : Identity)
+    (source : SourceState) :
+    source.find? (fun rec => rec.exactIdentity = r) = none
+    ↔
+    source.any (fun rec => rec.exactIdentity = r) = false := by
+  induction source with
+  | nil =>
+    simp
+  | cons head tail ih =>
+    by_cases h : head.exactIdentity = r
+    · simp [h]
+    · simp [h, ih]
+
+theorem find?_some_implies_any_true
+    (r : Identity)
+    (source : SourceState)
+    (record : SourceRecord)
+    (hFind : source.find? (fun rec => rec.exactIdentity = r) = some record) :
+    source.any (fun rec => rec.exactIdentity = r) = true := by
+  induction source with
+  | nil =>
+    cases hFind
+  | cons head tail ih =>
+    by_cases h : head.exactIdentity = r
+    · have : (head :: tail).any (fun rec => rec.exactIdentity = r) = true := by
+        rw [List.any_cons]
+        simp [h]
+      exact this
+    · have hFindTail : tail.find? (fun rec => rec.exactIdentity = r) = some record := by
+        rw [List.find?_cons] at hFind
+        simp [h] at hFind
+        exact hFind
+      have hAnyTail := ih hFindTail
+      rw [List.any_cons]
+      simp [h, hAnyTail]
+
+def verifiedPresence : VerifiedResult → Bool
+  | VerifiedResult.verifiedPresent _ => true
+  | VerifiedResult.verifiedAbsent => false
+
+theorem verifiedPresence_verifiedQueryT
+    (r : Identity)
+    (source : SourceState) :
+    verifiedPresence (verifiedQueryT r source) = verifiedIdentityConsumer r source := by
+  unfold verifiedQueryT verifiedIdentityConsumer verifiedPresence
+  cases hFind : source.find? (fun rec => rec.exactIdentity = r) with
+  | none =>
+    have hAny := (find?_none_iff_any_false r source).mp hFind
+    rw [hAny]
+  | some rec =>
+    have hAny := find?_some_implies_any_true r source rec hFind
+    rw [hAny]
+
 theorem c4_verified_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (verifiedIdentityConsumer r) := by
-  intro s₁ s₂ h
-  -- Direct proof by induction
-  induction s₁ generalizing s₂ with
-  | nil =>
-    cases s₂ with
-    | nil => rfl
-    | cons _ _ => simp [verifiedQueryT] at h
-  | cons rec tail ih =>
-    cases s₂ with
-    | nil => simp [verifiedQueryT] at h
-    | cons rec₂ tail₂ =>
-      simp [verifiedIdentityConsumer, verifiedQueryT, List.any_cons] at h ⊢
-      exact ih tail₂ h
+  intro s₁ s₂ hVerified
+  have hPresence : verifiedPresence (verifiedQueryT r s₁) = verifiedPresence (verifiedQueryT r s₂) :=
+    congrArg verifiedPresence hVerified
+  rw [verifiedPresence_verifiedQueryT r s₁, verifiedPresence_verifiedQueryT r s₂] at hPresence
+  exact hPresence
 
 /-! ## C5: Verified complete record -/
 
