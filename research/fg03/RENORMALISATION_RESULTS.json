@@ -1,0 +1,10 @@
+{
+  "probe": "FG-03",
+  "notion": "D3",
+  "coarse_grainings_tested": 3,
+  "safe_coarse_grainings": 0,
+  "unsafe_coarse_grainings": 2,
+  "trivial_invariances": 1,
+  "nontrivial_invariances": 0,
+  "result": "NO_RENORMALISATION_INVARIANCE"
+}

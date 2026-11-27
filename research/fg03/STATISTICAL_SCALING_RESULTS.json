@@ -1,0 +1,9 @@
+{
+  "probe": "FG-03",
+  "notion": "D5",
+  "natural_graph_family_found": false,
+  "graph_family_size": 1,
+  "statistical_scaling_model": null,
+  "result": "NO_NATURAL_GRAPH_FAMILY",
+  "note": "Only a single hand-constructed research graph exists. No independently generated growing family."
+}

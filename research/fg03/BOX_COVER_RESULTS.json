@@ -1,0 +1,13 @@
+{
+  "probe": "FG-03",
+  "notion": "D4",
+  "graph_metric": "unweighted undirected hop distance on typed carriers",
+  "box_cover_algorithm": "greedy set cover approximation on diameter ≤ ℓ",
+  "usable_scale_count": 2,
+  "scale_range_requirement": 5,
+  "result": "INSUFFICIENT_SCALE_RANGE",
+  "n_b_values": null,
+  "fractal_dimension_estimate": null,
+  "fit_quality": null,
+  "note": "Graph has only 5 nodes and 2 components; fewer than 5 distinct usable scales. No fit performed."
+}

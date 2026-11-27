@@ -1,0 +1,8 @@
+{
+  "probe": "FG-03",
+  "notion": "D1",
+  "proper_subgraphs_tested": 4,
+  "exact_typed_isomorphisms_found": 0,
+  "result": "NO_EXACT_SELF_SIMILARITY",
+  "details": "No proper subgraph is isomorphic to the full graph under the frozen typed isomorphism requirements (carriers, authority, transformations, fate, source-threading, invalid-domain boundaries preserved). The two components are distinct and neither is a scaled copy of the whole."
+}

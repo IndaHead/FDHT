@@ -1,0 +1,26 @@
+{
+  "probe": "FG-03",
+  "null_models": {
+    "N0_label_permuted": {
+      "description": "Preserve graph topology; permute semantic labels on carriers and transformations.",
+      "purpose": "Detect if apparent structure is label-dependent rather than topological."
+    },
+    "N1_degree_preserving": {
+      "description": "Preserve in/out degree sequence while rewiring compatible edges where possible.",
+      "purpose": "Detect if structure exceeds degree sequence constraints."
+    },
+    "N2_type_relaxed": {
+      "description": "Ignore carrier types while preserving arrow count.",
+      "purpose": "Detect if typing is load-bearing for any claimed pattern."
+    },
+    "N3_fate_permuted": {
+      "description": "Preserve graph and consumer counts; permute fate statuses.",
+      "purpose": "Detect if fate profiles are specially arranged."
+    },
+    "N4_hierarchical_nonfractal": {
+      "description": "Construct nested or branching graph with no scale-invariant self-similarity (e.g., simple tree of depth 3 with distinct labels).",
+      "purpose": "Determine whether test merely detects hierarchy or nesting."
+    }
+  },
+  "execution_note": "On the frozen small typed graph (5 carriers, 2 components), all nulls produce comparable modularity scores; FDHT structure is not distinguishable from hierarchical nonfractal nulls under the frozen criteria."
+}

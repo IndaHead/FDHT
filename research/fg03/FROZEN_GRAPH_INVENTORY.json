@@ -1,0 +1,61 @@
+{
+  "probe": "FG-03",
+  "frozen_after_criteria": true,
+  "source_artefacts": [
+    {
+      "path": "research/scf03b/TYPED_CARRIER_GRAPH.json",
+      "sha256": "3852b20d6ca1e56b0fdab3a4bda6444ff98eb10b7e253ba6b1e207ec697395b9",
+      "authority": "RESEARCH_PROBE_SCF03B",
+      "reason": "Recover carriers, transformations, consumers, fate cells, components from typed carrier graph extraction"
+    },
+    {
+      "path": "research/scf03b/CARRIER_INVENTORY.json",
+      "sha256": "2bb619a0c9c039aba03995a711e23d6c2ad25a8e1a5f3d1876e6531968f94da4",
+      "authority": "RESEARCH_PROBE_SCF03B",
+      "reason": "Carrier list with authority labels"
+    },
+    {
+      "path": "research/scf03b/FATE_CELL_INVENTORY.json",
+      "sha256": "686025992b301694abbe722c1a4549d0000c5a5c510868db719358a53fd33fdd",
+      "authority": "RESEARCH_PROBE_SCF03B",
+      "reason": "Fate cell statuses for transformations and consumers"
+    },
+    {
+      "path": "research/scf03b/CONNECTED_COMPONENTS.json",
+      "sha256": "e84ebb2c14b1f38efc3947986b12a7126203baebd7dc7b45d1288193bb81ffc5",
+      "authority": "RESEARCH_PROBE_SCF03B",
+      "reason": "Connected component structure"
+    },
+    {
+      "path": "research/probes/mrt05b/MRT05B_A2_SourceModel.lean",
+      "sha256": "624de6bfa39202de77740994188d5747f8cc00c91e1bfa8f37ce5bc2e89a4768",
+      "authority": "RESEARCH_PROBE_MRT05B",
+      "reason": "Source of A2 research-local carriers and verified fates (now fully proved)"
+    }
+  ],
+  "extracted_summary": {
+    "carriers": [
+      "RawHistory",
+      "TrajectoryBoundary",
+      "SourceState",
+      "ExactIndex",
+      "CandidateRepresentation"
+    ],
+    "permanent_carriers": [
+      "RawHistory",
+      "TrajectoryBoundary"
+    ],
+    "research_carriers": [
+      "SourceState",
+      "ExactIndex",
+      "CandidateRepresentation"
+    ],
+    "transformations": [
+      "trajectoryProjection",
+      "buildExactIndex",
+      "candidateT"
+    ],
+    "note": "No SourceState \u2194 RawHistory adapter. Two connected components."
+  },
+  "no_new_target_shape_introduced": true
+}

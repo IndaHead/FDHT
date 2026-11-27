@@ -1,0 +1,47 @@
+{
+  "probe": "FG-03",
+  "version": "1.0",
+  "frozen_before_graph_inspection": true,
+  "notions": {
+    "D1_exact_self_similarity": {
+      "name": "ExactSelfSimilar(G, H)",
+      "requirement": "Typed graph isomorphism φ : G ≅ H for proper subgraph H, preserving carriers, authority, transformations, direction, source/target types, consumer attachment, fate status, source-threading, additional-input boundaries, invalid-domain boundaries.",
+      "proper_subgraph_required": true,
+      "not_sufficient": ["shared labels", "two paths with same labels"]
+    },
+    "D2_typed_recursive_self_similarity": {
+      "name": "TypedRecursivePattern(P, G)",
+      "requirement": "At least two non-overlapping occurrences of nontrivial pattern P at distinct declared scales, preserving role structure, type compatibility, transformation direction, consumer locality, sufficiency/loss relations, authority boundaries.",
+      "minimum_candidate_pattern": "authoritative carrier → derived representation → consumer-relative fate classification",
+      "weakness_test": "Check if minimum pattern matches nearly every information system (modularity only)."
+    },
+    "D3_renormalisation_invariance": {
+      "name": "RenormalisationInvariance",
+      "requirement": "Coarse-graining R : Graph → Graph with frozen grouping/quotient/retained fields/consumer transport/fate aggregation/authority aggregation/unresolved rules, plus predeclared invariant I such that I(R(G)) = I(G) or predeclared scale law.",
+      "candidate_invariants_frozen": [
+        "typed_degree_profile",
+        "connected_component_structure",
+        "fate_profile_distribution",
+        "authority_transition_profile",
+        "consumer_per_carrier_profile",
+        "safe_loss_unresolved_incidence_signature",
+        "path_level_sufficiency_relations"
+      ]
+    },
+    "D4_box_cover_scaling": {
+      "name": "BoxCoverScaling",
+      "requirement": "Graph metric d and box-cover rule defining N_B(ℓ) (min or approx boxes of diameter ≤ ℓ). Candidate law N_B(ℓ) ∝ ℓ^(-d_B) over declared scale range.",
+      "minimum_usable_scales": 5,
+      "insufficient_scale_range_class": "INSUFFICIENT_SCALE_RANGE",
+      "no_fit_on_few_points": true
+    },
+    "D5_statistical_self_similarity": {
+      "name": "StatisticalSelfSimilarity",
+      "requirement": "Growing family G1..Gn generated independently of the fractality test. Single hand-constructed graph insufficient.",
+      "no_family_class": "NO_NATURAL_GRAPH_FAMILY",
+      "minimum_family_size": 8
+    }
+  },
+  "null_models_required": ["N0_label_permuted", "N1_degree_preserving", "N2_type_relaxed", "N3_fate_permuted", "N4_hierarchical_nonfractal"],
+  "claim_boundary": "Even positive results establish only bounded fractality under frozen criteria; no universal/physical/promotion claims."
+}

@@ -1,0 +1,9 @@
+{
+  "probe": "FG-03",
+  "notion": "D2",
+  "candidate_motifs": ["M0_source_to_derived", "M1_source_derived_safe", "M2_source_derived_safe_lossy", "M3_candidate_reentry_verified", "M4_raw_to_quotient_collision"],
+  "independent_recurrences_at_distinct_scales": 0,
+  "declared_scale_levels": 1,
+  "result": "MODULARITY_ONLY_NOT_FRACTALITY",
+  "details": "Motifs such as authoritative → derived representation appear in both components, but at a single scale and without non-overlapping scale-recursive structure. Minimum pattern is too weak (matches ordinary information systems). One occurrence is research-local A2 deliberately constructed, not an independent scale copy."
+}

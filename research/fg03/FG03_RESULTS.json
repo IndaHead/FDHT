@@ -1,0 +1,12 @@
+{
+  "probe": "FG-03",
+  "primary_classification": "I — FRACTAL INTERPRETATION NOT NECESSARY FOR CURRENT RESULTS",
+  "D1": "NO_EXACT_SELF_SIMILARITY",
+  "D2": "MODULARITY_ONLY_NOT_FRACTALITY",
+  "D3": "NO_RENORMALISATION_INVARIANCE",
+  "D4": "INSUFFICIENT_SCALE_RANGE",
+  "D5": "NO_NATURAL_GRAPH_FAMILY",
+  "law_recurrence_only": true,
+  "fractal_terminology_necessary": false,
+  "fdht_unchanged": true
+}

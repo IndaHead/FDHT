@@ -1,0 +1,6 @@
+{
+  "probe": "FG-03",
+  "all_results_restatable_without_fractal_terminology": true,
+  "result": "FRACTAL_INTERPRETATION_NOT_NECESSARY",
+  "details": "All established results (typed graph, quotient, fibre, kernel inclusion, consumer family, recursive composition of laws, hierarchy, provenance, source-threaded verification) are fully captured without fractal terminology."
+}

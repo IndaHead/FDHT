@@ -1,0 +1,20 @@
+{
+  "probe": "FG-03",
+  "rules": {
+    "R1_collapse_carrier_plus_consumers": {
+      "description": "Collapse each carrier plus its native consumers into one typed supernode.",
+      "status": "UNSAFE_COARSE_GRAINING",
+      "reason": "Destroys consumer-relative fate distinctions (SUFFICIENT vs OBSERVABLE_LOSS) that are load-bearing."
+    },
+    "R2_collapse_source_derived_branches": {
+      "description": "Collapse source → derived-representation branches into transformation modules.",
+      "status": "UNSAFE_COARSE_GRAINING",
+      "reason": "Collapses authority boundaries and source-threading status."
+    },
+    "R3_collapse_consumer_equivalent_fates": {
+      "description": "Collapse consumer-equivalent fate profiles.",
+      "status": "TRIVIAL_INVARIANCE",
+      "reason": "Invariant survives only because it discards the very distinctions the probe established."
+    }
+  }
+}

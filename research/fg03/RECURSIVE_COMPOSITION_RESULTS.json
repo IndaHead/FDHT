@@ -1,0 +1,7 @@
+{
+  "probe": "FG-03",
+  "law_recurrence": "LAW_RECURRENCE_ONLY",
+  "structural_recurrence": "NO_RECURRENCE",
+  "scale_recursive_structure": "NO_RECURRENCE",
+  "details": "Generic SufficientFor / ObservableLoss laws (ker(T) ⊆ ker(C)) recur across transformations, but the typed carrier/edge/consumer organisation does not repeat across scales. This is law recurrence, not geometric self-similarity."
+}
