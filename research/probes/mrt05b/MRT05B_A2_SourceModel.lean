@@ -264,21 +264,41 @@ theorem c4_verified_structural (r : Identity) :
 
 /-! ## C5: Verified complete record -/
 
+-- Probe-local encoding for C5 verified complete-record sufficiency
+def encodeVerified : Option SourceRecord → VerifiedResult
+  | some record => VerifiedResult.verifiedPresent record
+  | none => VerifiedResult.verifiedAbsent
+
+theorem encodeVerified_injective : Function.Injective encodeVerified := by
+  intro a b h
+  cases a with
+  | none =>
+    cases b with
+    | none => rfl
+    | some record => cases h
+  | some record₁ =>
+    cases b with
+    | none => cases h
+    | some record₂ =>
+      cases h
+      rfl
+
+theorem verifiedQueryT_eq_encodeVerified
+    (r : Identity)
+    (source : SourceState) :
+    verifiedQueryT r source = encodeVerified (completeRecordConsumer r source) := by
+  unfold verifiedQueryT completeRecordConsumer encodeVerified
+  split <;> rfl
+
 theorem c5_verified_completeRecord_structural (r : Identity) :
     SufficientFor (verifiedQueryT r) (completeRecordConsumer r) := by
-  intro s₁ s₂ h
-  -- Direct proof by induction
-  induction s₁ generalizing s₂ with
-  | nil =>
-    cases s₂ with
-    | nil => rfl
-    | cons _ _ => simp [verifiedQueryT] at h
-  | cons rec tail ih =>
-    cases s₂ with
-    | nil => simp [verifiedQueryT] at h
-    | cons rec₂ tail₂ =>
-      simp [completeRecordConsumer, verifiedQueryT] at h ⊢
-      exact ih tail₂ h
+  intro s₁ s₂ hVerified
+  have hEncoded :
+      encodeVerified (completeRecordConsumer r s₁)
+      = encodeVerified (completeRecordConsumer r s₂) := by
+    rw [← verifiedQueryT_eq_encodeVerified r s₁, ← verifiedQueryT_eq_encodeVerified r s₂]
+    exact hVerified
+  exact encodeVerified_injective hEncoded
 
 /-! ## Key negative results (compiled) -/
 
