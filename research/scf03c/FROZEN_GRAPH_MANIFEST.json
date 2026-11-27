@@ -1,0 +1,9 @@
+{
+  "authority": "FROZEN_BEFORE_ANALYSIS",
+  "scf03b_commit": "6cdfe5dc7fcaecac1d16070eaca6dbdfca744480",
+  "graph_sha256": "3852b20d6ca1e56b0fdab3a4bda6444ff98eb10b7e253ba6b1e207ec697395b9",
+  "carriers": 5,
+  "transformations": 3,
+  "consumers": 5,
+  "components": 2
+}

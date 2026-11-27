@@ -1,0 +1,11 @@
+{
+  "authority": "FROZEN_BEFORE_CELL_EVALUATION",
+  "fate_statuses": {
+    "SUFFICIENT": "SufficientFor T C proved or exhaustively validated",
+    "OBSERVABLE_LOSS": "Explicit witness x1 x2 with T x1 = T x2 and C x1 != C x2",
+    "UNRESOLVED": "Neither sufficiency nor ObservableLoss established",
+    "NOT_APPLICABLE": "No meaningful comparison declared",
+    "INVALID_DOMAIN_MATCH": "Domain C != source carrier T, no pullback exists"
+  },
+  "note": "No preferred cell counts. UNRESOLVED is a completed classification."
+}

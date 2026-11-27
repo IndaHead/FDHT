@@ -1,0 +1,10 @@
+{
+  "authority": "SCF03C_AUDIT",
+  "additional_input_boundaries": [
+    {
+      "boundary": "source-threaded verification",
+      "classification": "EXTERNAL_COMPOSITE_RESULT",
+      "reason": "Not admitted as graph transformation; target schema not admitted as carrier"
+    }
+  ]
+}

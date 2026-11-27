@@ -1,0 +1,41 @@
+{
+  "authority": "SCF03C_LEDGER",
+  "invalid_pairs": [
+    {
+      "transformation": "trajectoryProjection",
+      "consumer": "identityMembershipConsumer",
+      "reason": "Domain mismatch: RawHistory vs SourceState",
+      "classification": "INVALID_DOMAIN_MATCH"
+    },
+    {
+      "transformation": "trajectoryProjection",
+      "consumer": "identityMultiplicityConsumer",
+      "reason": "Domain mismatch: RawHistory vs SourceState",
+      "classification": "INVALID_DOMAIN_MATCH"
+    },
+    {
+      "transformation": "trajectoryProjection",
+      "consumer": "completeRecordConsumer",
+      "reason": "Domain mismatch: RawHistory vs SourceState",
+      "classification": "INVALID_DOMAIN_MATCH"
+    },
+    {
+      "transformation": "trajectoryProjection",
+      "consumer": "provenanceConsumer",
+      "reason": "Domain mismatch: RawHistory vs SourceState",
+      "classification": "INVALID_DOMAIN_MATCH"
+    },
+    {
+      "transformation": "candidateT",
+      "consumer": "rawIdentityConsumer",
+      "reason": "Domain mismatch: SourceState vs RawHistory",
+      "classification": "INVALID_DOMAIN_MATCH"
+    },
+    {
+      "transformation": "buildExactIndex",
+      "consumer": "rawIdentityConsumer",
+      "reason": "Domain mismatch: SourceState vs RawHistory",
+      "classification": "INVALID_DOMAIN_MATCH"
+    }
+  ]
+}

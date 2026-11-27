@@ -1,0 +1,21 @@
+{
+  "authority": "SCF03C_MATRIX",
+  "component": "Permanent_FDHT",
+  "cells": [
+    {
+      "transformation": "trajectoryProjection",
+      "source_carrier": "RawHistory",
+      "target_carrier": "TrajectoryBoundary",
+      "consumer": "rawIdentityConsumer",
+      "consumer_carrier": "RawHistory",
+      "status": "OBSERVABLE_LOSS",
+      "evidence": "MRT-05A certified collision",
+      "witness": "[] and [identityContext]",
+      "theorem": "trajectoryProjection_observableLoss_rawIdentity"
+    }
+  ],
+  "sufficient_count": 0,
+  "observable_loss_count": 1,
+  "unresolved_count": 0,
+  "completeness": "COMPLETE"
+}

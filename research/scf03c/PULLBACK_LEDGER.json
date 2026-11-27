@@ -1,0 +1,5 @@
+{
+  "authority": "SCF03C_LEDGER",
+  "pullbacks": [],
+  "reason": "No target-native consumers exist on TrajectoryBoundary, ExactIndex, or CandidateRepresentation"
+}

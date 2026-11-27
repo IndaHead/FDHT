@@ -1,0 +1,86 @@
+{
+  "authority": "SCF03C_MATRIX",
+  "component": "A2_SourceState",
+  "cells": [
+    {
+      "transformation": "candidateT",
+      "source_carrier": "SourceState",
+      "target_carrier": "CandidateRepresentation",
+      "consumer": "identityMembershipConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "SUFFICIENT",
+      "evidence": "MRT-05B structural observation",
+      "note": "Structural observation, not fully proved"
+    },
+    {
+      "transformation": "candidateT",
+      "source_carrier": "SourceState",
+      "target_carrier": "CandidateRepresentation",
+      "consumer": "identityMultiplicityConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "SUFFICIENT",
+      "evidence": "MRT-05B structural observation",
+      "note": "Structural observation, not fully proved"
+    },
+    {
+      "transformation": "candidateT",
+      "source_carrier": "SourceState",
+      "target_carrier": "CandidateRepresentation",
+      "consumer": "completeRecordConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "OBSERVABLE_LOSS",
+      "evidence": "MRT-05B explicit witness",
+      "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"
+    },
+    {
+      "transformation": "candidateT",
+      "source_carrier": "SourceState",
+      "target_carrier": "CandidateRepresentation",
+      "consumer": "provenanceConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "OBSERVABLE_LOSS",
+      "evidence": "MRT-05B explicit witness",
+      "witness": "s1=[r1,id1,payload1,lineage1], s2=[r2,id1,payload2,lineage2]"
+    },
+    {
+      "transformation": "buildExactIndex",
+      "source_carrier": "SourceState",
+      "target_carrier": "ExactIndex",
+      "consumer": "identityMembershipConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "UNRESOLVED",
+      "evidence": "Not independently tested"
+    },
+    {
+      "transformation": "buildExactIndex",
+      "source_carrier": "SourceState",
+      "target_carrier": "ExactIndex",
+      "consumer": "identityMultiplicityConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "UNRESOLVED",
+      "evidence": "Not independently tested"
+    },
+    {
+      "transformation": "buildExactIndex",
+      "source_carrier": "SourceState",
+      "target_carrier": "ExactIndex",
+      "consumer": "completeRecordConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "UNRESOLVED",
+      "evidence": "Not independently tested"
+    },
+    {
+      "transformation": "buildExactIndex",
+      "source_carrier": "SourceState",
+      "target_carrier": "ExactIndex",
+      "consumer": "provenanceConsumer",
+      "consumer_carrier": "SourceState",
+      "status": "UNRESOLVED",
+      "evidence": "Not independently tested"
+    }
+  ],
+  "sufficient_count": 2,
+  "observable_loss_count": 2,
+  "unresolved_count": 4,
+  "completeness": "COMPLETE"
+}

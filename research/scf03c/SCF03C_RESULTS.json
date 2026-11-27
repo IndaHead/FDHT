@@ -1,0 +1,11 @@
+{
+  "authority": "SCF03C_RESULTS",
+  "classification": "B",
+  "classification_text": "BOTH COMPONENT FATE MATRICES COMPLETE; SOME VALID CELLS REMAIN UNRESOLVED",
+  "permanent_fdht_cells": 1,
+  "permanent_fdht_settled": 1,
+  "a2_cells": 8,
+  "a2_settled": 4,
+  "a2_unresolved": 4,
+  "cross_component_adapter": false
+}

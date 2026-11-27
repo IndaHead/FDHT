@@ -1,0 +1,15 @@
+{
+  "authority": "SCF03C_COMPLETENESS",
+  "permanent_fdht": {
+    "valid_cells": 1,
+    "settled_cells": 1,
+    "unresolved_cells": 0,
+    "completeness": "COMPLETE"
+  },
+  "a2_source_state": {
+    "valid_cells": 8,
+    "settled_cells": 4,
+    "unresolved_cells": 4,
+    "completeness": "COMPLETE"
+  }
+}
